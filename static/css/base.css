@@ -325,3 +325,20 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 }
+
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(5px); /* Размытие заднего фона */
+    z-index: 10; /* Задайте z-index больше, чем у меню, чтобы оно оказалось поверх размытого фона */
+    pointer-events: none; /* Позволяет кликать на элементы под размытым задним фоном */
+}
+
+/* Стиль для меню */
+.dropdown-menu {
+    z-index: 11; /* Задайте бОльший z-index, чтобы меню оказалось поверх размытого фона */
+}
