@@ -11,7 +11,7 @@ from products.models import Product
 # from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
 
-# import stripe
+import stripe
 # import json
 
 
