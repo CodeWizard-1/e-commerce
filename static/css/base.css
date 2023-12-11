@@ -260,7 +260,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
 
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
