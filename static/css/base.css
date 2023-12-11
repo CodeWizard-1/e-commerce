@@ -279,11 +279,11 @@ input[name='q']::placeholder {
 
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 93px;
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 93px);
     }
 
     .display-4.logo-font.text-black {
@@ -340,7 +340,7 @@ input[name='q']::placeholder {
   }
   
   .carousel-item img {
-    height: 400px;
+    height: 500px;
     width: 100%;
     object-fit: cover;
   }
