@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-codewizard1-ecommerce-rkjafijsu1w.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['sportswear-ebbdbb6bb6ec.herokuapp.com','8000-codewizard1-ecommerce-rkjafijsu1w.ws-eu106.gitpod.io']
 
 
 # Application definition
