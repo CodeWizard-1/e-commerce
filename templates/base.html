@@ -140,8 +140,10 @@
     {% block content %}
     {% endblock %}
 
-    <div class="">
-        <footer class="fixed-down">
+    {% block page_footer %}
+    {% endblock %}
+    <div class="sticky-bottom">
+        <footer class="">
           <div class="row">
             <div class="col-6 col-md-2 mb-3 ml-5">
               <h5>Section</h5>
