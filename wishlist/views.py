@@ -6,7 +6,7 @@ from .models import Wishlist, Product
 
 class WishlistView(View):
     def get(self, request):
-        # Получаем или создаем Wishlist для текущего пользователя
+
         wishlist, created = Wishlist.objects.get_or_create(user=request.user)
         return render(request, 'wishlist.html', {'wishlist': wishlist})
 
@@ -17,7 +17,6 @@ def add_to_wishlist(request, product_id):
     except Product.DoesNotExist:
         raise Http404("Product not found")
 
-    # Получаем или создаем Wishlist для текущего пользователя
     wishlist, created = Wishlist.objects.get_or_create(user=request.user)
     wishlist.products.add(product)
     return redirect('wishlist')
@@ -29,7 +28,6 @@ def remove_from_wishlist(request, product_id):
     except Product.DoesNotExist:
         raise Http404("Product not found")
 
-    # Получаем Wishlist для текущего пользователя
     wishlist = Wishlist.objects.get(user=request.user)
     wishlist.products.remove(product)
     return redirect('wishlist')
