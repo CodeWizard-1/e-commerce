@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+    <h2>Список желаемого</h2>
+    {% if wishlist.products.all %}
+        <ul>
+            {% for product in wishlist.products.all %}
+                <li>{{ product.name }} - <a href="{% url 'remove_from_wishlist' product.id %}">Удалить</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Ваш список желаемого пуст.</p>
+    {% endif %}
+{% endblock %}
