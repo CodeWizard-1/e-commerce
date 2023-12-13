@@ -28,8 +28,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
+# DEBUG = 'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = ['sportswear-ebbdbb6bb6ec.herokuapp.com','8000-codewizard1-ecommerce-rkjafijsu1w.ws-eu106.gitpod.io']
 
 
