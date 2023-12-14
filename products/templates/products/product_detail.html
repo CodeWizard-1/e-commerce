@@ -145,7 +145,7 @@
                         <div class="review-card card-body">
                             <h4 class="mb-2">{{ review.title }}</h4>
                             <p><small class="text-black text-muted p-0"><em>Posted by {{ review.user }} on
-                                        {{ review.created_on}}</em></small></p>
+                                        {{ review.created_on }}</em></small></p>
                             <p class="card-text">{{ review.review }}</p>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
             </div>
             {% endif %}
             {% empty %}
-            <h5 class="font-weight-bold text-black mb-2 mt-3 text-center">No reviews yet! Log in to add yours.</h5>
+            <h5 class="font-weight-bold text-black mb-2 mt-3 text-center">No reviews yet!</h5>
             {% endfor %}
         </div>
 
@@ -212,5 +212,10 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
