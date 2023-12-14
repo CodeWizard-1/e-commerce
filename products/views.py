@@ -1,11 +1,17 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.views.generic import UpdateView, DeleteView
+from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.decorators import login_required
+from django.db import IntegrityError
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Brand, Category, Reviews
+from .forms import ProductForm, ReviewsForm
+from profiles.models import UserProfile
+from wishlist.models import Wishlist
 
 
 def all_products(request):
@@ -131,3 +137,68 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_review(request, product_id):
+
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == "POST":
+        review_form = ReviewsForm(request.POST)
+
+        if review_form.is_valid():
+            try:
+                Reviews.objects.create(
+                    product=product,
+                    user=request.user,
+                    title=request.POST["title"],
+                    review=request.POST["review"],
+                )
+                reviews = Reviews.objects.filter(product=product)
+                messages.success(request, "Your review has been successfully added!")
+                return redirect(reverse("product_detail", args=[product.id]))
+            except IntegrityError:
+                messages.error(request, "You have already reviewed this product.")
+                return redirect(reverse("product_detail", args=[product.id]))
+        else:
+            messages.error(request, "Your review has not been submitted.")
+    return redirect(reverse("product_detail", args=[product.id]))
+
+
+class UpdateReview(
+    LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, UpdateView
+):
+ 
+
+    model = Reviews
+    form_class = ReviewsForm
+    template_name = "products/edit_review.html"
+    success_message = "Your review was updated!"
+
+    def test_func(self):
+        review = self.get_object()
+        user = self.request.user
+        return user == review.user or user.is_superuser
+
+    def get_success_url(self):
+        return reverse("product_detail", kwargs={"product_id": self.object.product_id})
+
+
+class DeleteReview(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+
+
+    model = Reviews
+    template_name = "products/delete_review.html"
+    success_message = "Review deleted successfully."
+
+    def test_func(self):
+        review = self.get_object()
+        user = self.request.user
+        return user == review.user or user.is_superuser
+
+    def get_success_url(self):
+        return reverse("product_detail", kwargs={"product_id": self.object.product_id})
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(DeleteReview, self).delete(request, *args, **kwargs)

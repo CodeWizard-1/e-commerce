@@ -118,6 +118,7 @@ class Reviews(models.Model):
         constraints = [
             models.UniqueConstraint(fields=["user", "product"], name="reviews_per_user")
         ]
+        verbose_name_plural = "Reviews"
 
     def __str__(self):
         return self.title

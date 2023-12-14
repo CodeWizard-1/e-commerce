@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, ProductVariant
+from .models import Product, Category, ProductVariant, Brand, Reviews
 
 class ProductVariantInline(admin.StackedInline):
     model = ProductVariant
@@ -14,7 +14,11 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'sale_price',
         'rating',
-        'image',
+        'brand',
+        'on_sale',
+        'discount',
+        'discounted_price',
+        'created_on',
     )
 
     ordering = ('sku',)
@@ -39,8 +43,25 @@ class ProductVariantAdmin(admin.ModelAdmin):
         'gender',
     )
 
+class BrandAdmin(admin.ModelAdmin):
+    list_display = (
+        "friendly_name",
+        "name",
+    )
+
+class ReviewsAdmin(admin.ModelAdmin):
+    list_display = (
+        "product",
+        "user",
+        "title",
+        "review",
+        "created_on",
+        "updated_on",
+    )
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(ProductVariant, ProductVariantAdmin)
+admin.site.register(Brand, BrandAdmin)
+admin.site.register(Reviews, ReviewsAdmin)
 
