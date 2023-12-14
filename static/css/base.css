@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     background-color: #f1f1f1;
     background-size: cover;
-    height: calc(100vh - 164px);
+    /* height: calc(100vh - 164px); */
     color: #000000;
     font-family: 'Lato';
 }
@@ -281,16 +281,16 @@ footer {
         z-index: 1030;
     }
 
-    .header-container {
+    /* .header-container {
         padding-top: 164px;
-    }
+    } */
 }
 
 
 @media (max-width: 991px) {
-    .header-container {
+    /* .header-container {
         padding-top: 93px;
-    }
+    } */
 
     body {
         height: calc(100vh - 93px);

@@ -139,9 +139,9 @@
                 Customer Reviews
             </h3>
             {% for review in reviews %}
-            <div class="col-12 mt-3">
+            <div class="col-12 mt-3 ">
                 <div class="row mt-3">
-                    <div class="card w-100 text-center">
+                    <div class="card w-100 text-center border-black">
                         <div class="review-card card-body">
                             <h4 class="mb-2">{{ review.title }}</h4>
                             <p><small class="text-black text-muted p-0"><em>Posted by {{ review.user }} on
@@ -154,7 +154,7 @@
             <!-- Update and Delete Review buttons -->
             {% if user == review.user or user.is_superuser %}
             <div class="mb-3 text-center">
-                <a href="{% url 'update_review' review.id %}" class="btn product-btn my-2 ml-2">Update Review</a>
+                <a href="{% url 'update_review' review.id %}" class="btn btn-primary my-2 ml-2">Update Review</a>
                 <a href="{% url 'delete_review' review.id %}" class="btn btn-danger my-2 ml-2">Delete Review</a>
             </div>
             {% endif %}
