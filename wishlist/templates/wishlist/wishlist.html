@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block content %}
 <div class="overlay"></div>
@@ -22,14 +29,14 @@
             </div>
         </div>
 
-        <div class="">
+        <div class="d-block d-md-none">
             {% for product in wishlist.products.all %}
             <div class="text-center">
                 <div data-label="Product:" class="mb-3">
                     {% if product.image %}
-                    <img class="img-fluid rounded w-50" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="img-fluid rounded w-30" src="{{ product.image.url }}" alt="{{ product.name }}">
                     {% else %}
-                    <img class="img-fluid rounded w-50" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    <img class="img-fluid rounded w-30" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     {% endif %}
                 </div>
                 <div data-label="Name:" class="mb-3">
@@ -46,14 +53,14 @@
                 <div class="wishlist mb-3" data-label="View Product:">
                     View Product:
                     <a href="{% url 'product_detail' product.id %}" aria-label="Link to View Product Detail Page">
-                        <i class="fas fa-eye text-muted"></i>
+                        <i class="fa-solid fa-binoculars text-success"></i>
                     </a>
                 </div>
                 <div class="wishlist mb-3" data-label="Remove Product:">
                     Remove Product:
                     <a href="{% url 'remove_wishlist' product.id %}?next={% url 'wishlist' %}"
                         aria-label="Link to Remove Product">
-                        <i class="fas fa-minus-circle text-muted"></i>
+                        <i class="fa-solid fa-trash-can text-danger"></i>
                     </a>
                 </div>
             </div>
@@ -65,12 +72,13 @@
             {% endif %}
             {% endfor %}
         </div>
-        <div class="table-responsive rounded-0">
+        <div class="table-responsive rounded-0 d-none d-md-block">
             <table class="table wishlist-table text-align-center">
                 <thead class="wishlist-head">
                     <tr class="wishlist-row mx-1 my-1">
                         <th class="wishlist-title">Product</th>
                         <th class="wishlist-title">Name</th>
+                        <th class="wishlist-title">Description</th>
                         <th class="wishlist-title">Price</th>
                         <th class="wishlist-title">View</th>
                         <th class="wishlist-title">Remove</th>
@@ -81,14 +89,17 @@
                     <tr class="wishlist-table">
                         <td class="wishlist-title" data-label="Product:">
                             {% if product.image %}
-                            <img class="img-fluid rounded w-50" src="{{ product.image.url }}" alt="{{ product.name }}">
+                            <img class="img-fluid rounded w-30" src="{{ product.image.url }}" alt="{{ product.name }}">
                             {% else %}
-                            <img class="img-fluid rounded w-50" src="{{ MEDIA_URL }}noimage.png"
+                            <img class="img-fluid rounded w-30" src="{{ MEDIA_URL }}noimage.png"
                                 alt="{{ product.name }}">
                             {% endif %}
                         </td>
                         <td class="wishlist-title" data-label="Name:">
                             <p class="h6">{{ product.name }}</p>
+                        </td>
+                        <td class="wishlist-title" data-label="Name:">
+                            <p class="h6">{{ product.description }}</p>
                         </td>
                         <td class="wishlist-title" data-label="Price:">
                             <div>
@@ -102,13 +113,13 @@
                         <td class="wishlist" data-label="View Product:">
                             <a href="{% url 'product_detail' product.id %}"
                                 aria-label="Link to View Product Detail Page">
-                                <i class="fas fa-eye text-muted"></i>
+                                <i class="fa-solid fa-binoculars text-success"></i>
                             </a>
                         </td>
                         <td class="wishlist" data-label="Remove Product:">
                             <a href="{% url 'remove_wishlist' product.id %}?next={% url 'wishlist' %}"
                                 aria-label="Link to Remove Product">
-                                <i class="fas fa-minus-circle text-muted"></i>
+                                <i class="fa-solid fa-trash-can text-danger"></i>
                             </a>
                         </td>
                     </tr>

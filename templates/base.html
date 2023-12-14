@@ -155,7 +155,9 @@
     {% endblock %}
 
 
-    <footer class="footer">
+    {% include 'includes/footer.html' %}
+
+    <!-- <footer class="footer">
         <div class="row container">
         <div class="col-6 col-md-2">
             <h5>Section</h5>
@@ -195,7 +197,7 @@
             <li class="ml-4 mr-5"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook"></i></a></li>
         </ul>
         </div>
-    </footer>
+    </footer> -->
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
