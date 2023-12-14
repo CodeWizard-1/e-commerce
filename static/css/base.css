@@ -364,3 +364,11 @@ footer {
     color: white;
     font-size: 24px;
   }
+
+  .wishlist-badge {
+    position: absolute;
+    font-size: 1.25em;
+    left: 20px;
+    top: 15px;
+    font-weight: normal;
+}

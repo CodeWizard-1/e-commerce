@@ -1,24 +1,95 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from django.views import View
-from django.contrib.auth.decorators import login_required
+from django.shortcuts import (
+    render,
+    redirect,
+    reverse,
+    get_object_or_404,
+    HttpResponseRedirect,
+)
+from django.contrib import messages
 from django.http import Http404
-from .models import Wishlist, Product
 
-class WishlistView(View):
-    def get(self, request):
-        wishlist, created = Wishlist.objects.get_or_create(user=request.user)
-        return render(request, 'wishlist.html', {'wishlist': wishlist})
+from .models import Wishlist
+from profiles.models import UserProfile
+from products.models import Product
 
-@login_required
-def add_to_wishlist(request, product_id):
+
+
+def view_wishlist(request):
+
+    if not request.user.is_authenticated:
+        messages.error(
+            request, "Sorry, you need to be logged in to add to your Wishlist."
+        )
+        return redirect(reverse("account_login"))
+
+    user = get_object_or_404(UserProfile, user=request.user)
+    wishlist, created = Wishlist.objects.get_or_create(user=user.user)
+
+    template_name = "wishlist/wishlist.html"
+    context = {"wishlist": wishlist}
+    return render(request, template_name, context)
+
+
+def add_wishlist(request, product_id):
+
+    if not request.user.is_authenticated:
+        messages.error(
+            request, "Sorry, you need to be logged in to add to your Wishlist."
+        )
+        return redirect(reverse("account_login"))
+
     product = get_object_or_404(Product, pk=product_id)
-    wishlist, created = Wishlist.objects.get_or_create(user=request.user)
-    wishlist.products.add(product)
-    return redirect('wishlist')
+    try:
+        wishlist = get_object_or_404(Wishlist, user=request.user.id)
+    except Http404:
+        wishlist = Wishlist.objects.create(user=request.user)
 
-@login_required
-def remove_from_wishlist(request, product_id):
+    if product in wishlist.products.all():
+        messages.info(request, f"{product.name} is already on your Wishlist!")
+    else:
+        wishlist.products.add(product)
+        messages.info(request, f"{product.name} has been added to your Wishlist!")
+
+    redirect_url = request.META.get("HTTP_REFERER", reverse("products"))
+
+    return HttpResponseRedirect(redirect_url)
+
+
+def remove_wishlist(request, product_id):
+
+    if not request.user.is_authenticated:
+        messages.error(
+            request, "Sorry, you need to be logged in to edit your Wishlist."
+        )
+        return redirect(reverse("account_login"))
+
     product = get_object_or_404(Product, pk=product_id)
     wishlist = Wishlist.objects.get(user=request.user)
+
     wishlist.products.remove(product)
-    return redirect('wishlist')
+    messages.info(request, f"{product.name} has been removed from your Wishlist!")
+
+    redirect_url = request.META.get("HTTP_REFERER", reverse("products"))
+
+    return HttpResponseRedirect(redirect_url)
+
+
+def clear_wishlist(request):
+
+    if not request.user.is_authenticated:
+        messages.error(
+            request, "Sorry, you need to be logged in to edit your Wishlist."
+        )
+        return redirect(reverse("account_login"))
+
+    wishlist = Wishlist.objects.get(user=request.user)
+
+    products = wishlist.products.all()
+
+    for product in products:
+        wishlist.products.remove(product)
+
+    wishlist.products.remove(product)
+    messages.info(request, "Wishlist cleared!")
+
+    return redirect(reverse("wishlist"))
