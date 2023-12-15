@@ -58,6 +58,16 @@ def all_products(request):
         #     products = products.filter(category__name__in=categories)
         #     categories = Category.objects.filter(name__in=categories)
 
+        if "brand" in request.GET:
+            brand = request.GET["brand"]
+            products = products.filter(brand__name=brand)
+            brand = get_object_or_404(Brand, name=brand)
+            title = brand.get_friendly_name()
+
+
+        if "sale" in request.GET:
+            sale = True
+            products = products.filter(on_sale=True)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -75,6 +85,9 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        "sale": sale,
+        # "brand": brand,
+        # "wishlist": wishlist,
     }
 
     return render(request, 'products/products.html', context)

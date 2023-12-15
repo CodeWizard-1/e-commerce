@@ -90,19 +90,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sale
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <div class="row">
-                    <div class="col">
-                        <h6 class="dropdown-header text-black font-weight-bold">Sales and Offers</h6>
-                        <a href="{% url 'products' %}?category=lifestyle" class="dropdown-item">Best Sellers</a>
-                        <a href="{% url 'products' %}?category=running" class="dropdown-item">Running</a>
-                        <a href="{% url 'products' %}?category=all_shoes" class="dropdown-item">Shop All Sales</a>
-                    </div>
-                </div>
-            </div>
+            <a class="logo-font font-weight-bold nav-link text-danger" href="{% url 'products' %}?sale" id="sale-link" aria-haspopup="true"
+            aria-expanded="false">Sale</a>
         </li>
     </ul>
 </div>
