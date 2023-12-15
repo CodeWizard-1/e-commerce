@@ -375,3 +375,8 @@ footer {
     top: 15px;
     font-weight: normal;
 }
+
+.price-font-original {
+    color: #6c757d;
+    text-decoration: line-through;
+}
