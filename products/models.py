@@ -23,6 +23,11 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    GENDER_CHOICES = [
+        ('men', 'men'),
+        ('women', 'women'),
+        ('kids', 'kids'),
+    ]
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
@@ -45,6 +50,8 @@ class Product(models.Model):
     average_rating = models.DecimalField(
     max_digits=6, decimal_places=2, null=True, blank=True
     )
+    gender = models.CharField(max_length=10, choices=GENDER_CHOICES, null=True, blank=True)
+    
 
     def clean(self):
         if self.price < 0:
@@ -72,11 +79,7 @@ class ProductVariant(models.Model):
         ('3XL', 'Triple Extra Large'),
     ]
 
-    GENDER_CHOICES = [
-        ('M', 'Male'),
-        ('F', 'Female'),
-        ('C', 'Child'),
-    ]
+
 
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     clothing_size = models.CharField(max_length=10,choices=CLOTHING_SIZE_CHOICES, null=True, blank=True)
@@ -85,7 +88,7 @@ class ProductVariant(models.Model):
     child_shoe_size = models.CharField(max_length=10, null=True, blank=True)
     color = models.CharField(max_length=50, null=True, blank=True)
     stock_quantity = models.PositiveIntegerField(default=0)
-    gender = models.CharField(max_length=1, choices=GENDER_CHOICES, null=True, blank=True)
+
 
     def __str__(self):
         return f'{self.product.name} - Clothing Size: {self.clothing_size}, Men Shoe Size: {self.men_shoe_size}, Women Shoe Size: {self.women_shoe_size}, Child Shoe Size: {self.child_shoe_size}, Color: {self.color}'

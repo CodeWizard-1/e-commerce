@@ -36,11 +36,28 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-            
+
+
+
+        if 'gender' in request.GET:
+            gender = request.GET['gender']
+            if gender:
+                products = products.filter(gender=gender)
+
+
+
         if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+            categories = request.GET['category']
+            if categories:
+                categories = categories.split(',')
+                products = products.filter(category__name__in=categories)
+                categories = Category.objects.filter(name__in=categories)
+            
+        # if 'category' in request.GET:
+        #     categories = request.GET['category'].split(',')
+        #     products = products.filter(category__name__in=categories)
+        #     categories = Category.objects.filter(name__in=categories)
+
 
         if 'q' in request.GET:
             query = request.GET['q']

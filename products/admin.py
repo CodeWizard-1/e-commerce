@@ -19,6 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
         'discount',
         'discounted_price',
         'created_on',
+        'gender',
     )
 
     ordering = ('sku',)
@@ -40,7 +41,7 @@ class ProductVariantAdmin(admin.ModelAdmin):
         'child_shoe_size',
         'color',
         'stock_quantity',
-        'gender',
+
     )
 
 class BrandAdmin(admin.ModelAdmin):
