@@ -380,3 +380,12 @@ footer {
     color: #6c757d;
     text-decoration: line-through;
 }
+
+.dropdown:hover .nav-link {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.dropdown-menu {
+    display: none;
+}

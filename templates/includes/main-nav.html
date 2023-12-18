@@ -95,3 +95,22 @@
         </li>
     </ul>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $(".dropdown").hover(
+            function () {
+                $(this).find('.dropdown-menu').show();
+                $(this).find('.nav-link').css('text-decoration', 'underline');
+                $(this).find('.nav-link').css('text-decoration-color', 'black');
+            },
+            function () {
+                $(this).find('.dropdown-menu').hide();
+                $(this).find('.nav-link').css('text-decoration', 'none');
+            }
+        );
+    });
+</script>
+
+
+
