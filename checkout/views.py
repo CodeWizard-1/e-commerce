@@ -62,10 +62,6 @@ def checkout(request):
                 try:
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
-                        if product.on_sale:
-                            price = product.sale_price
-                        else:
-                            price = product.price
                         order_line_item = OrderLineItem(
                             order=order,
                             product=product,
@@ -74,11 +70,6 @@ def checkout(request):
                         order_line_item.save()
                     else:
                         for size, quantity in item_data['items_by_size'].items():
-                            if product.on_sale:
-                                price = product.sale_price
-                            else:
-                                price = product.price
-                            
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
