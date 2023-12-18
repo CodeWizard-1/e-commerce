@@ -64,7 +64,15 @@ class OrderLineItem(models.Model):
 
     def save(self, *args, **kwargs):
 
-        self.lineitem_total = self.product.price * self.quantity
+        # self.lineitem_total = self.product.price * self.quantity
+        # super().save(*args, **kwargs)
+
+        if self.product.on_sale:
+            price = self.product.sale_price
+        else:
+            price = self.product.price
+
+        self.lineitem_total = price * self.quantity
         super().save(*args, **kwargs)
 
     def __str__(self):
