@@ -51,6 +51,9 @@ class Product(models.Model):
     max_digits=6, decimal_places=2, null=True, blank=True
     )
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES, null=True, blank=True)
+    is_featured = models.BooleanField(
+        default=False, verbose_name="Feature on Home Page"
+    )
     
 
     def clean(self):
