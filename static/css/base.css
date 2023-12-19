@@ -443,3 +443,8 @@ footer {
 .contact .container .row {
     margin-bottom: 20px;
 }
+
+
+footer a {
+    color: gray !important;
+  }
