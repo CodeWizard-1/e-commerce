@@ -7,10 +7,16 @@ class ProductVariantInline(admin.StackedInline):
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = (
-        'sku',
+
+    search_fields = [
         'name',
+    ]
+
+    list_display = (
+        'name',
+        'gender',
         'category',
+        "is_featured",
         'price',
         'sale_price',
         'rating',
@@ -19,10 +25,17 @@ class ProductAdmin(admin.ModelAdmin):
         'discount',
         'discounted_price',
         'created_on',
-        'gender',
+        
+        
     )
 
-    ordering = ('sku',)
+    list_editable = (
+        "is_featured",
+        "on_sale",
+    )
+
+
+    ordering = ("name",)
     inlines = [ProductVariantInline]
 
 class CategoryAdmin(admin.ModelAdmin):
