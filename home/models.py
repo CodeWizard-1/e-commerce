@@ -15,5 +15,4 @@ class Contact(models.Model):
         return f"{self.name}, {self.email}"
 
     class Meta:
-        # Name for admin panel
         verbose_name = "Contact Form Submission"
