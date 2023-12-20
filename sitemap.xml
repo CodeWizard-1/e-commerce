@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/bag/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hoodies-and-sweatshirts&amp;gender=men</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=jackets&amp;gender=men</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hoodies-and-sweatshirts,jackets&amp;gender=men</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=socks&amp;gender=men</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=bags&amp;gender=men</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=socks,bags&amp;gender=men</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hoodies-and-sweatshirts&amp;gender=women</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=jackets&amp;gender=women</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hoodies-and-sweatshirts,jackets&amp;gender=women</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=socks&amp;gender=women</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=bags&amp;gender=women</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=socks,bags&amp;gender=women</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hoodies-and-sweatshirts&amp;gender=kids</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=jackets&amp;gender=kids</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hoodies-and-sweatshirts,jackets&amp;gender=kids</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hats&amp;gender=kids</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=bags&amp;gender=kids</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hats,bags&amp;gender=kids</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?sale</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/13/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=bags</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/7/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=jackets</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/9/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=socks</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/12/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/5/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hoodies-and-sweatshirts</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/contact</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/privacy_policy</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/returns</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hoodies-and-sweatshirts&amp;gender=</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=jackets&amp;gender=</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/6/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=socks&amp;gender=</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=bags&amp;gender=</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/3/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/10/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/4/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/8/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hats&amp;gender=</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/11/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/?category=hats</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sportswear-ebbdbb6bb6ec.herokuapp.com/products/14/</loc>
+  <lastmod>2023-12-20T14:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

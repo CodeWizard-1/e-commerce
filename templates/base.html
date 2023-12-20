@@ -2,45 +2,58 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
 
     {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Discover the latest trends in high-quality sports clothing and accessories at SportsWear, your premier online destination in Ireland. Explore our extensive collection for men, women, and children, featuring a wide range of activewear, fitness apparel, and sports accessories. Elevate your active lifestyle with our stylish and functional sportswear designed for various activities, including running, yoga, gym workouts, and outdoor adventures. Shop now for top-notch athletic gear, trendy sportswear, and performance-driven accessories. Enjoy the convenience of online shopping with fast and reliable delivery services across Ireland. Stay ahead in sports fashion with SportsWear – your go-to source for quality and style in Irish sports apparel.">
+    <meta name="keywords"
+        content="SportsWear, sports clothing, activewear, sportswear, fitness apparel, athletic gear, sports accessories, Ireland, online store, men's sportswear, women's sportswear, kids sportswear, workout clothes, gym wear, running gear, yoga apparel, outdoor sports, sportswear sale, sportswear shop, sportswear brands, sportswear fashion, sportswear trends, sports fashion, athletic clothing, exercise clothing, sporty outfits, sports equipment, sportswear store, sports gear, performance wear, team sports, sportswear collection, sportswear online, sportswear deals, sportswear discounts, sportswear offers, sportswear clearance, sportswear delivery, sportswear Ireland, active lifestyle, fitness fashion, trendy sportswear, sports and leisure, sportswear for all ages, sportswear for every sport, quality sportswear, Irish sports fashion, sports apparel trends, sports clothing trends, sports clothing store, sports clothing brands, affordable sportswear, sportswear essentials, sportswear accessories, sportswear online shopping, sportswear delivery Ireland, sports gear sale, sports gear online, sports gear store, sports gear brands, sports gear shop, sports gear discounts, sports gear offers, sports gear clearance, sports gear delivery, sports gear Ireland, sports gear trends, sports gear fashion, sports gear for all ages, sports gear for every sport, quality sports gear, Irish sports gear, sports equipment store, sports equipment brands, sports equipment shop, sports equipment discounts, sports equipment offers, sports equipment clearance, sports equipment delivery, sports equipment Ireland, sports equipment trends, sports equipment fashion, sports equipment for all ages, quality sports equipment, Irish sports equipment, outdoor sports gear, outdoor sports equipment, fitness accessories, workout accessories, sports fashion Ireland, sportswear and accessories, sportswear and gear, sports lifestyle, sports fashion trends, fitness trends, active lifestyle clothing, athletic lifestyle, sports clothing for sale, sports clothing online, sports clothing deals, sports clothing discounts, sports clothing offers, sports clothing clearance, sports clothing delivery, sports clothing Ireland, sports clothing trends, sports clothing fashion, sports clothing for all ages, quality sports clothing, Irish sports clothing, sports clothing store, sports clothing brands, sports clothing shop, sports clothing essentials, trendy sports clothing, sportswear and accessories for men, sportswear and accessories for women, sportswear and accessories for kids, sports gear and accessories for men, sports gear and accessories for women, sports gear and accessories for kids, sports equipment and accessories for men, sports equipment and accessories for women, sports equipment and accessories for kids, outdoor sports gear and accessories, fitness accessories for men, fitness accessories for women, fitness accessories for kids">
+
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
     {% block extra_css %}
     {% endblock %}
 
     {% block corejs %}
-        <script src="https://kit.fontawesome.com/0e34ff38b4.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
-        <!-- Stripe -->
-        <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://kit.fontawesome.com/0e34ff38b4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
     {% block extra_js %}
     {% endblock %}
 
     <title>SportsWear{% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="container-fluid sticky-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -51,7 +64,8 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
+                        <input class="form-control border border-black rounded-0" type="text" name="q"
+                            placeholder="Search">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -64,9 +78,10 @@
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    
+
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
@@ -74,38 +89,39 @@
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% if request.user.is_superuser %}
+                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            {% endif %}
+                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
                     {% if request.user.is_authenticated %}
-                        <li class="list-inline-item">
-                            <a class="text-black nav-link" href="{% url 'wishlist' %}">
-                                <div class="text-center">
-                                    <div><i class="fa-solid fa-heart fa-xl"></i></div>
-                                    <p class="my-0">
-                                        Wishlist
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
+                    <li class="list-inline-item">
+                        <a class="text-black nav-link" href="{% url 'wishlist' %}">
+                            <div class="text-center">
+                                <div><i class="fa-solid fa-heart fa-xl"></i></div>
+                                <p class="my-0">
+                                    Wishlist
+                                </p>
+                            </div>
+                        </a>
+                    </li>
                     {% endif %}
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link"
+                            href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                        €{{ grand_total|floatformat:2 }}
+                                    €{{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        €0.00
+                                    €0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -116,7 +132,8 @@
         </div>
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
@@ -125,26 +142,27 @@
         </div>
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
-                <h4 id="carousel-text" class="logo-font my-1">Follow your dream!&nbsp;&nbsp;<span class="text-primary"><i class="fa-solid fa-trophy"></i></span></h4>
+                <h4 id="carousel-text" class="logo-font my-1">Follow your dream!&nbsp;&nbsp;<span
+                        class="text-primary"><i class="fa-solid fa-trophy"></i></span></h4>
             </div>
         </div>
     </header>
     {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
+    <div class="message-container">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
     {% endif %}
 
     {% block page_header %}
@@ -175,23 +193,24 @@
                 "FREE RETURNS & EXCHANGE",
                 "FREE DELIVERY ON ORDERS OVER €50",
             ];
-    
+
             var currentIndex = 0;
             var delay = 3000;
-    
+
             function changeText() {
                 $("#carousel-text").fadeOut(500, function () {
                     $(this).html(textArray[currentIndex]).fadeIn(500);
                 });
-    
+
                 currentIndex = (currentIndex + 1) % textArray.length;
-    
+
                 setTimeout(changeText, delay);
             }
-    
+
             changeText();
         });
     </script>
     {% endblock %}
-  </body>
+</body>
+
 </html>
