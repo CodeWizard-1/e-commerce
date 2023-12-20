@@ -17,11 +17,20 @@ from wishlist.models import Wishlist
 def all_products(request):
 
     products = Product.objects.all()
+    user = request.user
     query = None
     categories = None
     sort = None
     direction = None
     sale = False
+
+
+    if user.is_authenticated:
+        wishlist, created = Wishlist.objects.get_or_create(user=user)
+    else:
+        wishlist = None
+
+
 
     if request.GET:
         if 'sort' in request.GET:
@@ -54,10 +63,6 @@ def all_products(request):
                 products = products.filter(category__name__in=categories)
                 categories = Category.objects.filter(name__in=categories)
             
-        # if 'category' in request.GET:
-        #     categories = request.GET['category'].split(',')
-        #     products = products.filter(category__name__in=categories)
-        #     categories = Category.objects.filter(name__in=categories)
 
         if "brand" in request.GET:
             brand = request.GET["brand"]
@@ -88,7 +93,7 @@ def all_products(request):
         'current_sorting': current_sorting,
         "sale": sale,
         # "brand": brand,
-        # "wishlist": wishlist,
+        "wishlist": wishlist,
     }
 
     return render(request, 'products/products.html', context)
