@@ -448,3 +448,49 @@ footer {
 footer a {
     color: gray !important;
   }
+
+
+/* Mail Chimp */
+#mc_embed_signup form {
+    display: block;
+    position: relative;
+    text-align: left;
+    margin: 0;
+}
+
+#mc_embed_signup h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+#mc_embed_signup h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+
+
+#mc_embed_signup .helper_text {
+    display: none;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    color: blue;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+    border: 2px solid blue;
+}
+
+#mc_embed_signup .foot {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+
+#mc_embed_signup .button {
+    background-color: var(--blue);
+    font-size: 20px;
+    height: 35px;
+}
