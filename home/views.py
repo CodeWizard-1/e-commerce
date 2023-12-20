@@ -25,6 +25,10 @@ def privacy_policy(request):
 
     return render(request, "home/privacy_policy.html")
 
+def returns(request):
+
+    return render(request, "home/returns.html")
+
 
 def contact(request):
     if request.method == "POST":
