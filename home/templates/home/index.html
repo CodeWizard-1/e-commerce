@@ -69,18 +69,23 @@
           <div class="mt-auto card-links">
             {% if product.on_sale %}
             <div class="sale-footer bg-white d-flex flex-row">
-              <p class="mb-0 pt-3 pb-1">
+              <p class="mb-0 pt-2 pb-2">
                 <span class="h6 pr-3 text-left font-weight-bold price-font-original text-decoration-line-through">
                   €{{ product.price }}</span>
               </p>
-              <p class="mb-0 pt-3 pb-0">
+              <p class="mb-0 pt-2 pb-2">
                 <span class="h5 text-left font-weight-bold price-font text-danger">
                   €{{ product.sale_price|floatformat:2 }}</span>
               </p>
             </div>
             {% else %}
-            <p class="mb-0 pt-3 pb-1"><span class="h5 text-left font-weight-bold price-font">
+            <p class="mb-0 pt-2 pb-2"><span class="h5 text-left font-weight-bold price-font">
                 €{{ product.price }}</span></p>
+            {% endif %}
+            {% if product.brand %}
+                <a class="text-muted" href="{% url 'products' %}?brand={{ product.brand.name }}">
+                    <i class="fa-solid fa-copyright"></i> {{ product.brand.friendly_name }}
+                </a>
             {% endif %}
             {% if product.category %}
             <p class="small mt-1 mb-0">
@@ -123,9 +128,7 @@
         alt="hero-bg">
     </div>
   </div>
-
   <hr class="featurette-divider">
-
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
       <h2 class="featurette-heading mb-5">Sporty Fashion for Everyone<span class="text-muted"></span></h2>
@@ -138,13 +141,9 @@
       <img src="{% static 'images/hero-bg-9.webp' %}"
         class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
         alt="hero-bg">
-
-
     </div>
   </div>
-
   <hr class="featurette-divider">
-
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading mb-5">Trends and Innovations in Sportswear<span class="text-muted"></span></h2>
@@ -157,11 +156,8 @@
       <img src="{% static 'images/hero-bg-15.webp' %}"
         class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
         alt="hero-bg">
-
-
     </div>
   </div>
-
   <hr class="featurette-divider">
 </div>
 {% endblock %}

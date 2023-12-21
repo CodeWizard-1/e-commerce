@@ -12,6 +12,7 @@ from .models import Product, Brand, Category, Reviews
 from .forms import ProductForm, ReviewsForm
 from profiles.models import UserProfile
 from wishlist.models import Wishlist
+import random
 
 
 def all_products(request):
