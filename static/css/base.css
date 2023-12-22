@@ -123,8 +123,8 @@ input[name='q']::placeholder {
 
 .message-container {
     position: fixed;
-    top: 72px;
-    right: 15px;
+    top: 105px;
+    right: 27px;
     z-index: 99999999999;
 }
 
@@ -492,11 +492,15 @@ footer a {
 #mc_embed_signup .button {
     background-color: var(--blue);
     font-size: 20px;
-    height: 35px;
+    height: 40px;
 }
 
 #delivery-banner {
     background: #000000;
     color: white;
     text-align: center;
+}
+
+.accout-block{
+    display: flex;
 }
