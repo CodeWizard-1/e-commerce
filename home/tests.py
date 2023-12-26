@@ -60,6 +60,6 @@ class ContactViewTest(TestCase):
 
         messages = [m.message for m in get_messages(response.wsgi_request)]
         self.assertIn(
-            "Thank you, your email.",
+            "Thank you, your email has been sent. We will contact you shortly.",
             messages,
         )
