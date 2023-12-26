@@ -243,7 +243,7 @@ class UpdateReview(
         return reverse("product_detail", kwargs={"product_id": self.object.product_id})
 
 
-class DeleteReview(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+class DeleteReview(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, DeleteView):
 
 
     model = Reviews

@@ -405,3 +405,14 @@ class DeleteReviewViewTest(TestCase):
 
             messages = list(get_messages(response.wsgi_request))
             self.assertEqual(str(messages[0]), "Review deleted successfully.")
+
+def tearDown(self):
+
+    User.objects.filter(username="superuser").delete()
+    User.objects.filter(username="regularuser").delete()
+    Category.objects.filter(name="Gaming").delete()
+    Brand.objects.filter(name="Sideshow").delete()
+    Product.objects.filter(name="Test Product").delete()
+
+
+
