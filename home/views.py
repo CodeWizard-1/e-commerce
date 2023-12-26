@@ -21,6 +21,9 @@ def index(request):
 
 
 
+
+
+
 def privacy_policy(request):
 
     return render(request, "home/privacy_policy.html")

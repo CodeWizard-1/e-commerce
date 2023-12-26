@@ -7,10 +7,10 @@
 
         let minusDisabled = currentValue < 2;
    
-        let plusDisabled = currentValue > 98;
+        let plusDisabled = currentValue >= 99;
 
-        $(`.decrement-qty_${itemId}`).prop('disabled', minusDisabled);
-        $(`.increment-qty_${itemId}`).prop('disabled', plusDisabled);
+        // $(`.decrement-qty_${itemId}`).prop('disabled', minusDisabled);
+        // $(`.increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
     
 
@@ -25,6 +25,17 @@
         let itemId = $(this).data('item_id');
         handleEnableDisable(itemId);
     });
+
+    $('.qty_input').on('input', function () {
+    let itemId = $(this).data('item_id');
+    let currentValue = parseInt($(this).val());
+
+    if (currentValue > 99) {
+        $(this).val(99);
+    }
+
+        handleEnableDisable(itemId);
+    });
     
 
     $('.increment-qty').click(function (e) {
@@ -35,8 +46,13 @@
 
         let currentValue = parseInt($(closestInput).val());
 
-        $(closestInput).val(currentValue + 1);
-        handleEnableDisable(itemId);
+        if (currentValue < 99) {
+            $(closestInput).val(currentValue + 1);
+            handleEnableDisable(itemId);
+        }
+
+        // $(closestInput).val(currentValue + 1);
+        // handleEnableDisable(itemId);
     });
     
 
@@ -48,7 +64,11 @@
 
         let currentValue = parseInt($(closestInput).val());
 
-        $(closestInput).val(currentValue - 1);
-        handleEnableDisable(itemId);
+        // $(closestInput).val(currentValue - 1);
+        // handleEnableDisable(itemId);
+        if (currentValue > 1) {
+            $(closestInput).val(currentValue - 1);
+            handleEnableDisable(itemId);
+        }
     });
     </script>
