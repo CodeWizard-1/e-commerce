@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+import sys
 import dj_database_url
 from django.contrib.messages import constants as messages
 from pathlib import Path
@@ -150,6 +151,8 @@ if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
+    if 'test' in sys.argv:
+        DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 else:
     DATABASES = {
         'default': {
@@ -157,6 +160,7 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
 }
+
 
 # DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
