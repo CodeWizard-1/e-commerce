@@ -323,7 +323,7 @@ The Home page of the online store is an attractive and informative landing page,
 [Back to Top](#table-of-contents)
 
 ### Footer
-![Footer Image]!(image-7.png)
+![Footer Image](image-7.png)
 - The footer is consistently present on every page, featuring links to Contact, Returns, Privacy Policies, and an email address.
 - Additionally, the footer incorporates our newsletter signup, powered by MailChimp. This ensures its visibility on every page, maximizing the likelihood of visitors subscribing.
 
@@ -334,7 +334,7 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Returns Page
-![Returns Page Image]!(image-8.png)
+![Returns Page Image](image-8.png)
 
 - The product returns page provides detailed information about the return policy of the online store
 <br>
@@ -365,7 +365,7 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Restricted Pages
-![Logged in Nav Image]!(image-11.png)
+![Logged in Nav Image](image-11.png)
 ![Logged out Nav Image](image-10.png)
 - Certain pages are accessible only to users who have logged in. Links to these pages are displayed in the Navbar exclusively when a user is logged in.
 - The Wishlist feature is reserved solely for users who have registered an account.
