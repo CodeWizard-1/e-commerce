@@ -266,24 +266,19 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 
 ### Database Schema
 
-- Both the AllAuth User and the Products Database are the main ones in the schema, connecting all products and profiles.
-- The Products Database allows for a connection to the Checkout Databases, including the orders, order items and coupons.
-- The Products Database also allows us to create a Wishlist for users. This is a ManyToMany database, which allows us to have 1 user wishlist as many products as they want.
-- The Profile Database is separate from the User, so that users to the site don't need to have created an account to make an order but if they do, they can save their profile information for quicker checkout next time. 
-- The Review Database is connected to the Profile Database - this means that registered users can leave a review for a product, as well as update and delete those reviews.
-- The Contact Database is used purely for creating and storing Contact Form submissions on the admin panel for staff to view.
+- I created an entity relationship diagram using  [Drawsql.app](https://drawsql.app/). This allowed me to visually represent the connections between my data structures and streamlined the development process significantly. Now, I have a visual guide, making it much easier to understand and interact with my data.
 
-![Database Schema](documentation/images/database.png)
+![Database Schema](documentation/drawSQL-e-commerce.png)
 
 [Back to Top](#table-of-contents)
 
 <br>
 
 ## The Scope Plane
-- Home page with hero image that immediately tells the user what the site is for.
-- Account registration which will allow for restricted viewing on Editing and Deleting reviews, wishlists and saving their information for quicker checkout next time.
-- Fully responsive website, tested across all screen sizes, with navigation for mobile.
-- Ability to create, view, update and delete reviews for users and products for superusers.
+- Designing a homepage featuring a compelling hero images that instantly communicates the website's purpose to users.
+- Implementing account registration to enable restricted access for editing and deleting reviews, managing wishlists, and saving user information for faster checkouts in the future.
+- Developing a fully responsive website, ensuring seamless functionality across all screen sizes, with optimized navigation for mobile users.
+- Empowering superusers with the capability to create, view, update, and delete reviews for both users and products.
 
 <br>
 
@@ -298,12 +293,8 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 ## Existing Features
 
 ### Home Page
-![Hero Image](documentation/images/hero.png)
-- The home page features a hero image, with some text that show a product for sale. This lets the user know immediately what type of items are available.
-- The index page is split into multiple sections, with the information easy to read and eye catching to a visitor.
-- There is a button that links to the product details page.
-
-![Hero Mobile Image](documentation/images/hero-mobile.png)
+![Hero Image](image-4.png)
+The Home page of the online store is an attractive and informative landing page, created to attract attention and comfortably guide users.
 
 <br>
 
@@ -311,31 +302,11 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 
 <br>
 
-### Brands Section
-![Brand Section Image](documentation/images/brands.png)
-- The Brands section is a section of images which links to a search for each brand name.
-- There is a hover effect on each image for larger screen sizes, which shows text with the name of each Brand. On mobile, this hover effect is the default.
-
-![Brand Mobile Image](documentation/images/brand-mobile.png)
-
-<br>
-
-[Back to Top](#table-of-contents)
-
-<br>
-
-### Categories Section
-![Categories Section Image](documentation/images/categories.png)
-- The categories section is used to add more colour to the page. Each panel links to a search of categories. On mobile this section is condensed to a vertical view.
-
-![Categories Mobile Image](documentation/images/categories-mobile.png)
-
-<br>
 
 ### Featured Products Section
-![Featured Products Section Image](documentation/images/featured.png)
-- The Featured Products section will take a random list of 5 products that have been marked as "Is_Featured" on the admin panel.
-- Each product has a card with it's details, price and if it's also on sale.
+![Featured Products Section Image](image-5.png)
+- The "Trending This Week" section will showcase a random list of 5 products marked as "Is_Featured" on the admin panel.
+- Each product is presented with a card displaying its details, price, and whether it is currently on sale
 
 <br>
 
@@ -343,19 +314,18 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 
 <br>
 
-### Why Shop With Us Section
-![Featured Products Section Image](documentation/images/why-shop.png)
-- The "Why Shop With Us" section gives users a quick summary of reasons to shop with this store.
-- There are icons and a single line of text giving 3 quick reasons why a user would want to shop online - quick shipping, weekly rotation of products and no import fees are reasons why users would want to shop with an online store and also come back to shop again.
+### Healthy Lifestyle and Sporty Fashion Section
+![Healthy Lifestyle and Sporty Fashion Image](image-6.png)
+- This section serves as an introduction to the online store's commitment to promoting a healthy lifestyle through sporty fashion.
 
 <br>
 
 [Back to Top](#table-of-contents)
 
 ### Footer
-![Footer Image](documentation/images/footer.png)
-- The footer is used across all pages, with links to Contact, FAQs, Privacy Policies and an email address.
-- The footer also has our newsletter signup, generated through MailChimp. This makes it available across every page to maximise the chance of someone signing up.
+![Footer Image]!(image-7.png)
+- The footer is consistently present on every page, featuring links to Contact, Returns, Privacy Policies, and an email address.
+- Additionally, the footer incorporates our newsletter signup, powered by MailChimp. This ensures its visibility on every page, maximizing the likelihood of visitors subscribing.
 
 <br>
 
@@ -363,11 +333,10 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 
 <br>
 
-### FAQs Page
-![FAQs Page Image](documentation/images/faqs.png)
-- The FAQs page gives the user information about shipping, cancellations, order modifications and payment options.
-- There is a link system at the top of the page to allow users to quickly get to the section they need.
+### Returns Page
+![Returns Page Image]!(image-8.png)
 
+- The product returns page provides detailed information about the return policy of the online store
 <br>
 
 [Back to Top](#table-of-contents)
@@ -375,9 +344,19 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 <br>
 
 ### Contact Page
-![Contact Page Image](documentation/images/contact.png)
-- The contact page features small icons with quick and easy to read information with a phone number, address and email.
-- The page also hold a form for users to get in contact with the business. This form stores the posted information in the Admin panel, for staff to read easily.
+![Contact Page Image](image-9.png)
+- On the contact page, concise information is presented using small icons for quick and easy comprehension, including a phone number, address, and email.
+- Additionally, the page includes a contact form enabling users to reach out to the business. The information submitted through this form is stored in the Admin panel, ensuring easy access for staff to review.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
+### Privacy Policy
+![Privaty Policy Image](image-12.png)
+- A privacy policy is a legal document that describes how a website collects, uses, discloses and manages the personal information of its users or customers. It contains information about the types of data collected, the purposes for collecting it, storage and security methods, and the rights of users regarding their personal information.
 
 <br>
 
@@ -386,10 +365,10 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 <br>
 
 ### Restricted Pages
-![Logged in Nav Image](documentation/images/logged-in-nav.png)
-![Logged out Nav Image](documentation/images/logged-out-nav.png)
-- Some pages are restricted to logged in users only. Links to these pages are only show in the Navbar when a user logged in.
-- The Wishlist is exclusively for users who register an account.
+![Logged in Nav Image]!(image-11.png)
+![Logged out Nav Image](image-10.png)
+- Certain pages are accessible only to users who have logged in. Links to these pages are displayed in the Navbar exclusively when a user is logged in.
+- The Wishlist feature is reserved solely for users who have registered an account.
 
 <br>
 
