@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4">Shopping Bag</h2>
+                <h2 class="logo-font mb-4">Shopping Basket</h2>
                 <hr>
             </div>
         </div>
@@ -57,7 +57,7 @@
                         <div class="row">
                             <div class="col">
                                 {% include "bag/checkout-buttons.html" %}
-                                <p class="text-muted mb-5">A summary of your bag contents is below</p>
+                                <p class="text-muted mb-5">A summary of your basket contents is below</p>
                             </div>
                         </div>
                         <div class="btt-button shadow-sm rounded-0 border border-black">
@@ -119,7 +119,7 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
+                    <p class="lead mb-5">Your basket is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
