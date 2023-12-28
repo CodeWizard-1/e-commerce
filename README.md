@@ -684,7 +684,7 @@ When the user clicks on this, they can see all the items in their basket, the in
 <br>
 
 ### Error Page
-![Error Page Image]
+![Error Page Image] (image-70.png)
 - If a user lands on a page that either doesn't exist or that they shouldn't be on (a regular user using links on an admin page or trying to edit/delete something from a link), they will be shown an error message. . page with a button to return them to the store.
 
 <br>
@@ -695,8 +695,11 @@ When the user clicks on this, they can see all the items in their basket, the in
 
 ## Future Features
 
-- There are a few features I would like to add to the website, given more time. Currently the product ratings are just random numbers entered when the product is being added (initally with a fixtures file) but I would like for users to also be able to add a product rating too which is caluclated as an average. 
-- Currently, the coupons can be added any number of times - there is no limit for one use per customer. I tried to implement that to no success. More information about it can be found in the [Bugs Section](#bugs-not-fixed)
+- If I had extra time, I would implement several new features on the site. Currently, product ratings are simply random numbers entered when adding a product through the settings file. However, I want users to also be able to give a product rating, calculated as an average.
+
+- There are also plans to implement functionality that allows you to display the number of goods sold and their sizes in the administrative panel, as well as provide information about the availability of goods by size.
+
+- Additionally, to attract more visitors, I would introduce a blog with information about the latest trends in the world of sportswear.
 
 <br>
 
@@ -706,16 +709,15 @@ When the user clicks on this, they can see all the items in their basket, the in
 ## The Surface Plane
 ## Design
 ### Colour Scheme
- -  The colour scheme was designed so that while it stands out as a bright interface, the colours also don't distract from the product images, as these are the main point of the website.
- - For this I chose a blue to stand out on the white background - they compliment each other well enough without one being overly distracting from the other.
+- The following colors were chosen for the website: white, which is associated with purity, freshness and lightness; gray, which is a universal color and adds elegance and restraint; blue, considered universal and popular; red, often associated with energy, passion and strength, which can draw attention to sportswear; and black, symbolizing class and elegance.
 
-![Color Scheme](documentation/images/colours.png)
+![Color Sheme](image-72.png)
 
 ### Typography
- -   The font chosen for the website is a font called Fjalla One. This was picked because it is very easy to read with a medium contrast but it also has a somewhat fantasy feel to it, in fitting with the expected user base of people who like Pop Culture. I wanted the typography to compliment the website, not overpower what it was saying. The font was found on [Google Font](https://fonts.google.com/specimen/Fjalla+One) and imported to the website with a CSS import.
+ - The site chose the Lato font due to its excellent readability, modern design and versatility
 
 ### Images
-- All product images were taken from their respective brands websites, as well as some from [Gamestop](https://www.gamestop.com/).
+- All images used as educational material were taken from these sites[Freepik](https://www.freepik.com/), [Nike](https://www.nike.com/), [Adidas](https://www.adidas.ie/), [Puma](https://eu.puma.com/).
 
 <br>
 
@@ -725,7 +727,7 @@ When the user clicks on this, they can see all the items in their basket, the in
 
 ## **Business Model**
 
-This website follows a Business to Customer model - it sells products related to Pop Culture directly to the customer. The website has been built for quick checkout for both registered and unregistered users, with extra features available to users who have signed up to the website, as well as users who subscribe to the newsletter.
+This online resource operates on the principle of Business to Customer model, providing the opportunity to purchase sportswear directly to consumers. It is designed to make it easy for both registered and unregistered users to pay for purchases, with additional features available to registered users and newsletter subscribers.
 
 [Back to Top](#table-of-contents)
 
@@ -733,9 +735,9 @@ This website follows a Business to Customer model - it sells products related to
 
 ### **Social Media Marketing**
 
-A mockup design of a Facebook page is included. The main goal of this Facebook page would be to showcase new deals on products, give coupon code discounts to followers, and have targeted ads for different times of the year - "End of School Sale", "Christmas Sale", "New Season of X Show Starting Soon" etc.
+The main task of this page on the social network Facebook is to inform about new products, notify subscribers about offers and promotions, as well as place targeted advertising.
 
-![Facebook 1](documentation/images/facebook-mockup.png)
+![Facebook 1]![Alt text](image-73.png)
 
 ### **Newsletter Marketing**
 
