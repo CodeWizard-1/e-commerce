@@ -741,12 +741,9 @@ The main task of this page on the social network Facebook is to inform about new
 
 ### **Newsletter Marketing**
 
-The website has an embedded [Mailchimp](https://mailchimp.com/?currency=EUR) newsletter in the footer, as well as a pop-up form for the first visit. The reason for both would be to allow users who return to sign up, even after they have dismissed the inital pop-up. The campaign sends out a custom thank you email with a discount code to encourage users to subscribe.
+ In the footer of the website is a [Mailchimp](https://mailchimp.com/?currency=EUR) newsletter in the footer which is used to send emails to subscribers about the latest products, promotions and discounts.
 
-This newsletter can in turn be used by the site owner to send subscribers emails on the latest products, deals, and discounts available.
-
-![Newsletter Pop-Up](documentation/images/newsletter-popup.png)
-![Newsletter Email](documentation/images/newsletter.png)
+![Newsletter Email](image-74.png)
 
 [Back to Top](#table-of-contents)
 
@@ -754,13 +751,13 @@ This newsletter can in turn be used by the site owner to send subscribers emails
 
 ### **Keywords**
 
-For finding meta keywords for the website, I used [Wordtracker](https://www.wordtracker.com/search). The keywords were chosen based on their performance and volume, as the competition stat wasn't show for the majority of the keywords.
+Keywords were analyzed and added to the description of the online store on the main page of the site
 
-![Keywords](documentation/images/wordtracker.png)
+![Keywords](image-75.png)
 
 ### **Sitemap.xml**
 
-I created a sitemap using [XML-Sitemaps](https://www.xml-sitemaps.com) on my live website [https://levelup-loot-vt.herokuapp.com/](https://levelup-loot-vt.herokuapp.com/)
+I created a sitemap using [XML-Sitemaps](https://www.xml-sitemaps.com) on my live website [https://sportswear-ebbdbb6bb6ec.herokuapp.com/](https://sportswear-ebbdbb6bb6ec.herokuapp.com/)
 
 The XML that was created is in the root directory of the website.
 
@@ -768,7 +765,7 @@ The XML that was created is in the root directory of the website.
 
 The robots.txt file was created using this guide [https://www.conductor.com/academy/robotstxt/](https://www.conductor.com/academy/robotstxt/).
 
-![Robots](documentation/images/robots.png)
+![Robots](image-76.png)
 
 [Back to top](#table-of-contents)
 
