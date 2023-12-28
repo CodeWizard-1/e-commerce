@@ -327,6 +327,8 @@ The Home page of the online store is an attractive and informative landing page,
 - The footer is consistently present on every page, featuring links to Contact, Returns, Privacy Policies, and an email address.
 - Additionally, the footer incorporates our newsletter signup, powered by MailChimp. This ensures its visibility on every page, maximizing the likelihood of visitors subscribing.
 
+![Alt text](image-57.png)
+
 <br>
 
 [Back to Top](#table-of-contents)
@@ -366,8 +368,10 @@ The Home page of the online store is an attractive and informative landing page,
 
 ### Main Nav Menu
 ![Main Nav Menu Image](image-13.png)
-![Main-nav-dropdown](image-14.png)
+
 - Throughout the site, the user has access to the main navigation menu. Features include a search bar, account/profile access, cart link and subtotal if the user has added items to their carts, as well as links to filter products by gender, brand and sale page. Once logged in, users have access to the wishlist page.
+
+<!-- ![Main-nav-dropdown](image-14.png) -->
 
 <br>
 
@@ -377,6 +381,7 @@ The Home page of the online store is an attractive and informative landing page,
 
 ### Restricted Pages
 ![Logged in Nav Image](image-11.png)
+
 ![Logged out Nav Image](image-10.png)
 - Certain pages are accessible only to users who have logged in. Links to these pages are displayed in the Navbar exclusively when a user is logged in.
 - The Wishlist feature is reserved solely for users who have registered an account.
@@ -404,8 +409,11 @@ The Home page of the online store is an attractive and informative landing page,
 
 ### Search Bar
 ![Search Bar Image](image-17.png)
+
 ![Search Bar bag Image](image-18.png)
+
 ![Search Bar  img](image-19.png)
+
 ![Search Bar error](image-20.png)
 
 - Users can use the search bar in the navigation menu to find specific products. The search term is matched with the product name and description to provide the user with a list of products that match their search query.
@@ -445,6 +453,7 @@ If the user clicks the search button without entering anything, an error message
 - If necessary, the user can update his review.
 
 ![Alt text](image-26.png)
+
 ![Alt text](image-27.png)
 
 - After updating the review, the user will see a success message.
@@ -454,6 +463,7 @@ If the user clicks the search button without entering anything, an error message
 - If the user decides to delete a review, he will also be informed about the successful action in the message
 
 ![Alt text](image-29.png)
+
 ![Alt text](image-30.png)
 
 <br>
@@ -475,6 +485,7 @@ If the user clicks the search button without entering anything, an error message
 - To add a product to your wishlist, you need to click on the heart icon on the page with the product description or on the page with the total quantity of the product.
 
 ![Alt text](image-31.png)
+
 ![Alt text](image-35.png)
 
 
@@ -483,6 +494,7 @@ If the user clicks the search button without entering anything, an error message
 ![Alt text](image-32.png)
 
 ![Alt text](image-36.png)
+
 ![Alt text](image-33.png)
 
 - If you click on the heart icon again, the item will be removed from your wishlist and there will be an additional message about it.
@@ -511,6 +523,7 @@ If the user clicks the search button without entering anything, an error message
 - If the user is logged in and has administrator rights, he will see an additional menu "Product Management"
 
 ![Alt text](image-42.png)
+
 ![Alt text](image-43.png)
 
 
@@ -534,11 +547,77 @@ If the user clicks the search button without entering anything, an error message
 
 <br>
 
-### Cart Page
-![Cart Image](documentation/images/cart.png)
-- The cart page shows everything a user has in their cart currently.
-- This page allows for updating quantities, deleting products from their cart and seeing details of each product.
-- The subtotals are calculated automatically and if a product is on sale, it will show the original price of each item and the sale price.
+### User Sign Up Page
+![User Sign Up Image](image-47.png)
+- Users without an account can register by clicking the "Register" link in the main navigation menu. They will be given a form to add their details and create a profile for that user upon completion.
+
+![Alt text](image-48.png)
+
+![Alt text](image-49.png)
+- Users are sent a confirmation email to complete account registration
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
+### User Sign In Page
+![User Sign In Image](image-50.png)
+
+- If the user is not logged into the site but has a profile, they can click on the login link where they will be presented with a login page. To do this, they must enter their username or email address and the correct password. There is also a checkbox to remember the user on their current device to avoid having to log in every time they visit the site.
+
+![Alt text](image-51.png)
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
+### User Sign Out Page
+![User Sign Out Image](image-52.png)
+
+- If the user is not logged into the site but has a profile, they can click on the login link where they will be presented with a login page. To do this, they must enter their username or email address and the correct password. There is also a checkbox to remember the user on their current device to avoid having to log in every time they visit the site.
+
+![Alt text](image-53.png)
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
+### User Profile Page
+![User Profile Image](image-54.png)
+
+- When the user has completed registration on the site, he is provided with a profile. The profile contains information about the default delivery address, if one is set, and a list of the user's previous orders.
+
+![Alt text](image-55.png)
+
+- There is a form in the user's profile that contains default delivery information if the user has saved it. The user can update this information from their profile by editing the form and clicking the "Update Information" button. This information will be automatically used the user's next purchase to make the site more convenient for customers.
+
+![Alt text](image-56.png)
+
+- Users can view a list with complete order history in their profiles. The data is displayed in a table, each row of which contains the order number, time and date of purchase, items included in the order, and the total amount of each order.
+- The order number contains a link that, when clicked, takes the user to the order confirmation page for that specific order containing all the details about that order, as well as a link to return to the user's profile.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
+
+### Basket Page
+![basket Image](image-59.png)
+- The basket can be accessed from the main navigation menu.
+The menu displays the running total of items in the user's basket.
+When the user clicks on this, they can see all the items in their basket, the individual price of each product, a subtotal for the product if the quantity is greater than 1, and a quantity switch for each product with buttons to update the quantity or remove the product entirely from your basket.
+
+![Alt text](image-58.png)
+
+- If the user has nothing in their cart, a message will appear prompting the user to continue shopping
 
 <br>
 
