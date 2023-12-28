@@ -684,14 +684,10 @@ When the user clicks on this, they can see all the items in their basket, the in
 <br>
 
 ### Error Page
-![Admin Dashboard Image](documentation/images/admin-dashboard.png)
-- The admin dashboard is restricted to Super Users and anyone the Super User designates as staff. The dashboard is populated with the information from the Models in each app.
-- There is a section for products, wishlists, users, contact form submissions and orders.
-![Admin Products Image](documentation/images/admin-products.png)
-- The Products section of the admin, allows for adding, removing and updating all products.
-- There are also checkboxes to allow admins to update products as on_sale (with a default 10% off) and to be featured on the home page.
-![Admin Contact Image](documentation/images/admin-contact.png)
-- The Contact form submissions are saved to the admin panel. The name, email and message from the contact form is shown to the admin, to allow them to reply to the User easily.
+![Error Page Image]
+- If a user lands on a page that either doesn't exist or that they shouldn't be on (a regular user using links on an admin page or trying to edit/delete something from a link), they will be shown an error message. . page with a button to return them to the store.
+
+<br>
 
 [Back to Top](#table-of-contents)
 
