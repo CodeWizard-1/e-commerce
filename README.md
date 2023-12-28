@@ -615,9 +615,25 @@ If the user clicks the search button without entering anything, an error message
 The menu displays the running total of items in the user's basket.
 When the user clicks on this, they can see all the items in their basket, the individual price of each product, a subtotal for the product if the quantity is greater than 1, and a quantity switch for each product with buttons to update the quantity or remove the product entirely from your basket.
 
-![Alt text](image-58.png)
+![Alt text](image-60.png)
 
-- If the user has nothing in their cart, a message will appear prompting the user to continue shopping
+- If the user has nothing in their basket, a message will appear prompting the user to continue shopping
+
+![Alt text](image-61.png)
+
+- Similar to the quantity selector on an individual product page, users can adjust the quantity of a product already in their basket.
+- From here, the user can add a maximum quantity of 99 items to the cart in the same way as on the individual product page. Or it can be removed from the basket.
+
+![Alt text](image-62.png)
+
+- This is the amount that the user’s cart will be after adding up all the products and their quantities.
+- Under the cart amount, the user can see the shipping cost. If the value of the basket exceeds 50 euros, delivery is free, otherwise it is calculated as 10% of the order amount.
+
+![Alt text](image-63.png)
+
+
+- Once the total is calculated, users will see two buttons: one to continue shopping and one to proceed to checkout.
+
 
 <br>
 
@@ -626,12 +642,40 @@ When the user clicks on this, they can see all the items in their basket, the in
 <br>
 
 ### Checkout Page
-![Checkout Image](documentation/images/checkout.png)
-![Coupon Image](documentation/images/coupon.png)
-- The checkout page shows the products, prices, a coupon section, includes a users information and a stripe element for secure card payments.
-- The coupon code section allows a user to add a coupon code, which then shows how much of a discount the user will get, as well as their newly updated total price.
-- On successful checkout, an order summary page is shown. This will include the discount if a coupon was used, and has a link to brows more products after.
-![Order Summary Image](documentation/images/order-confirm.png)
+![Checkout Image](image-64.png)
+
+- The final step in a user's shopping journey on a website is the checkout page.
+- This page contains a form for the user's shipping and payment information, as well as a summary of the user's order.
+- If a user has an account on the site, they can save shipping information to their profile so that it is automatically filled in when placing an order.
+
+![Alt text](image-65.png)
+
+- When placing an order, the user can add their details and, if logged in, check the box to save their details for future transactions.
+- Users must enter their payment information before completing checkout, and all payments are processed through Stripe.
+
+![Alt text](image-66.png)
+
+- The final summary of the user's order is displayed, containing all of the user's cart items, the quantity, and the running total for each item.
+- The user can also see the order total, shipping costs, any discounts applied, and the total in a summary.
+
+
+![Alt text](image-67.png)
+
+- At the very end of placing an order, the user will see two buttons: one for setting up a cart, the other for placing an order.
+- The total amount is displayed below the order completion button to further inform the user of how much will be charged to their card once the order is completed.
+
+
+![Alt text](image-68.png)
+
+- Once the order is completed and payment has been received, the user will receive an order confirmation email containing the order number and a receipt showing the total payment amount.
+
+
+![Alt text](image-69.png)
+
+- Once the order is completed, the user is redirected to a confirmation page informing them that an order confirmation email has been sent to the provided email address.
+- This page contains the final description of the order and what the user purchased.
+- This page can be accessed again from the user's profile if they have an account on the site by clicking on the order number in the list of past orders.
+
 
 <br>
 
@@ -639,7 +683,7 @@ When the user clicks on this, they can see all the items in their basket, the in
 
 <br>
 
-### Admin Page
+### Error Page
 ![Admin Dashboard Image](documentation/images/admin-dashboard.png)
 - The admin dashboard is restricted to Super Users and anyone the Super User designates as staff. The dashboard is populated with the information from the Models in each app.
 - There is a section for products, wishlists, users, contact form submissions and orders.
