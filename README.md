@@ -364,6 +364,17 @@ The Home page of the online store is an attractive and informative landing page,
 
 <br>
 
+### Main Nav Menu
+![Main Nav Menu Image](image-13.png)
+![Main-nav-dropdown](image-14.png)
+- Throughout the site, the user has access to the main navigation menu. Features include a search bar, account/profile access, cart link and subtotal if the user has added items to their carts, as well as links to filter products by gender, brand and sale page. Once logged in, users have access to the wishlist page.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ### Restricted Pages
 ![Logged in Nav Image](image-11.png)
 ![Logged out Nav Image](image-10.png)
@@ -376,13 +387,14 @@ The Home page of the online store is an attractive and informative landing page,
 
 <br>
 
-### Products Page
-![Products Page Image](documentation/images/products.png)
-- The Products Page lists all products initially.
-- This can be changed by choosing a category or a brand from the drop down navbar menu or by using the Selector Box to sort items.
-- Each individual product has a card with all details listed (rating, price, brand, category) and each card also has a hover effect.
-- Each product can also be added to a logged in users wishlist if they click the heart icon.
-- Clicking on the "View Product" button will bring the user to the product detail page for that item.
+### Product Filtration
+![Main-nav-dropdown](image-14.png)
+
+![Main-nav-dropdown-brand](image-15.png)
+
+![Main-nav-dropdown-sale](image-16.png)
+
+- Through the navigation menu, the user can sort and filter products. All products can be selected by gender, brand, as well as products for children. In the subcategory, you can choose from the presented clothing categories. There is also a separate page with products at a reduced price for a more convenient search for the product by the user.
 
 <br>
 
@@ -390,15 +402,59 @@ The Home page of the online store is an attractive and informative landing page,
 
 <br>
 
-### Product Details Page
-![Product Detail Image](documentation/images/product-detail.png)
-- The product detail page shows a larger product image, a description for the product, as well as allowing the user to add this product to their cart for the amount they want.
-- The page also shows user left reviews, with the option for logged in users to leave their own.
-- Reviews are able to be updated or deleted by the User who left them or by admin/superusers. This is all CRUD functionality.
+### Search Bar
+![Search Bar Image](image-17.png)
+![Search Bar bag Image](image-18.png)
+![Search Bar  img](image-19.png)
+![Search Bar error](image-20.png)
 
-![Review Image](documentation/images/reviews.png)
-![Review Image](documentation/images/update-review.png)
-![Review Image](documentation/images/delete-review.png)
+- Users can use the search bar in the navigation menu to find specific products. The search term is matched with the product name and description to provide the user with a list of products that match their search query.
+The user can also see how many results were returned for their search query.
+If the user clicks the search button without entering anything, an error message is displayed.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
+
+### Product Details Page
+![Product Detail Image](image-21.png)
+- Product details page displays product image, name, regular price, discount price (if available), brand, category, rating, option to add to wishlist, product description, option to select size (if available), select quantity and user can add product to cart.
+- The page also displays reviews left by users, with the option for authorized users to leave their own.
+- Reviews can be updated or deleted by the user who left them or by the administrator/superuser. These are all CRUD functions.
+
+
+- If the user is not authorized, he is prompted to log into his account or register.
+
+![Review Image](image-22.png)
+
+- If the user is authorized, he can click on “Review this product” to write a review.
+ 
+![Review Image](image-23.png)
+
+- A window will open below in which the user can specify a topic and leave a review.
+
+![Review Image](image-24.png)
+
+- After writing a review and sending it, the user will see a success message.
+
+![Alt text](image-25.png)
+
+- If necessary, the user can update his review.
+
+![Alt text](image-26.png)
+![Alt text](image-27.png)
+
+- After updating the review, the user will see a success message.
+
+![Alt text](image-28.png)
+
+- If the user decides to delete a review, he will also be informed about the successful action in the message
+
+![Alt text](image-29.png)
+![Alt text](image-30.png)
 
 <br>
 
@@ -407,26 +463,70 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Wishlist Page
-![Wishlist Image](documentation/images/wishlist.png)
-- The Wishlist page allows users to have a list of all the products they have added to their Wishlist, by clicking the heart icon on each product.
-- On the Wishlist page, there is ashort summary of the product, as well as a link to the product detail page, which allows users to add it to their cart.
-- The page also has a remove option, which allows users to remove product from their Wishlist - again this is done through CRUD functionality.
+![Wishlist Image](image-37.png)
+- The Wishlist page allows users to get a list of all the products they have added to their wishlist by clicking the heart icon on each product.
+- The Wishlist page provides a brief description of the product as well as a link to the product detail page that allows users to add it to their cart.
+- The page also has a delete option that allows users to remove a product from their wishlist - again, this is done using the CRUD function.
 
+- If the user has not added any product to the wishlist, he will see the message below.
+
+![Alt text](image-41.png)
+
+- To add a product to your wishlist, you need to click on the heart icon on the page with the product description or on the page with the total quantity of the product.
+
+![Alt text](image-31.png)
+![Alt text](image-35.png)
+
+
+- After successfully adding a product, the heart icon will change color and an additional message will appear.
+
+![Alt text](image-32.png)
+
+![Alt text](image-36.png)
+![Alt text](image-33.png)
+
+- If you click on the heart icon again, the item will be removed from your wishlist and there will be an additional message about it.
+
+![Alt text](image-34.png)
+
+- On the wishlist page itself, you can click on the binoculars icon to go to the product page.
+
+![Alt text](image-38.png)
+
+- You can remove a product from your wish list by clicking on the product removal icon, and if you want to remove the entire product from the list, you need to click on the “CLEAR WISHLIST” sign at the top.
+
+![Alt text](image-39.png)
+
+![Alt text](image-40.png)
 <br>
 
 [Back to Top](#table-of-contents)
 
 <br>
 
-### Profile Page
-![Profile Image](documentation/images/account-dashboard.png)
-- The Account Profile page has a tabbed dashboard which allows users to update their information - name and shipping address - which can be used for a quicker checkout process.
-- This Profile page also shows the users Order History, which allows them to see the summary of all past purchases.
-- On this dashboard, the user also has the option to delete their profile. This deletes all associated order histories and information. There is a separate page for deletion confirmation.
+### My Account Dropdown
 
-![Order History Image](documentation/images/account-orders.png)
-![Delete Profile Image](documentation/images/account-delete.png)
-![Delete Profile Image](documentation/images/profile-delete.png)
+- If the user is logged in, the My Account drop-down in the navigation menu will contain a link to the user's profile.
+- If the user is not logged in, they will be given the option to either register for an account or log into an existing account.
+- If the user is logged in and has administrator rights, he will see an additional menu "Product Management"
+
+![Alt text](image-42.png)
+![Alt text](image-43.png)
+
+
+- If the user is logged in and has admin permissions, they can add new products to the site from the admin dropdown in the nav menu.
+- The add product page contains a form for the admin to fill out with the details of the new product.
+
+![Alt text](image-44.png)
+
+- If the user is logged in and has admin permissions, they can edit site products by clicking the edit icon on either the product card on the all products page or the individual product page.
+- The edit product page contains the same form as the add product page but the fields are already populated with the product's current data.
+
+![Alt text](image-45.png)
+
+- If the user is logged in and has admin permissions, they can delete site products by clicking the delete icon on either the product card on the all products page or the individual product page.
+
+![Alt text](image-46.png)
 
 <br>
 
