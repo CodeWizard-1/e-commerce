@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
 
   
     function handleEnableDisable(itemId) {
@@ -9,8 +9,6 @@
    
         let plusDisabled = currentValue >= 99;
 
-        // $(`.decrement-qty_${itemId}`).prop('disabled', minusDisabled);
-        // $(`.increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
     
 
@@ -50,9 +48,6 @@
             $(closestInput).val(currentValue + 1);
             handleEnableDisable(itemId);
         }
-
-        // $(closestInput).val(currentValue + 1);
-        // handleEnableDisable(itemId);
     });
     
 
@@ -64,8 +59,6 @@
 
         let currentValue = parseInt($(closestInput).val());
 
-        // $(closestInput).val(currentValue - 1);
-        // handleEnableDisable(itemId);
         if (currentValue > 1) {
             $(closestInput).val(currentValue - 1);
             handleEnableDisable(itemId);
