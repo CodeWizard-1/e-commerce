@@ -51,15 +51,15 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | File | Screenshot | Notes |
 | --- | --- | --- |
 | konami-code.js | ![screenshot](documentation/testing/konami-code-js-validation.png) | Pass: No Errors |
-| countryfields.js | ![screenshot](documentation/testing/countryfields-js-validation.png) | Pass: No Errors |
+| countryfields.js | ![screenshot](image-100.png) | Pass: No Errors |
 | add_post.html (postloadjs) | ![screenshot](documentation/testing/add-post-postloadjs-validation.png) | Pass: No Errors |
 | edit_post.html (postloadjs) | ![screenshot](documentation/testing/edit-post-postloadjs-validation.png) | Pass: No Errors |
 | add_product.html (postloadjs) | ![screenshot](documentation/testing/add-product-postloadjs-validation.png) | Pass: No Errors |
 | edit_product.html (postloadjs) | ![screenshot](documentation/testing/edit-product-postloadjs-validation.png) | Pass: No Errors |
 | products.html (postloadjs) | ![screenshot](documentation/testing/products-postloadjs-validation.png) | Pass: No Errors |
 | basket.html (postloadjs) | ![screenshot](documentation/testing/basket-postloadjs-validation.png) | Pass: No Errors |
-| quantity_input_script.html (script) | ![screenshot](documentation/testing/quantity-input-script-validation.png) | Pass: No Errors |
-| stripe_elements.js | ![screenshot](documentation/testing/stripe-elements-validation.png) | Undefined Stripe variable |
+| quantity_input_script.html (script) | ![screenshot](image-101.png) | Undefined "minusDisabled" and "plusDisabled" variable |
+| stripe_elements.js | ![screenshot](image-99.png) | Undefined Stripe variable |
 
 ### Python
 
