@@ -50,15 +50,13 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| konami-code.js | ![screenshot](documentation/testing/konami-code-js-validation.png) | Pass: No Errors |
+| base.html (postloadjs) | ![screenshot](image-106.png)| Pass: No Errors |
 | countryfields.js | ![screenshot](image-100.png) | Pass: No Errors |
-| add_post.html (postloadjs) | ![screenshot](documentation/testing/add-post-postloadjs-validation.png) | Pass: No Errors |
-| edit_post.html (postloadjs) | ![screenshot](documentation/testing/edit-post-postloadjs-validation.png) | Pass: No Errors |
-| add_product.html (postloadjs) | ![screenshot](documentation/testing/add-product-postloadjs-validation.png) | Pass: No Errors |
-| edit_product.html (postloadjs) | ![screenshot](documentation/testing/edit-product-postloadjs-validation.png) | Pass: No Errors |
-| products.html (postloadjs) | ![screenshot](documentation/testing/products-postloadjs-validation.png) | Pass: No Errors |
-| basket.html (postloadjs) | ![screenshot](documentation/testing/basket-postloadjs-validation.png) | Pass: No Errors |
-| quantity_input_script.html (script) | ![screenshot](image-101.png) | Undefined "minusDisabled" and "plusDisabled" variable |
+| add_product.html (postloadjs) | ![screenshot](image-105.png) | Pass: No Errors |
+| edit_product.html (postloadjs) | ![screenshot](image-104.png) | Pass: No Errors |
+| products.html (postloadjs) | ![screenshot](image-103.png) | Pass: No Errors |
+| bag.html (postloadjs) | ![screenshot](image-102.png) | Pass: No Errors |
+| quantity_input_script.html (script) | ![screenshot](image-101.png) | Undefined "minusDisabled" and "plusDisabled" variables |
 | stripe_elements.js | ![screenshot](image-99.png) | Undefined Stripe variable |
 
 ### Python
@@ -67,20 +65,17 @@ I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to 
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Basket contexts.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/basket/contexts.py) | ![screenshot](documentation/testing/basket-contexts-python-test.png) | Pass: No Errors |
-| Basket urls.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/basket/urls.py) | ![screenshot](documentation/testing/basket-urls-python-test.png) | Pass: No Errors |
-| Basket views.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/basket/views.py) | ![screenshot](documentation/testing/basket-views-python-test.png) | Pass: No Errors |
-| Blog admin.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/blog/admin.py) | ![screenshot](documentation/testing/blog-admin-python-test.png) | Pass: No Errors |
-| Blog forms.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/blog/forms.py) | ![screenshot](documentation/testing/blog-forms-python-test.png) | Pass: No Errors |
-| Blog models.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/blog/models.py) | ![screenshot](documentation/testing/blog-models-python-test.png) | Pass: No Errors |
-| Blog urls.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/blog/urls.py) | ![screenshot](documentation/testing/blog-urls-python-test.png) | Pass: No Errors |
-| Blog views.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/blog/views.py) | ![screenshot](documentation/testing/blog-views-python-test.png) | Pass: No Errors |
-| Checkout admin.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/checkout/admin.py) | ![screenshot](documentation/testing/checkout-admin-python-test.png) | Pass: No Errors |
-| Checkout forms.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/checkout/forms.py) | ![screenshot](documentation/testing/checkout-forms-python-test.png) | Pass: No Errors |
-| Checkout models.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/checkout/models.py) | ![screenshot](documentation/testing/checkout-models-python-test.png) | Pass: No Errors |
-| Checkout signals.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/checkout/signals.py) | ![screenshot](documentation/testing/checkout-signals-python-test.png) | Pass: No Errors |
-| Checkout urls.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/checkout/urls.py) | ![screenshot](documentation/testing/checkout-urls-python-test.png) | Pass: No Errors |
-| Checkout views.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/checkout/views.py) | ![screenshot](documentation/testing/checkout-views-python-test.png) | Pass: No Errors |
+| Bag contexts.py | n/a | ![screenshot](image-108.png) | Pass: No Errors |
+| Bag urls.py | n/a | ![screenshot](image-109.png) | Pass: No Errors |
+| Bag views.py | n/a | ![screenshot](image-110.png) | Pass: No Errors |
+| Base urls.py | n/a  | ![screenshot]!(image-111.png) | Pass: No Errors |
+| Base views.py | n/a  | ![screenshot](image-112.png) | Pass: No Errors |
+| Checkout admin.py | n/a  | ![screenshot](image-113.png) | Pass: No Errors |
+| Checkout forms.py | n/a | ![screenshot](image-114.png) | Pass: No Errors |
+| Checkout models.py | n/a  | ![screenshot](image-115.png) | Pass: No Errors |
+| Checkout signals.py | n/a | ![screenshot](image-116.png) | Pass: No Errors |
+| Checkout urls.py | n/a | ![screenshot](image-117.png) | Pass: No Errors |
+| Checkout views.py | n/a  | ![screenshot](image-118.png) | Pass: No Errors |
 | Checkout webhook_handler.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/checkout/webhook_handler.py) | ![screenshot](documentation/testing/checkout-webhook-handler-python-test.png) | Pass: No Errors |
 | Checkout webhooks.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/checkout/webhooks.py) | ![screenshot](documentation/testing/checkout-webhooks-python-test.png) | Pass: No Errors |
 | Contact admin.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/contact/admin.py) | ![screenshot](documentation/testing/contact-admin-python-test.png) | Pass: No Errors |

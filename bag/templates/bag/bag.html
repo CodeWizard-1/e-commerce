@@ -145,7 +145,7 @@
     $('.update-link').click(function (e) {
         var form = $(this).prev('.update-form');
         form.submit();
-    })
+    });
 
     $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
@@ -159,6 +159,6 @@
             .done(function () {
                 location.reload();
             });
-    })
+    });
 </script>
 {% endblock %}
