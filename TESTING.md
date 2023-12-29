@@ -6,7 +6,7 @@ During the development of this project, I conducted numerous tests to ensure the
 
 ## Code Validation
 
-I have validated all of my code using the recommended tools for each language.
+I tested all my code using each language's preferred programming tools.
 
 ### HTML
 
@@ -24,17 +24,15 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Sign In | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](image-85.png) | Pass: No Errors |
 | Search | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F%3Fq%3Djacket) | ![screenshot](image-84.png) | Pass: No Errors |
 | Log Out | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Faccounts%2Flogout%2F) | ![screenshot](image-83.png) | Pass: No Errors |
-| Basket | n/a | ![screenshot](documentation/testing/html-validation-basket.png) | Pass: No Errors |
-| Checkout | n/a | ![screenshot](documentation/testing/html-validation-checkout.png) | Warning: Empty heading (Loading spinner after submitting checkout form) |
-| Checkout Success | n/a | ![screenshot](documentation/testing/html-validation-checkout-success.png) | Pass: No Errors |
-| Profile | n/a | ![screenshot](documentation/testing/html-validation-profile.png) | Pass: No Errors |
-| Add Product | n/a | ![screenshot](documentation/testing/html-validation-add-product.png) | Pass: No Errors |
-| Edit Product | n/a | ![screenshot](documentation/testing/html-validation-edit-product.png) | Error: An img element must have an alt attribute, except under certain conditions (Current image for product being edited) |
-| Delete Product | n/a | ![screenshot](documentation/testing/html-validation-delete-product.png) | Pass: No Errors |
-| Add Blog | n/a | ![screenshot](documentation/testing/html-validation-add-blog.png) | Multiple Errors all from summernote widget for blog content field |
-| Edit Blog | n/a | ![screenshot](documentation/testing/html-validation-edit-blog.png) | Multiple Errors all from summernote widget for blog content field |
-| Delete Blog | n/a | ![screenshot](documentation/testing/html-validation-delete-blog.png) | Pass: No Errors |
-| Open Tickets | n/a | ![screenshot](documentation/testing/html-validation-open-tickets.png) | Pass: No Errors |
+| Basket | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fbag%2F) | ![screenshot](image-87.png) | Pass: No Errors |
+| Checkout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fcheckout%2F) | ![screenshot](image-88.png) | Pass: No Errors|
+| Checkout Success | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fcheckout%2Fcheckout_success%2FBC80EDE13F7D41A4A98524CDF77A6514) | ![screenshot](image-89.png) | Pass: No Errors |
+| Profile | n/a | ![screenshot](image-90.png)| Pass: No Errors |
+| Add Product | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fadd) | ![screenshot](image-91.png) | Pass: No Errors |
+| Edit Product | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fedit%2F3%2F) | ![screenshot](image-92.png) | Pass: No Errors |
+| Update Review | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fupdate_review%2F15%2F) | ![screenshot](image-94.png) | Pass: No Errors |
+| Delete Review | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fdelete_review%2F15%2F) | ![screenshot](image-93.png) | Pass: No Errors |
+| Wishlist | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fwishlist%2F) | ![screenshot](image-95.png) | Pass: No Errors |
 
 ### CSS
 
