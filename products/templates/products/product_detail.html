@@ -85,7 +85,7 @@
                         {% endif %}
                         {% else %}
                         <a href="{% url 'add_wishlist' product.id %}" aria-label="Add product to Wishlist">
-                            <div class="wishlist-icon"><i class="fa-regular fa-heart"></i></i></div>
+                            <div class="wishlist-icon"><i class="fa-regular fa-heart"></i></div>
                         </a>
                         <span class="pl-2 d-flex">  Add to wishlist</span>
                         {% endif %}
@@ -192,7 +192,6 @@
                         <button class="btn collapsed btn-black" data-toggle="collapse" data-target="#collapseOne"
                             aria-expanded="false" aria-controls="collapseOne">
                             <span class="">Review This Product</span>
-                            <!-- <span class="icon "><i class="fa-regular fa-hand-pointer"></i></span> -->
                             <span class="icon "><i class="fa-solid fa-arrow-pointer" style="color: #ffffff;"></i></span>
                         </button>
                     </h5>
@@ -218,6 +217,7 @@
             </div>
         </div>
         {% else %}
+        <div>
         <p class="text-center">Please <a class="link-normal" href="{% url 'account_signup' %}">Register</a> or <a
                 class="link-normal" href="{% url 'account_login' %}">Login</a> to leave a review.</p>
         {% endif %}
@@ -233,7 +233,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script>
     $('.btt-link').click(function (e) {
         window.scrollTo(0, 0)
     })
