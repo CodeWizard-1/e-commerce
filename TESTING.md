@@ -40,9 +40,9 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fretro-reboot.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#warnings) | ![screenshot](documentation/testing/main-css-validation.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](documentation/testing/checkout-css-validation.png) | Pass: No Errors |
-| profile.css | n/a | ![screenshot](documentation/testing/profile-css-validation.png) | Pass: No Errors |
+| base.css | n/a  | ![screenshot](image-96.png) | Pass: No Errors |
+| checkout.css | n/a | ![screenshot](image-98.png) | Pass: No Errors |
+| profile.css | n/a | ![screenshot](image-97.png) | Pass: No Errors |
 
 ### JavaScript
 

@@ -221,9 +221,6 @@ input[name='q']::placeholder {
     color: #fff;
     text-align: center;
     vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     background-color: #000;
     border: 1px solid #000;
@@ -239,7 +236,6 @@ input[name='q']::placeholder {
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
     background-color: #222;
-    border-color: #222;
 }
 
 .allauth-form-inner-content a {
@@ -269,7 +265,6 @@ input[name='q']::placeholder {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
-    border-color: #dc3545;
     border-radius: 0;
 }
 
@@ -288,16 +283,11 @@ footer {
         z-index: 1030;
     }
 
-    /* .header-container {
-        padding-top: 164px;
-    } */
 }
 
 
 @media (max-width: 991px) {
-    /* .header-container {
-        padding-top: 93px;
-    } */
+
 
     body {
         height: calc(100vh - 93px);
@@ -490,7 +480,7 @@ footer a {
 
 
 #mc_embed_signup .button {
-    background-color: var(--blue);
+    background-color: blue;
     font-size: 20px;
     height: 40px;
 }
