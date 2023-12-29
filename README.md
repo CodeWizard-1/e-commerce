@@ -832,88 +832,9 @@ The robots.txt file was created using this guide [https://www.conductor.com/acad
 
 <br>
 
-# Testing 
-### Validator Testing 
+# Testing
 
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
-  - The only warnings that were given were because of the nature of Django Template Syntax.
-![W3 Errors](documentation/images/w3-validation.png)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
-  ![W3 Errors](documentation/images/css-validation.png)
-- Python
-  - No errors were returned when passing through [CI Python Linter](https://pep8ci.herokuapp.com/)
-  - The only issue that was brought up by the Linter were some lines too long. As these were less than 5 characters and that code had already been formatted by the Black plugin, I left these alone.
-
-<br>
-
-### Lighthouse Testing
-#### Desktop
-![Lighthouse Metrics](documentation/images/lighthouse-desktop.png)
-- Testing on desktop initially resulted in a low Accessibility score of 87. This was due to the insufficient contrast ratio of the blue color I had originally chosen.
-- To address this issue, I used a color contrast checker in Lighthouse and discovered that I needed to change the blue color to a darker shade.
-- I also checked the colors used in the Categories section and realized that I needed to improve the contrast there as well. To resolve this, I added a drop shadow effect to the text.
-- After implementing these fixes, the updated metrics showed significant improvements: 99 Performance, 98 Accessibility, 92 Best Practices, and 100 SEO.
-
-- ![Lighthouse Metrics](documentation/images/lighthouse-desktop-accessibility.png)
-- ![Lighthouse Metrics](documentation/images/lighthouse-contrast.png)
-
-<br>
-
-#### Mobile
-
-- On mobile, the performance score is 93. Initially, it was lower due to a cumulative layout shift (CLS) of 0.219. To address this, recommendations were provided to add width and height attributes to images and convert the images from .jpg to .webp format.
-- To convert the images from .jpg to .webp, I used the [WEBP Converter](https://cloudconvert.com/webp-converter) website.
-- Additionally, I changed the background image on the Hero section of the index page to a smaller version in order to mitigate the CLS issue.
-- The main challenges with achieving a higher rating are related to Lighthouse's recommendation to use HTTP2, which is not within my control as the website is hosted on Heroku.
-- There is also an issue related to "Reduced unused JavaScript," which specifically mentions Stripe, AWS, Mailchimp, and jQuery. Since these libraries are included in the base template and separating them would require significant time and effort, I have chosen to leave them as they are and provide screenshots as evidence.
-
-![Lighthouse Metrics](documentation/images/lighthouse-mobile.png)
-![Lighthouse Metrics](documentation/images/lighthouse-mobile-perf.png)
-![Lighthouse Metrics](documentation/images/lighthouse-mobile-js.png)
-
-| Page | Device | Category | Result |
-|------|--------|----------|--------|
-|Index | Mobile | Performance | 93% |
-|||Accessibility| 98% |
-|||Best Practice | 92% |
-|||SEO | 100% |
-|| Desktop | Performance | 100% |
-||| Accessibility | 98% |
-||| Best Practice | 92% |
-||| SEO | 100% |
- <br>
-
- [Back to Top](#table-of-contents)
-
-<br>
-
-### Automated Testing
-- I wrote tests for each app and for every view.py, model.py and form.py I have in the project. Below is the coverage report. Since my last project I have taken a keen interest in learning more about automated testing. Linked below are some of the resources I used to help me learn. Although the test still aren't comprehensive as I'd like and there are unfortunately some apps that I didn't even know how to begin to tackle (or if I should), I still managed to write 81 tests that all pass.
-
-- For the SetUp methods, based on the video linked below from Adam Johnson, I used the class method. However, as I had previously learned to use the SetUp method, I reverted back to that as I didn't know the difference between the 2 versions and didn't want t confuse the code by having multiple ways for the same thing. 
-
-#### Resources Used For Testing
-- [DjangoCon 2021 | Speed up your tests with setUpTestData | Adam Johnson](https://www.youtube.com/watch?v=_8qLxaWMdzE)
-- [Mozilla | Django Tutorial Part 10: Testing a Django web application](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing)
-- [https://machinelearningmastery.com/ | A Gentle Introduction to Unit Testing in Python](https://machinelearningmastery.com/a-gentle-introduction-to-unit-testing-in-python/)
-- [Real Python | Getting Started With Testing in Python](https://realpython.com/python-testing/)
-- [DataQuest | A Beginner’s Guide to Unit Tests in Python (2023)](https://www.dataquest.io/blog/unit-tests-python/)
-
-<br>
-
-![Coverage Report](documentation/images/coverage-report.png)
-![Pytest Report](documentation/images/pytest.png) 
-
-<br>
-
-### Manual Testing
-- Manual testing has been done extensively and has been shown in separate file, located [here.](documentation/testing.md)
-
-### Other Testing
- - The website has been tested across various screen sizes, using the Chrome DevTools responsive device section, [Responsive Design Checker](https://responsivedesignchecker.com/) and by opening the website on Firefox, Chrome, 3 various sized Android phones (Huawei P20 Lite, OnePlus 9 Pro, Samsung Galaxy S20) and an Android tablet (Samsung Galaxy Tab 10). 
- - Here is a link to a separate [Markdown file](documentation/tested-devices.md) of device screenshots.
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 <br>
 
