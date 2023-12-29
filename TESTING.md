@@ -15,16 +15,15 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2F) | ![screenshot]!(image-77.png) | Pass: No Errors |
-| All Products | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fretro-reboot.herokuapp.com%2Fproducts%2F) | ![screenshot](documentation/testing/html-validation-all-products.png) | Pass: No Errors |
-| Individual Product | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fretro-reboot.herokuapp.com%2Fproducts%2F13%2F) | ![screenshot](documentation/testing/html-validation-individual-product.png) | Pass: No Errors |
-| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fretro-reboot.herokuapp.com%2Fcontact%2F) | ![screenshot](documentation/testing/html-validation-contact.png) | Pass: No Errors |
-| Blog | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fretro-reboot.herokuapp.com%2Fblog%2F) | ![screenshot](documentation/testing/html-validation-blog.png) | Pass: No Errors |
-| Blog Post | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fretro-reboot.herokuapp.com%2Fblog%2Fcaring-for-game-cartridges-essential-tips%2F) | ![screenshot](documentation/testing/html-validation-blog-post.png) | Pass: No Errors |
-| Sign Up | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fretro-reboot.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/testing/html-validation-signup.png) | Pass: No Errors |
-| Sign In | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fretro-reboot.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/testing/html-validation-login.png) | Pass: No Errors |
-| Password Reset | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fretro-reboot.herokuapp.com%2Faccounts%2Fpassword%2Freset%2F) | ![screenshot](documentation/testing/html-validation-password-reset.png) | Pass: No Errors |
-| Search | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fretro-reboot.herokuapp.com%2Fproducts%2F%3Fq%3Dpokemon) | ![screenshot](documentation/testing/html-validation-search.png) | Pass: No Errors |
-| Log Out | n/a | ![screenshot](documentation/testing/html-validation-logout.png) | Pass: No Errors |
+| All Products | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F) | ![screenshot](image-78.png) | Pass: No Errors |
+| Product Detail | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F13%2F) | ![screenshot]![Alt text](image-79.png) | Pass: No Errors |
+| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fcontact) | ![screenshot](image-80.png) | Pass: No Errors |
+| Privacy Policy | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fprivacy_policy) | ![screenshot](image-81.png) | Pass: No Errors |
+| Returns | [W3C](https://https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Freturns) | ![screenshot](image-82.png) | Pass: No Errors |
+| Sign Up | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](image-86.png) | Pass: No Errors |
+| Sign In | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](image-85.png) | Pass: No Errors |
+| Search | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F%3Fq%3Djacket) | ![screenshot](image-84.png) | Pass: No Errors |
+| Log Out | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Faccounts%2Flogout%2F) | ![screenshot](image-83.png) | Pass: No Errors |
 | Basket | n/a | ![screenshot](documentation/testing/html-validation-basket.png) | Pass: No Errors |
 | Checkout | n/a | ![screenshot](documentation/testing/html-validation-checkout.png) | Warning: Empty heading (Loading spinner after submitting checkout form) |
 | Checkout Success | n/a | ![screenshot](documentation/testing/html-validation-checkout-success.png) | Pass: No Errors |
