@@ -76,18 +76,14 @@ I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to 
 | Checkout signals.py | n/a | ![screenshot](image-116.png) | Pass: No Errors |
 | Checkout urls.py | n/a | ![screenshot](image-117.png) | Pass: No Errors |
 | Checkout views.py | n/a  | ![screenshot](image-118.png) | Pass: No Errors |
-| Checkout webhook_handler.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/checkout/webhook_handler.py) | ![screenshot](documentation/testing/checkout-webhook-handler-python-test.png) | Pass: No Errors |
-| Checkout webhooks.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/checkout/webhooks.py) | ![screenshot](documentation/testing/checkout-webhooks-python-test.png) | Pass: No Errors |
-| Contact admin.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/contact/admin.py) | ![screenshot](documentation/testing/contact-admin-python-test.png) | Pass: No Errors |
-| Contact forms.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/contact/forms.py) | ![screenshot](documentation/testing/contact-forms-python-test.png) | Pass: No Errors |
-| Contact models.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/contact/models.py) | ![screenshot](documentation/testing/contact-models-python-test.png) | Pass: No Errors |
-| Contact urls.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/contact/urls.py) | ![screenshot](documentation/testing/contact-urls-python-test.png) | Pass: No Errors |
-| Contact views.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/contact/views.py) | ![screenshot](documentation/testing/contact-views-python-test.png) | Pass: No Errors |
-| Discount Codes admin.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/discount_codes/admin.py) | ![screenshot](documentation/testing/discount-codes-admin-python-test.png) | Pass: No Errors |
-| Discount Codes forms.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/discount_codes/forms.py) | ![screenshot](documentation/testing/discount-codes-forms-python-test.png)  | Pass: No Errors |
-| Discount Codes models.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/discount_codes/models.py) | ![screenshot](documentation/testing/discount-codes-models-python-test.png)  | Pass: No Errors |
-| Homepage urls.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/homepage/urls.py) | ![screenshot](documentation/testing/homepage-urls-python-test.png)  | Pass: No Errors |
-| Homepage views.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/homepage/views.py) | ![screenshot](documentation/testing/homepage-views-python-test.png) | Pass: No Errors |
+| Checkout webhook_handler.py | n/a | ![screenshot](image-119.png) | Pass: No Errors |
+| Checkout webhooks.py | n/a | ![screenshot](image-120.png)| Pass: No Errors |
+| Home urls.py | n/a | ![screenshot](image-121.png) | Pass: No Errors |
+| Home views.py | n/a | !![Alt text](image-122.png) | Pass: No Errors |
+| Home forms.py | n/a | ![screenshot](image-123.png) | Pass: No Errors |
+| Home models.py | n/a | ![screenshot](image-124.png) | Pass: No Errors |
+| Home admin.py | n/a | ![screenshot](image-125.png) | Pass: No Errors |
+
 | Newsletter admin.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/newsletter/admin.py) | ![screenshot](documentation/testing/newsletter-admin-python-test.png) | Pass: No Errors |
 | Newsletter forms.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/newsletter/forms.py) | ![screenshot](documentation/testing/newsletter-forms-python-test.png) | Pass: No Errors |
 | Newsletter models.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/newsletter/models.py) | ![screenshot](documentation/testing/newsletter-models-python-test.png) | Pass: No Errors |

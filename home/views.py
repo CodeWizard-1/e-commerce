@@ -20,13 +20,10 @@ def index(request):
     return render(request, "home/index.html", context)
 
 
-
-
-
-
 def privacy_policy(request):
 
     return render(request, "home/privacy_policy.html")
+
 
 def returns(request):
 
@@ -40,12 +37,14 @@ def contact(request):
             form.save()
             messages.success(
                 request,
-                "Thank you, your email has been sent. We will contact you shortly.",
+                "Thank you, your email has been sent. \
+                    We will contact you shortly.",
             )
             return redirect("contact")
         else:
             messages.error(
-                request, "Form submission failed. Please check the form and try again."
+                request, "Form submission failed. \
+                    Please check the form and try again."
             )
     else:
         form = ContactForm()
