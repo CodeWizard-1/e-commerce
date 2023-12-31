@@ -131,34 +131,28 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | --- | --- | --- | --- |
 | Home | Desktop | ![screenshot](image-160.png) | No major warnings |
 | Home | Mobile | ![screenshot](image-159.png) | Some minor warnings |
-| All Products | Desktop | ![screenshot](documentation/testing/lighthouse-all-products-desktop.png) | Some minor warnings |
-| All Products | Mobile | ![screenshot](documentation/testing/lighthouse-all-products-mobile.png) | Some minor warnings |
-| Individual Product | Desktop | ![screenshot](documentation/testing/lighthouse-product-desktop.png) | No major warnings |
-| Individual Product | Mobile | ![screenshot](documentation/testing/lighthouse-product-mobile.png) | Some minor warnings |
-| Contact | Desktop | ![screenshot](documentation/testing/lighthouse-contact-desktop.png) | No major warnings |
-| Contact | Mobile | ![screenshot](documentation/testing/lighthouse-contact-mobile.png) | Some minor warnings |
-| Blog | Desktop | ![screenshot](documentation/testing/lighthouse-blog-desktop.png) | No major warnings |
-| Blog | Mobile | ![screenshot](documentation/testing/lighthouse-blog-mobile.png) | Some minor warnings |
-| Blog Post | Desktop | ![screenshot](documentation/testing/lighthouse-blog-post-desktop.png) | No major warnings |
-| Blog Post | Mobile | ![screenshot](documentation/testing/lighthouse-blog-post-mobile.png) | Some minor warnings |
-| Sign Up | Desktop | ![screenshot](documentation/testing/lighthouse-signup-desktop.png) | No major warnings |
-| Sign Up | Mobile | ![screenshot](documentation/testing/lighthouse-signup-mobile.png) | Some minor warnings |
-| Sign In | Desktop | ![screenshot](documentation/testing/lighthouse-login-desktop.png) | No major warnings |
-| Sign In | Mobile | ![screenshot](documentation/testing/lighthouse-login-mobile.png) | Some minor warnings |
-| Password Reset | Desktop | ![screenshot](documentation/testing/lighthouse-password-reset-desktop.png) | No major warnings |
-| Password Reset | Mobile | ![screenshot](documentation/testing/lighthouse-password-reset-mobile.png) | Some minor warnings |
-| Search | Desktop | ![screenshot](documentation/testing/lighthouse-search-desktop.png) | No major warnings |
-| Search | Mobile | ![screenshot](documentation/testing/lighthouse-search-mobile.png) | Some minor warnings |
-| Log Out | Desktop | ![screenshot](documentation/testing/lighthouse-logout-desktop.png) | No major warnings |
-| Log Out | Mobile | ![screenshot](documentation/testing/lighthouse-logout-mobile.png) | Some minor warnings |
-| Basket | Desktop | ![screenshot](documentation/testing/lighthouse-basket-desktop.png) | No major warnings |
-| Basket | Mobile | ![screenshot](documentation/testing/lighthouse-basket-mobile.png) | Some minor warnings |
-| Checkout | Desktop | ![screenshot](documentation/testing/lighthouse-checkout-desktop.png) | No major warnings |
-| Checkout | Mobile | ![screenshot](documentation/testing/lighthouse-checkout-mobile.png) | Some minor warnings |
-| Checkout Success | Desktop | ![screenshot](documentation/testing/lighthouse-checkout-success-desktop.png) | Some minor warnings |
-| Checkout Success | Mobile | ![screenshot](documentation/testing/lighthouse-checkout-success-mobile.png) | Some minor warnings |
-| Profile | Desktop | ![screenshot](documentation/testing/lighthouse-profile-desktop.png) | No major warnings |
-| Profile | Mobile | ![screenshot](documentation/testing/lighthouse-profile-mobile.png) | Some minor warnings |
+| All Products | Desktop | ![screenshot](image-161.png)| Some minor warnings |
+| All Products | Mobile | ![screenshot](image-162.png) | Some minor warnings |
+| Product detail | Desktop | ![screenshot](image-163.png) | Some minor warnings |
+| Product detail | Mobile | ![screenshot]!(image-164.png) | Some minor warnings |
+| Contact | Desktop | ![screenshot](image-165.png) | No major warnings |
+| Contact | Mobile | ![screenshot](image-166.png) | Some minor warnings |
+| Wishlist | Desktop | ![screenshot](image-168.png) | No major warnings |
+| Wishlist  | Mobile | ![screenshot](image-167.png) | Some minor warnings |
+| Sign Up | Desktop | ![screenshot](image-172.png) | No major warnings |
+| Sign Up | Mobile | ![screenshot](image-171.png) | Some minor warnings |
+| Sign In | Desktop | ![screenshot](image-173.png) | Some minor warnings |
+| Sign In | Mobile | ![screenshot](image-174.png) | Some minor warnings |
+| Search | Desktop | ![screenshot](image-175.png) | Some minor warnings |
+| Search | Mobile | ![screenshot](image-176.png) | Some minor warnings |
+| Log Out | Desktop | ![screenshot](image-169.png) | No major warnings |
+| Log Out | Mobile | ![screenshot](image-170.png) | Some minor warnings |
+| Basket | Desktop | ![screenshot](image-177.png) | Some minor warnings |
+| Basket | Mobile | ![screenshot](image-178.png) | Some minor warnings |
+| Checkout | Desktop | ![screenshot](image-179.png) | Some minor warnings |
+| Checkout | Mobile | ![screenshot](image-180.png) | Some minor warnings |
+| Profile | Desktop | ![screenshot](image-181.png) | No major warnings |
+| Profile | Mobile | ![screenshot](image-182.png) | Some minor warnings |
 
 ## Defensive Programming
 
