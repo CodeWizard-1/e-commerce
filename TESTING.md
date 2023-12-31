@@ -83,25 +83,23 @@ I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to 
 | Home forms.py | n/a | ![screenshot](image-123.png) | Pass: No Errors |
 | Home models.py | n/a | ![screenshot](image-124.png) | Pass: No Errors |
 | Home admin.py | n/a | ![screenshot](image-125.png) | Pass: No Errors |
-
-| Newsletter admin.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/newsletter/admin.py) | ![screenshot](documentation/testing/newsletter-admin-python-test.png) | Pass: No Errors |
-| Newsletter forms.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/newsletter/forms.py) | ![screenshot](documentation/testing/newsletter-forms-python-test.png) | Pass: No Errors |
-| Newsletter models.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/newsletter/models.py) | ![screenshot](documentation/testing/newsletter-models-python-test.png) | Pass: No Errors |
-| Newsletter urls.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/newsletter/urls.py) | ![screenshot](documentation/testing/newsletter-urls-python-test.png) | Pass: No Errors |
-| Newsletter views.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/newsletter/views.py) | ![screenshot](documentation/testing/newsletter-views-python-test.png) | Pass: No Errors |
-| Products admin.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/products/admin.py) | ![screenshot](documentation/testing/products-admin-python-test.png) | Pass: No Errors |
-| Products forms.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/products/forms.py) | ![screenshot](documentation/testing/products-forms-python-test.png) | Pass: No Errors |
-| Products models.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/products/models.py) | ![screenshot](documentation/testing/products-models-python-test.png) | Pass: No Errors |
-| Products urls.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/products/urls.py) | ![screenshot](documentation/testing/products-urls-python-test.png) | Pass: No Errors |
-| Products views.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/products/views.py) | ![screenshot](documentation/testing/products-views-python-test.png) | Pass: No Errors |
-| Products widgets.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/products/widgets.py) | ![screenshot](documentation/testing/products-widgets-python-test.png) | Pass: No Errors |
-| Profiles forms.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/profiles/forms.py) | ![screenshot](documentation/testing/profiles-forms-python-test.png) | Pass: No Errors |
-| Profiles models.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/profiles/models.py) | ![screenshot](documentation/testing/profiles-models-python-test.png) | Pass: No Errors |
-| Profiles urls.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/profiles/urls.py) | ![screenshot](documentation/testing/profiles-urls-python-test.png) | Pass: No Errors |
-| Profiles views.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/profiles/views.py) | ![screenshot](documentation/testing/profiles-views-python-test.png) | Pass: No Errors |
-| Project Level settings.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/retro_reboot/settings.py) | ![screenshot](documentation/testing/project-level-settings-python-test.png) | Pass: No Errors |
-| Project Level urls.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/retro_reboot/urls.py) | ![screenshot](documentation/testing/project-level-urls-python-test.png) | Pass: No Errors |
-| Project Level views.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/adamgilroy22/retro-reboot/main/retro_reboot/views.py) | ![screenshot](documentation/testing/project-level-views-python-test.png) | Pass: No Errors |
+| Products admin.py |  n/a | ![screenshot](image-126.png) | Pass: No Errors |
+| Products forms.py | n/a | ![screenshot](image-127.png) | Pass: No Errors |
+| Products models.py |  n/a | ![screenshot](image-128.png) | Pass: No Errors |
+| Products urls.py | n/a  | ![screenshot](image-129.png) | Pass: No Errors |
+| Products views.py | n/a  | ![screenshot](image-130.png) | Pass: No Errors |
+| Products widgets.py | n/a | ![screenshot](image-131.png)| Pass: No Errors |
+| Profiles forms.py | n/a  | ![screenshot](image-132.png) | Pass: No Errors |
+| Profiles models.py | n/a| ![screenshot](image-133.png) | Pass: No Errors |
+| Profiles urls.py | n/a | ![screenshot](image-134.png) | Pass: No Errors |
+| Profiles views.py | n/a | ![screenshot](image-135.png) | Pass: No Errors |
+| Wishlist admin.py | n/a  | ![screenshot](image-136.png) | Pass: No Errors |
+| Wishlist models.py | n/a| ![screenshot](image-137.png) | Pass: No Errors |
+| Wishlist urls.py | n/a | ![screenshot](image-138.png) | Pass: No Errors |
+| Wishlist views.py | n/a | ![screenshot](image-139.png) | Pass: No Errors |
+| Base settings.py | n/a  | ![screenshot]![Alt text](image-140.png)| Pass: No Errors |
+| Base urls.py | n/a | ![screenshot](image-141.png) | Pass: No Errors |
+| Base views.py | n/a | ![screenshot](image-142.png) | Pass: No Errors |
 
 
 ## Browser Compatibility

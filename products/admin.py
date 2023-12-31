@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Product, Category, ProductVariant, Brand, Reviews
 
+
 class ProductVariantInline(admin.StackedInline):
     model = ProductVariant
     extra = 1
@@ -25,8 +26,6 @@ class ProductAdmin(admin.ModelAdmin):
         'discount',
         'discounted_price',
         'created_on',
-        
-        
     )
 
     list_editable = (
@@ -34,9 +33,9 @@ class ProductAdmin(admin.ModelAdmin):
         "on_sale",
     )
 
-
     ordering = ("name",)
     inlines = [ProductVariantInline]
+
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
@@ -57,11 +56,13 @@ class ProductVariantAdmin(admin.ModelAdmin):
 
     )
 
+
 class BrandAdmin(admin.ModelAdmin):
     list_display = (
         "friendly_name",
         "name",
     )
+
 
 class ReviewsAdmin(admin.ModelAdmin):
     list_display = (
@@ -73,9 +74,9 @@ class ReviewsAdmin(admin.ModelAdmin):
         "updated_on",
     )
 
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(ProductVariant, ProductVariantAdmin)
 admin.site.register(Brand, BrandAdmin)
 admin.site.register(Reviews, ReviewsAdmin)
-

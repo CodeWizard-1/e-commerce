@@ -26,28 +26,10 @@ def all_products(request):
     sale = False
     brand = None
 
-
     if user.is_authenticated:
         wishlist, created = Wishlist.objects.get_or_create(user=user)
     else:
         wishlist = None
-
-
-
-    # if request.GET:
-    #     if 'sort' in request.GET:
-    #         sortkey = request.GET['sort']
-    #         sort = sortkey
-    #         if sortkey == 'name':
-    #             sortkey = 'lower_name'
-    #             products = products.annotate(lower_name=Lower('name'))
-    #         if sortkey == 'category':
-    #             sortkey = 'category__name'
-    #         if 'direction' in request.GET:
-    #             direction = request.GET['direction']
-    #             if direction == 'desc':
-    #                 sortkey = f'-{sortkey}'
-    #         products = products.order_by(sortkey)
 
     if request.GET:
         if 'sort' in request.GET:
@@ -72,22 +54,18 @@ def all_products(request):
             if gender:
                 products = products.filter(gender=gender)
 
-
-
         if 'category' in request.GET:
             categories = request.GET['category']
             if categories:
                 categories = categories.split(',')
                 products = products.filter(category__name__in=categories)
                 categories = Category.objects.filter(name__in=categories)
-            
 
         if "brand" in request.GET:
             brand = request.GET["brand"]
             products = products.filter(brand__name=brand)
             brand = get_object_or_404(Brand, name=brand)
             title = brand.get_friendly_name()
-
 
         if "sale" in request.GET:
             sale = True
@@ -96,10 +74,11 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter any \
+                    search criteria!")
                 return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = Q(name__icontains=query) | Q(description__icontains=query)  # noqa
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -123,7 +102,7 @@ def product_detail(request, product_id):
     reviews = Reviews.objects.filter(product=product).order_by("-created_on")
 
     related_products = list(
-        Product.objects.filter(category=product.category).exclude(pk=product_id)
+        Product.objects.filter(category=product.category).exclude(pk=product_id)  # noqa
     )
     if len(related_products) >= 4:
         related_products = random.sample(related_products, 4)
@@ -138,7 +117,7 @@ def product_detail(request, product_id):
         return render(request, template, context)
     else:
         user = request.user
-        wishlist = Wishlist.objects.filter(user=user, products=product_id).exists()
+        wishlist = Wishlist.objects.filter(user=user, products=product_id).exists()  # noqa
 
         template = "products/product_detail.html"
         context = {
@@ -163,10 +142,10 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. \
+                Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -189,7 +168,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product. \
+                Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -231,10 +211,12 @@ def add_review(request, product_id):
                     review=request.POST["review"],
                 )
                 reviews = Reviews.objects.filter(product=product)
-                messages.success(request, "Your review has been successfully added!")
+                messages.success(request, "Your review has been \
+                    successfully added!")
                 return redirect(reverse("product_detail", args=[product.id]))
             except IntegrityError:
-                messages.error(request, "You have already reviewed this product.")
+                messages.error(request, "You have already \
+                    reviewed this product.")
                 return redirect(reverse("product_detail", args=[product.id]))
         else:
             messages.error(request, "Your review has not been submitted.")
@@ -244,7 +226,6 @@ def add_review(request, product_id):
 class UpdateReview(
     LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, UpdateView
 ):
- 
 
     model = Reviews
     form_class = ReviewsForm
@@ -257,11 +238,12 @@ class UpdateReview(
         return user == review.user or user.is_superuser
 
     def get_success_url(self):
-        return reverse("product_detail", kwargs={"product_id": self.object.product_id})
+        return reverse("product_detail",
+                       kwargs={"product_id": self.object.product_id})
 
 
-class DeleteReview(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, DeleteView):
-
+class DeleteReview(LoginRequiredMixin, SuccessMessageMixin,
+                   UserPassesTestMixin, DeleteView):
 
     model = Reviews
     template_name = "products/delete_review.html"
@@ -273,7 +255,8 @@ class DeleteReview(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin,
         return user == review.user or user.is_superuser
 
     def get_success_url(self):
-        return reverse("product_detail", kwargs={"product_id": self.object.product_id})
+        return reverse("product_detail",
+                       kwargs={"product_id": self.object.product_id})
 
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)

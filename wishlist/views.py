@@ -13,7 +13,6 @@ from profiles.models import UserProfile
 from products.models import Product
 
 
-
 def view_wishlist(request):
 
     if not request.user.is_authenticated:
@@ -48,7 +47,8 @@ def add_wishlist(request, product_id):
         messages.info(request, f"{product.name} is already on your Wishlist!")
     else:
         wishlist.products.add(product)
-        messages.info(request, f"{product.name} has been added to your Wishlist!")
+        messages.info(request, f"{product.name} has been added \
+            to your Wishlist!")
 
     redirect_url = request.META.get("HTTP_REFERER", reverse("products"))
 
@@ -67,7 +67,8 @@ def remove_wishlist(request, product_id):
     wishlist = Wishlist.objects.get(user=request.user)
 
     wishlist.products.remove(product)
-    messages.info(request, f"{product.name} has been removed from your Wishlist!")
+    messages.info(request, f"{product.name} has been removed \
+        from your Wishlist!")
 
     redirect_url = request.META.get("HTTP_REFERER", reverse("products"))
 
