@@ -108,9 +108,9 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot](documentation/testing/chrome.png) | Works as expected |
-| Firefox | ![screenshot](documentation/testing/firefox.png) | Works as expected |
-| Edge | ![screenshot](documentation/testing/edge.png) | Works as expected |
+| Chrome | ![screenshot](image-143.png) | Works as expected |
+| Firefox | ![screenshot](image-144.png) | Works as expected |
+| Edge | ![screenshot](image-145.png) | Works as expected |
 
 ## Responsiveness
 
@@ -118,10 +118,10 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 | Device | Screenshot | Notes |
 | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/testing/responsive-mobile.png) ![screenshot](documentation/testing/responsive-mobile-menu.png) ![screenshot](documentation/testing/responsive-mobile-products.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/testing/responsive-tablet.png) ![screenshot](documentation/testing/responsive-tablet-menu.png) ![screenshot](documentation/testing/responsive-tablet-products.png) | Works as expected |
-| Laptop | ![screenshot](documentation/testing/responsive-laptop.png) ![screenshot](documentation/testing/responsive-laptop-products.png) | Works as expected |
-| Desktop | ![screenshot](documentation/testing/responsive-desktop.png) ![screenshot](documentation/testing/responsive-desktop-products.png) | Works as expected |
+| Mobile (DevTools) | ![screenshot](image-146.png) ![screenshot](image-147.png) ![screenshot](image-148.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](image-149.png) ![screenshot](image-150.png) ![screenshot](image-151.png) | Works as expected |
+| Laptop | ![screenshot](image-152.png) ![screenshot](image-153.png) | Works as expected |
+| Desktop | ![screenshot](image-154.png) ![screenshot](image-155.png) | Works as expected |
 
 ## Lighthouse Audit
 
