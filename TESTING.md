@@ -129,8 +129,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Desktop | ![screenshot](documentation/testing/lighthouse-home-desktop.png) | No major warnings |
-| Home | Mobile | ![screenshot](documentation/testing/lighthouse-home-mobile.png) | Some minor warnings |
+| Home | Desktop | ![screenshot](image-156.png) | No major warnings |
+| Home | Mobile | ![screenshot](image-158.png) | Some minor warnings |
 | All Products | Desktop | ![screenshot](documentation/testing/lighthouse-all-products-desktop.png) | Some minor warnings |
 | All Products | Mobile | ![screenshot](documentation/testing/lighthouse-all-products-mobile.png) | Some minor warnings |
 | Individual Product | Desktop | ![screenshot](documentation/testing/lighthouse-product-desktop.png) | No major warnings |
