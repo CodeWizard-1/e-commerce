@@ -5,11 +5,11 @@ from django.contrib import messages
 
 from products.models import Product
 
-
+# View to display the bag contents
 def view_bag(request):
     return render(request, "bag/bag.html")
 
-
+# Function to add items to the bag
 def add_to_bag(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get("quantity"))
@@ -53,7 +53,7 @@ def add_to_bag(request, item_id):
     request.session["bag"] = bag
     return redirect(redirect_url)
 
-
+# Function to adjust the quantity of items in the bag
 def adjust_bag(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get("quantity"))
@@ -91,7 +91,7 @@ def adjust_bag(request, item_id):
     request.session["bag"] = bag
     return redirect(reverse("view_bag"))
 
-
+# Function to remove items from the bag
 def remove_from_bag(request, item_id):
     try:
         product = get_object_or_404(Product, pk=item_id)

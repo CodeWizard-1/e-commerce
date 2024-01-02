@@ -3,6 +3,9 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """
+    Form class for handling order information in the checkout process.
+    """
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',
@@ -23,7 +26,9 @@ class OrderForm(forms.ModelForm):
             'county': 'County, State or Locality',
         }
 
+        # Setting autofocus for the 'full_name' field
         self.fields['full_name'].widget.attrs['autofocus'] = True
+        # Adding placeholders and styles to form fields
         for field in self.fields:
             if field != 'country':
                 if self.fields[field].required:
