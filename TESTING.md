@@ -14,25 +14,25 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2F) | ![screenshot](image-77.png) | Pass: No Errors |
-| All Products | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F) | ![screenshot](image-78.png) | Pass: No Errors |
-| Product Detail | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F13%2F) | ![screenshot]![Alt text](image-79.png) | Pass: No Errors |
-| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fcontact) | ![screenshot](image-80.png) | Pass: No Errors |
-| Privacy Policy | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fprivacy_policy) | ![screenshot](image-81.png) | Pass: No Errors |
-| Returns | [W3C](https://https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Freturns) | ![screenshot](image-82.png) | Pass: No Errors |
-| Sign Up | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](image-86.png) | Pass: No Errors |
-| Sign In | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](image-85.png) | Pass: No Errors |
-| Search | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F%3Fq%3Djacket) | ![screenshot](image-84.png) | Pass: No Errors |
-| Log Out | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Faccounts%2Flogout%2F) | ![screenshot](image-83.png) | Pass: No Errors |
-| Basket | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fbag%2F) | ![screenshot](image-87.png) | Pass: No Errors |
-| Checkout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fcheckout%2F) | ![screenshot](image-88.png) | Pass: No Errors|
-| Checkout Success | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fcheckout%2Fcheckout_success%2FBC80EDE13F7D41A4A98524CDF77A6514) | ![screenshot](image-89.png) | Pass: No Errors |
-| Profile | n/a | ![screenshot](image-90.png)| Pass: No Errors |
-| Add Product | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fadd) | ![screenshot](image-91.png) | Pass: No Errors |
-| Edit Product | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fedit%2F3%2F) | ![screenshot](image-92.png) | Pass: No Errors |
-| Update Review | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fupdate_review%2F15%2F) | ![screenshot](image-94.png) | Pass: No Errors |
-| Delete Review | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fdelete_review%2F15%2F) | ![screenshot](image-93.png) | Pass: No Errors |
-| Wishlist | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fwishlist%2F) | ![screenshot](image-95.png) | Pass: No Errors |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2F) | ![screenshot](documentation/image-77.png) | Pass: No Errors |
+| All Products | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F) | ![screenshot](documentation/image-78.png) | Pass: No Errors |
+| Product Detail | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F13%2F) | ![screenshot]![Alt text](documentation/image-79.png) | Pass: No Errors |
+| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fcontact) | ![screenshot](documentation/image-80.png) | Pass: No Errors |
+| Privacy Policy | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fprivacy_policy) | ![screenshot](documentation/image-81.png) | Pass: No Errors |
+| Returns | [W3C](https://https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Freturns) | ![screenshot](documentation/image-82.png) | Pass: No Errors |
+| Sign Up | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/image-86.png) | Pass: No Errors |
+| Sign In | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/image-85.png) | Pass: No Errors |
+| Search | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F%3Fq%3Djacket) | ![screenshot](documentation/image-84.png) | Pass: No Errors |
+| Log Out | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Faccounts%2Flogout%2F) | ![screenshot](documentation/image-83.png) | Pass: No Errors |
+| Basket | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fbag%2F) | ![screenshot](documentation/image-87.png) | Pass: No Errors |
+| Checkout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fcheckout%2F) | ![screenshot](documentation/image-88.png) | Pass: No Errors|
+| Checkout Success | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fcheckout%2Fcheckout_success%2FBC80EDE13F7D41A4A98524CDF77A6514) | ![screenshot](documentation/image-89.png) | Pass: No Errors |
+| Profile | n/a | ![screenshot](documentation/image-90.png)| Pass: No Errors |
+| Add Product | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fadd) | ![screenshot](documentation/image-91.png) | Pass: No Errors |
+| Edit Product | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fedit%2F3%2F) | ![screenshot](documentation/image-92.png) | Pass: No Errors |
+| Update Review | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fupdate_review%2F15%2F) | ![screenshot](documentation/image-94.png) | Pass: No Errors |
+| Delete Review | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2Fdelete_review%2F15%2F) | ![screenshot](documentation/image-93.png) | Pass: No Errors |
+| Wishlist | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fwishlist%2F) | ![screenshot](documentation/image-95.png) | Pass: No Errors |
 
 ### CSS
 
@@ -40,9 +40,9 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| base.css | n/a  | ![screenshot](image-96.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](image-98.png) | Pass: No Errors |
-| profile.css | n/a | ![screenshot](image-97.png) | Pass: No Errors |
+| base.css | n/a  | ![screenshot](documentation/image-96.png) | Pass: No Errors |
+| checkout.css | n/a | ![screenshot](documentation/image-98.png) | Pass: No Errors |
+| profile.css | n/a | ![screenshot](documentation/image-97.png) | Pass: No Errors |
 
 ### JavaScript
 
@@ -50,14 +50,14 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| base.html (postloadjs) | ![screenshot](image-106.png)| Pass: No Errors |
-| countryfields.js | ![screenshot](image-100.png) | Pass: No Errors |
-| add_product.html (postloadjs) | ![screenshot](image-105.png) | Pass: No Errors |
-| edit_product.html (postloadjs) | ![screenshot](image-104.png) | Pass: No Errors |
-| products.html (postloadjs) | ![screenshot](image-103.png) | Pass: No Errors |
-| bag.html (postloadjs) | ![screenshot](image-102.png) | Pass: No Errors |
-| quantity_input_script.html (script) | ![screenshot](image-101.png) | Undefined "minusDisabled" and "plusDisabled" variables |
-| stripe_elements.js | ![screenshot](image-99.png) | Undefined Stripe variable |
+| base.html (postloadjs) | ![screenshot](documentation/image-106.png)| Pass: No Errors |
+| countryfields.js | ![screenshot](documentation/image-100.png) | Pass: No Errors |
+| add_product.html (postloadjs) | ![screenshot](documentation/image-105.png) | Pass: No Errors |
+| edit_product.html (postloadjs) | ![screenshot](documentation/image-104.png) | Pass: No Errors |
+| products.html (postloadjs) | ![screenshot](documentation/image-103.png) | Pass: No Errors |
+| bag.html (postloadjs) | ![screenshot](documentation/image-102.png) | Pass: No Errors |
+| quantity_input_script.html (script) | ![screenshot](documentation/image-101.png) | Undefined "minusDisabled" and "plusDisabled" variables |
+| stripe_elements.js | ![screenshot](documentation/image-99.png) | Undefined Stripe variable |
 
 ### Python
 
@@ -65,41 +65,41 @@ I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to 
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Bag contexts.py | n/a | ![screenshot](image-108.png) | Pass: No Errors |
-| Bag urls.py | n/a | ![screenshot](image-109.png) | Pass: No Errors |
-| Bag views.py | n/a | ![screenshot](image-110.png) | Pass: No Errors |
-| Base urls.py | n/a  | ![screenshot]!(image-111.png) | Pass: No Errors |
-| Base views.py | n/a  | ![screenshot](image-112.png) | Pass: No Errors |
-| Checkout admin.py | n/a  | ![screenshot](image-113.png) | Pass: No Errors |
-| Checkout forms.py | n/a | ![screenshot](image-114.png) | Pass: No Errors |
-| Checkout models.py | n/a  | ![screenshot](image-115.png) | Pass: No Errors |
-| Checkout signals.py | n/a | ![screenshot](image-116.png) | Pass: No Errors |
-| Checkout urls.py | n/a | ![screenshot](image-117.png) | Pass: No Errors |
-| Checkout views.py | n/a  | ![screenshot](image-118.png) | Pass: No Errors |
-| Checkout webhook_handler.py | n/a | ![screenshot](image-119.png) | Pass: No Errors |
-| Checkout webhooks.py | n/a | ![screenshot](image-120.png)| Pass: No Errors |
-| Home urls.py | n/a | ![screenshot](image-121.png) | Pass: No Errors |
-| Home views.py | n/a | !![Alt text](image-122.png) | Pass: No Errors |
-| Home forms.py | n/a | ![screenshot](image-123.png) | Pass: No Errors |
-| Home models.py | n/a | ![screenshot](image-124.png) | Pass: No Errors |
-| Home admin.py | n/a | ![screenshot](image-125.png) | Pass: No Errors |
-| Products admin.py |  n/a | ![screenshot](image-126.png) | Pass: No Errors |
-| Products forms.py | n/a | ![screenshot](image-127.png) | Pass: No Errors |
-| Products models.py |  n/a | ![screenshot](image-128.png) | Pass: No Errors |
-| Products urls.py | n/a  | ![screenshot](image-129.png) | Pass: No Errors |
-| Products views.py | n/a  | ![screenshot](image-130.png) | Pass: No Errors |
-| Products widgets.py | n/a | ![screenshot](image-131.png)| Pass: No Errors |
-| Profiles forms.py | n/a  | ![screenshot](image-132.png) | Pass: No Errors |
-| Profiles models.py | n/a| ![screenshot](image-133.png) | Pass: No Errors |
-| Profiles urls.py | n/a | ![screenshot](image-134.png) | Pass: No Errors |
-| Profiles views.py | n/a | ![screenshot](image-135.png) | Pass: No Errors |
-| Wishlist admin.py | n/a  | ![screenshot](image-136.png) | Pass: No Errors |
-| Wishlist models.py | n/a| ![screenshot](image-137.png) | Pass: No Errors |
-| Wishlist urls.py | n/a | ![screenshot](image-138.png) | Pass: No Errors |
-| Wishlist views.py | n/a | ![screenshot](image-139.png) | Pass: No Errors |
-| Base settings.py | n/a  | ![screenshot]![Alt text](image-140.png)| Pass: No Errors |
-| Base urls.py | n/a | ![screenshot](image-141.png) | Pass: No Errors |
-| Base views.py | n/a | ![screenshot](image-142.png) | Pass: No Errors |
+| Bag contexts.py | n/a | ![screenshot](documentation/image-108.png) | Pass: No Errors |
+| Bag urls.py | n/a | ![screenshot](documentation/image-109.png) | Pass: No Errors |
+| Bag views.py | n/a | ![screenshot](documentation/image-110.png) | Pass: No Errors |
+| Base urls.py | n/a  | ![screenshot](documentation/image-111.png) | Pass: No Errors |
+| Base views.py | n/a  | ![screenshot](documentation/image-112.png) | Pass: No Errors |
+| Checkout admin.py | n/a  | ![screenshot](documentation/image-113.png) | Pass: No Errors |
+| Checkout forms.py | n/a | ![screenshot](documentation/image-114.png) | Pass: No Errors |
+| Checkout models.py | n/a  | ![screenshot](documentation/image-115.png) | Pass: No Errors |
+| Checkout signals.py | n/a | ![screenshot](documentation/image-116.png) | Pass: No Errors |
+| Checkout urls.py | n/a | ![screenshot](documentation/image-117.png) | Pass: No Errors |
+| Checkout views.py | n/a  | ![screenshot](documentation/image-118.png) | Pass: No Errors |
+| Checkout webhook_handler.py | n/a | ![screenshot](documentation/image-119.png) | Pass: No Errors |
+| Checkout webhooks.py | n/a | ![screenshot](documentation/image-120.png)| Pass: No Errors |
+| Home urls.py | n/a | ![screenshot](documentation/image-121.png) | Pass: No Errors |
+| Home views.py | n/a | !![Alt text](documentation/image-122.png) | Pass: No Errors |
+| Home forms.py | n/a | ![screenshot](documentation/image-123.png) | Pass: No Errors |
+| Home models.py | n/a | ![screenshot](documentation/image-124.png) | Pass: No Errors |
+| Home admin.py | n/a | ![screenshot](documentation/image-125.png) | Pass: No Errors |
+| Products admin.py |  n/a | ![screenshot](documentation/image-126.png) | Pass: No Errors |
+| Products forms.py | n/a | ![screenshot](documentation/image-127.png) | Pass: No Errors |
+| Products models.py |  n/a | ![screenshot](documentation/image-128.png) | Pass: No Errors |
+| Products urls.py | n/a  | ![screenshot](documentation/image-129.png) | Pass: No Errors |
+| Products views.py | n/a  | ![screenshot](documentation/image-130.png) | Pass: No Errors |
+| Products widgets.py | n/a | ![screenshot](documentation/image-131.png)| Pass: No Errors |
+| Profiles forms.py | n/a  | ![screenshot](documentation/image-132.png) | Pass: No Errors |
+| Profiles models.py | n/a| ![screenshot](documentation/image-133.png) | Pass: No Errors |
+| Profiles urls.py | n/a | ![screenshot](documentation/image-134.png) | Pass: No Errors |
+| Profiles views.py | n/a | ![screenshot](documentation/image-135.png) | Pass: No Errors |
+| Wishlist admin.py | n/a  | ![screenshot](documentation/image-136.png) | Pass: No Errors |
+| Wishlist models.py | n/a| ![screenshot](documentation/image-137.png) | Pass: No Errors |
+| Wishlist urls.py | n/a | ![screenshot](documentation/image-138.png) | Pass: No Errors |
+| Wishlist views.py | n/a | ![screenshot](documentation/image-139.png) | Pass: No Errors |
+| Base settings.py | n/a  | ![screenshot]![Alt text](documentation/image-140.png)| Pass: No Errors |
+| Base urls.py | n/a | ![screenshot](documentation/image-141.png) | Pass: No Errors |
+| Base views.py | n/a | ![screenshot](documentation/image-142.png) | Pass: No Errors |
 
 
 ## Browser Compatibility
@@ -108,9 +108,9 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot](image-143.png) | Works as expected |
-| Firefox | ![screenshot](image-144.png) | Works as expected |
-| Edge | ![screenshot](image-145.png) | Works as expected |
+| Chrome | ![screenshot](documentation/image-143.png) | Works as expected |
+| Firefox | ![screenshot](documentation/image-144.png) | Works as expected |
+| Edge | ![screenshot](documentation/image-145.png) | Works as expected |
 
 ## Responsiveness
 
@@ -118,10 +118,10 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 | Device | Screenshot | Notes |
 | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](image-146.png) ![screenshot](image-147.png) ![screenshot](image-148.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](image-149.png) ![screenshot](image-150.png) ![screenshot](image-151.png) | Works as expected |
-| Laptop | ![screenshot](image-152.png) ![screenshot](image-153.png) | Works as expected |
-| Desktop | ![screenshot](image-154.png) ![screenshot](image-155.png) | Works as expected |
+| Mobile (DevTools) | ![screenshot](documentation/image-146.png) ![screenshot](documentation/image-147.png) ![screenshot](documentation/image-148.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/image-149.png) ![screenshot](documentation/image-150.png) ![screenshot](documentation/image-151.png) | Works as expected |
+| Laptop | ![screenshot](documentation/image-152.png) ![screenshot](documentation/image-153.png) | Works as expected |
+| Desktop | ![screenshot](documentation/image-154.png) ![screenshot](documentation/image-155.png) | Works as expected |
 
 ## Lighthouse Audit
 
@@ -129,30 +129,30 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Desktop | ![screenshot](image-160.png) | No major warnings |
-| Home | Mobile | ![screenshot](image-159.png) | Some minor warnings |
-| Products | Desktop | ![screenshot](image-161.png)| Some minor warnings |
-| Products | Mobile | ![screenshot](image-162.png) | Some minor warnings |
-| Product detail | Desktop | ![screenshot](image-163.png) | Some minor warnings |
-| Product detail | Mobile | ![screenshot](image-164.png) | Some minor warnings |
-| Contact | Desktop | ![screenshot](image-165.png) | No major warnings |
-| Contact | Mobile | ![screenshot](image-166.png) | Some minor warnings |
-| Wishlist | Desktop | ![screenshot](image-168.png) | No major warnings |
-| Wishlist  | Mobile | ![screenshot](image-167.png) | Some minor warnings |
-| Sign Up | Desktop | ![screenshot](image-172.png) | No major warnings |
-| Sign Up | Mobile | ![screenshot](image-171.png) | Some minor warnings |
-| Sign In | Desktop | ![screenshot](image-173.png) | Some minor warnings |
-| Sign In | Mobile | ![screenshot](image-174.png) | Some minor warnings |
-| Search | Desktop | ![screenshot](image-175.png) | Some minor warnings |
-| Search | Mobile | ![screenshot](image-176.png) | Some minor warnings |
-| Log Out | Desktop | ![screenshot](image-169.png) | No major warnings |
-| Log Out | Mobile | ![screenshot](image-170.png) | Some minor warnings |
-| Basket | Desktop | ![screenshot](image-177.png) | Some minor warnings |
-| Basket | Mobile | ![screenshot](image-178.png) | Some minor warnings |
-| Checkout | Desktop | ![screenshot](image-179.png) | Some minor warnings |
-| Checkout | Mobile | ![screenshot](image-180.png) | Some minor warnings |
-| Profile | Desktop | ![screenshot](image-181.png) | No major warnings |
-| Profile | Mobile | ![screenshot](image-182.png) | Some minor warnings |
+| Home | Desktop | ![screenshot](documentation/image-160.png) | No major warnings |
+| Home | Mobile | ![screenshot](documentation/image-159.png) | Some minor warnings |
+| Products | Desktop | ![screenshot](documentation/image-161.png)| Some minor warnings |
+| Products | Mobile | ![screenshot](documentation/image-162.png) | Some minor warnings |
+| Product detail | Desktop | ![screenshot](documentation/image-163.png) | Some minor warnings |
+| Product detail | Mobile | ![screenshot](documentation/image-164.png) | Some minor warnings |
+| Contact | Desktop | ![screenshot](documentation/image-165.png) | No major warnings |
+| Contact | Mobile | ![screenshot](documentation/image-166.png) | Some minor warnings |
+| Wishlist | Desktop | ![screenshot](documentation/image-168.png) | No major warnings |
+| Wishlist  | Mobile | ![screenshot](documentation/image-167.png) | Some minor warnings |
+| Sign Up | Desktop | ![screenshot](documentation/image-172.png) | Some minor warnings |
+| Sign Up | Mobile | ![screenshot](documentation/image-171.png) | Some minor warnings |
+| Sign In | Desktop | ![screenshot](documentation/image-173.png) | Some minor warnings |
+| Sign In | Mobile | ![screenshot](documentation/image-174.png) | Some minor warnings |
+| Search | Desktop | ![screenshot](documentation/image-175.png) | Some minor warnings |
+| Search | Mobile | ![screenshot](documentation/image-176.png) | Some minor warnings |
+| Log Out | Desktop | ![screenshot](documentation/image-169.png) | No major warnings |
+| Log Out | Mobile | ![screenshot](documentation/image-170.png) | Some minor warnings |
+| Basket | Desktop | ![screenshot](documentation/image-177.png) | Some minor warnings |
+| Basket | Mobile | ![screenshot](documentation/image-178.png) | Some minor warnings |
+| Checkout | Desktop | ![screenshot](documentation/image-179.png) | Some minor warnings |
+| Checkout | Mobile | ![screenshot](documentation/image-180.png) | Some minor warnings |
+| Profile | Desktop | ![screenshot](documentation/image-181.png) | Some minor warnings |
+| Profile | Mobile | ![screenshot](documentation/image-182.png) | Some minor warnings |
 
 ## Manual testing
 
@@ -300,22 +300,22 @@ Below are the user stories I've included, along with corresponding screenshots f
 
 | User Story | Screenshot |
 | --- | --- |
-| As a user I can view products so that I can decide which items I want to purchase | ![screenshot](image-183.png) |
-| In my user role, I am equipped with the capability to search through all products and explore various categories. This functionality guarantees that I only encounter products of personal interest | ![screenshot](image-184.png) ![screenshot](image-185.png) |
-| As a site user, I want the site to be responsive. | Mobile:![screenshot](image-188.png) Tablet:![screenshot](image-189.png) Desktop:![screenshot](image-190.png)|
-| As a site user, I would appreciate the ability to filter products based on gender. This feature enables me to tailor my product search according to specific gender categories, streamlining the shopping experience and helping me find relevant items more efficiently. | ![Alt text](image-191.png) |
-|As a site user, I would like to have the capability to browse products based on categories. This functionality allows me to easily navigate through distinct product categories, enhancing my ability to find items aligned with my preferences. | ![screenshot](image-186.png) ![screenshot](image-187.png) |
-| As a user, I possess the ability to review the items present in my shopping basket. This feature facilitates the identification of the total cost of my purchase and all the items included. | ![screenshot](image-192.png) 
-| In my user role, I can effortlessly assess the total cost of my purchases. This feature aids me in avoiding unnecessary expenditure. | ![Alt text](image-193.png) ![Alt text](image-194.png)| |
-| In my user role, I should experience a sense of confidence in the security and safety of my payment information. This sense of assurance allows me to confidently provide the necessary details for making a purchase.| ![Alt text](image-195.png) |
-| As a site user, I have the ability to initiate the creation of an account. This functionality serves the purpose of allowing me to store my information for convenient repeat purchases and to review my order history. | ![screenshot](image-196.png) |
-| As a user, I would like the ability to make purchases without creating an account, ensuring a quick and convenient payment process. | ![screenshot](image-197.png)|
-| As a user of the site, I want to be able to update and save delivery information to my profile if necessary. | ![screenshot](image-198.png) |
-| In my user role, I want to add products to a Wishlist. This functionality simplifies the process of tracking items I plan to purchase in the future | ![screenshot](image-199.png) ![Alt text](image-200.png) ![Alt text](image-201.png)|
-| As a user role, I want to subscribe to the newsletter. This subscription ensures that I stay up to date with new products and promotions. |  ![screenshot](image-202.png) |
-| As a site administrator, I want to be able to access and use the admin panel. This feature allows me to efficiently perform tasks such as creating, updating, managing and deleting products and orders. | ![screenshot](image-203.png) |
-| As a site user, I would like to receive order confirmation emails containing detailed information about my purchase, including the ordered items and the total amount. This feature ensures that I stay informed about the specifics of my order and provides a convenient record of the transaction sent directly to my email. | ![screenshot](image-68.png) |
-| As a site user, I would like the ability to read product reviews and also to leave my own feedback. This feature provides me with valuable insights from other users' experiences, helping me make informed decisions about a product. Additionally, it allows me to contribute to the community by sharing my thoughts and opinions on the items I've purchased. | ![screenshot](image-204.png) |
+| As a user I can view products so that I can decide which items I want to purchase | ![screenshot](documentation/image-183.png) |
+| In my user role, I am equipped with the capability to search through all products and explore various categories. This functionality guarantees that I only encounter products of personal interest | ![screenshot](documentation/image-184.png) ![screenshot](documentation/image-185.png) |
+| As a site user, I want the site to be responsive. | Mobile:![screenshot](documentation/image-188.png) Tablet:![screenshot](documentation/image-189.png) Desktop:![screenshot](documentation/image-190.png)|
+| As a site user, I would appreciate the ability to filter products based on gender. This feature enables me to tailor my product search according to specific gender categories, streamlining the shopping experience and helping me find relevant items more efficiently. | ![Alt text](documentation/image-191.png) |
+|As a site user, I would like to have the capability to browse products based on categories. This functionality allows me to easily navigate through distinct product categories, enhancing my ability to find items aligned with my preferences. | ![screenshot](documentation/image-186.png) ![screenshot](documentation/image-187.png) |
+| As a user, I possess the ability to review the items present in my shopping basket. This feature facilitates the identification of the total cost of my purchase and all the items included. | ![screenshot](documentation/image-192.png).
+| In my user role, I can effortlessly assess the total cost of my purchases. This feature aids me in avoiding unnecessary expenditure. | ![Alt text](documentation/image-193.png) ![Alt text](documentation/image-194.png)| |
+| In my user role, I should experience a sense of confidence in the security and safety of my payment information. This sense of assurance allows me to confidently provide the necessary details for making a purchase.| ![Alt text](documentation/image-195.png) |
+| As a site user, I have the ability to initiate the creation of an account. This functionality serves the purpose of allowing me to store my information for convenient repeat purchases and to review my order history. | ![screenshot](documentation/image-196.png) |
+| As a user, I would like the ability to make purchases without creating an account, ensuring a quick and convenient payment process. | ![screenshot](documentation/image-197.png)|
+| As a user of the site, I want to be able to update and save delivery information to my profile if necessary. | ![screenshot](documentation/image-198.png) |
+| In my user role, I want to add products to a Wishlist. This functionality simplifies the process of tracking items I plan to purchase in the future | ![screenshot](documentation/image-199.png) ![Alt text](documentation/image-200.png) ![Alt text](documentation/image-201.png)|
+| As a user role, I want to subscribe to the newsletter. This subscription ensures that I stay up to date with new products and promotions. |  ![screenshot](documentation/image-202.png) |
+| As a site administrator, I want to be able to access and use the admin panel. This feature allows me to efficiently perform tasks such as creating, updating, managing and deleting products and orders. | ![screenshot](documentation/image-203.png) |
+| As a site user, I would like to receive order confirmation emails containing detailed information about my purchase, including the ordered items and the total amount. This feature ensures that I stay informed about the specifics of my order and provides a convenient record of the transaction sent directly to my email. | ![screenshot](documentation/image-68.png) |
+| As a site user, I would like the ability to read product reviews and also to leave my own feedback. This feature provides me with valuable insights from other users' experiences, helping me make informed decisions about a product. Additionally, it allows me to contribute to the community by sharing my thoughts and opinions on the items I've purchased. | ![screenshot](documentation/image-204.png) |
 
 
 Below are the user stories that I plan to implement in the future:
@@ -338,12 +338,12 @@ In order to run the tests, I ran the following command in the terminal each time
 
 `python3 manage.py test `
 
-![screenshot](image-205.png)
+![screenshot](documentation/image-205.png)
 
 
 `python-m coverage report `
 
-![Alt text](image-206.png)
+![Alt text](documentation/image-206.png)
 
 
 **Open Issues**
@@ -351,4 +351,4 @@ In order to run the tests, I ran the following command in the terminal each time
 
 | Bug | Status |
 | --- | --- |
-| [USER STORY: Password Recovery](https://github.com/CodeWizard-1/e-commerce/issues/17) | Open |
+| [USER STORY: Password Recovery ](https://github.com/CodeWizard-1/e-commerce/issues/17) | Open |

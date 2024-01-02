@@ -1,6 +1,6 @@
 # Sportswear
 
-![Alt text](image.png)
+![Alt text](documentation/image.png)
 
 Welcome to the Sportswear online store. This site was built using Django with custom Python, HTML, and CSS code for Code Institute P5 eCommerce apps. Our online store is an application that allows users to purchase clothes and accessories for sports as well as for everyday style.
 
@@ -116,7 +116,7 @@ The product section took precedence as the primary focus of the website, receivi
 The Project board [here](https://github.com/users/CodeWizard-1/projects/5).
 
 
-![Project Kanban](image-1.png)
+![Project Kanban](documentation/image-1.png)
 
 [Back to Top](#table-of-contents)
 
@@ -127,13 +127,13 @@ The Project board [here](https://github.com/users/CodeWizard-1/projects/5).
 * Based on the collected and studied user stories, a project implementation plan was developed.
 You can read user stories [here](https://github.com/CodeWizard-1/e-commerce/issues?q=is%3Aissue+is%3Aclosed).
 
-![Alt text](image-3.png)
+![Alt text](documentation/image-3.png)
 
 * Each user story was assigned a point value based on the complexity of implementation. Using the MoSCoW principle (Must Have, Should Have, Could Have, Won't Have), iterations were planned for the implementation of the identified tasks.
 
 You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milestones?state=closed).
 
-![Alt text](image-2.png)
+![Alt text](documentation/image-2.png)
 
 <br>
 
@@ -293,7 +293,7 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 ## Existing Features
 
 ### Home Page
-![Hero Image](image-4.png)
+![Hero Image](documentation/image-4.png)
 The Home page of the online store is an attractive and informative landing page, created to attract attention and comfortably guide users.
 
 <br>
@@ -304,7 +304,7 @@ The Home page of the online store is an attractive and informative landing page,
 
 
 ### Featured Products Section
-![Featured Products Section Image](image-5.png)
+![Featured Products Section Image](documentation/image-5.png)
 - The "Trending This Week" section will showcase a random list of 5 products marked as "Is_Featured" on the admin panel.
 - Each product is presented with a card displaying its details, price, and whether it is currently on sale
 
@@ -315,7 +315,7 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Healthy Lifestyle and Sporty Fashion Section
-![Healthy Lifestyle and Sporty Fashion Image](image-6.png)
+![Healthy Lifestyle and Sporty Fashion Image](documentation/image-6.png)
 - This section serves as an introduction to the online store's commitment to promoting a healthy lifestyle through sporty fashion.
 
 <br>
@@ -323,11 +323,11 @@ The Home page of the online store is an attractive and informative landing page,
 [Back to Top](#table-of-contents)
 
 ### Footer
-![Footer Image](image-7.png)
+![Footer Image](documentation/image-7.png)
 - The footer is consistently present on every page, featuring links to Contact, Returns, Privacy Policies, and an email address.
 - Additionally, the footer incorporates our newsletter signup, powered by MailChimp. This ensures its visibility on every page, maximizing the likelihood of visitors subscribing.
 
-![Alt text](image-57.png)
+![Alt text](documentation/image-57.png)
 
 <br>
 
@@ -336,7 +336,7 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Returns Page
-![Returns Page Image](image-8.png)
+![Returns Page Image](documentation/image-8.png)
 
 - The product returns page provides detailed information about the return policy of the online store
 <br>
@@ -346,7 +346,7 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Contact Page
-![Contact Page Image](image-9.png)
+![Contact Page Image](documentation/image-9.png)
 - On the contact page, concise information is presented using small icons for quick and easy comprehension, including a phone number, address, and email.
 - Additionally, the page includes a contact form enabling users to reach out to the business. The information submitted through this form is stored in the Admin panel, ensuring easy access for staff to review.
 
@@ -357,7 +357,7 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Privacy Policy
-![Privaty Policy Image](image-12.png)
+![Privaty Policy Image](documentation/image-12.png)
 - A privacy policy is a legal document that describes how a website collects, uses, discloses and manages the personal information of its users or customers. It contains information about the types of data collected, the purposes for collecting it, storage and security methods, and the rights of users regarding their personal information.
 
 <br>
@@ -367,12 +367,13 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Main Nav Menu
-![Alt text](image-207.png)
-![Alt text](image-208.png)
-![Alt text](image-209.png)
- - At the very top there is an information board in which information about the terms of return and delivery, the minimum order amount for free delivery is updated every three seconds (to encourage the user to buy a larger number of products, as well as a motivational phrase as a call to action).
+![Alt text](documentation/image-209.png)
+![Alt text](documentation/image-208.png)
+![Alt text](documentation/image-207.png)
 
-![Main Nav Menu Image](image-13.png)
+ - At the very top there is an information board in which information about the terms of return and delivery, the minimum order amount for free delivery is updated every three seconds (to encourage the user to buy  more number of products), as well as a motivational phrase as a call to action.
+
+![Main Nav Menu Image](documentation/image-13.png)
 
 - Throughout the site, the user has access to the main navigation menu. Features include a search bar, account/profile access, cart link and subtotal if the user has added items to their carts, as well as links to filter products by gender, brand and sale page. Once logged in, users have access to the wishlist page.
 
@@ -385,9 +386,9 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Restricted Pages
-![Logged in Nav Image](image-11.png)
+![Logged in Nav Image](documentation/image-11.png)
 
-![Logged out Nav Image](image-10.png)
+![Logged out Nav Image](documentation/image-10.png)
 - Certain pages are accessible only to users who have logged in. Links to these pages are displayed in the Navbar exclusively when a user is logged in.
 - The Wishlist feature is reserved solely for users who have registered an account.
 
@@ -398,14 +399,14 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Product Filtration
-![Main-nav-dropdown](image-14.png)
+![Main-nav-dropdown](documentation/image-14.png)
 
-![Main-nav-dropdown-brand](image-15.png)
+![Main-nav-dropdown-brand](documentation/image-15.png)
 
 - When selecting the desired product, the user can filter by men's, women's and children's products.
 - The user can also filter by brand.
 
-![Alt text](image-211.png)
+![Alt text](documentation/image-211.png)
 
 - On the product page, the user can filter the product by price, rating, name, category and brand
 
@@ -416,13 +417,13 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Search Bar
-![Search Bar Image](image-17.png)
+![Search Bar Image](documentation/image-17.png)
 
-![Search Bar bag Image](image-18.png)
+![Search Bar bag Image](documentation/image-18.png)
 
-![Search Bar  img](image-19.png)
+![Search Bar  img](documentation/image-19.png)
 
-![Search Bar error](image-20.png)
+![Search Bar error](documentation/image-20.png)
 
 - Users can use the search bar in the navigation menu to find specific products. The search term is matched with the product name and description to provide the user with a list of products that match their search query.
 The user can also see how many results were returned for their search query.
@@ -436,7 +437,7 @@ If the user clicks the search button without entering anything, an error message
 
 ### Sale Page
 
-![Alt text](image-210.png)
+![Alt text](documentation/image-210.png)
 
 - This page displays all products that are participating in the promotion with a price reduction
 
@@ -448,7 +449,7 @@ If the user clicks the search button without entering anything, an error message
 <br>
 
 ### Product Details Page
-![Product Detail Image](image-21.png)
+![Product Detail Image](documentation/image-21.png)
 - Product details page displays product image, name, regular price, discount price (if available), brand, category, rating, option to add to wishlist, product description, option to select size (if available), select quantity and user can add product to cart.
 - The page also displays reviews left by users, with the option for authorized users to leave their own.
 - Reviews can be updated or deleted by the user who left them or by the administrator/superuser. These are all CRUD functions.
@@ -456,40 +457,40 @@ If the user clicks the search button without entering anything, an error message
 
 - If the user is not authorized, he is prompted to log into his account or register.
 
-![Review Image](image-22.png)
+![Review Image](documentation/image-22.png)
 
 - If the user is authorized, he can click on “Review this product” to write a review.
  
-![Review Image](image-23.png)
+![Review Image](documentation/image-23.png)
 
 - A window will open below in which the user can specify a topic and leave a review.
 
-![Review Image](image-24.png)
+![Review Image](documentation/image-24.png)
 
 - After writing a review and sending it, the user will see a success message.
 
-![Alt text](image-25.png)
+![Alt text](documentation/image-25.png)
 
 - If necessary, the user can update his review.
 
-![Alt text](image-26.png)
+![Alt text](documentation/image-26.png)
 
-![Alt text](image-27.png)
+![Alt text](documentation/image-27.png)
 
 - After updating the review, the user will see a success message.
 
-![Alt text](image-28.png)
+![Alt text](documentation/image-28.png)
 
 - If the user decides to delete a review, he will also be informed about the successful action in the message
 
-![Alt text](image-29.png)
+![Alt text](documentation/image-29.png)
 
-![Alt text](image-30.png)
+![Alt text](documentation/image-30.png)
 
 
 -For the convenience of the user, to quickly return to the top of the page, a button has been added to the lower right corner when clicked on which the user will return to the top of the page
 
-![Alt text](image-212.png)
+![Alt text](documentation/image-212.png)
 
 <br>
 
@@ -498,43 +499,43 @@ If the user clicks the search button without entering anything, an error message
 <br>
 
 ### Wishlist Page
-![Wishlist Image](image-37.png)
+![Wishlist Image](documentation/image-37.png)
 - The Wishlist page allows users to get a list of all the products they have added to their wishlist by clicking the heart icon on each product.
 - The Wishlist page provides a brief description of the product as well as a link to the product detail page that allows users to add it to their cart.
 - The page also has a delete option that allows users to remove a product from their wishlist - again, this is done using the CRUD function.
 
 - If the user has not added any product to the wishlist, he will see the message below.
 
-![Alt text](image-41.png)
+![Alt text](documentation/image-41.png)
 
 - To add a product to your wishlist, you need to click on the heart icon on the page with the product description or on the page with the total quantity of the product.
 
-![Alt text](image-31.png)
+![Alt text](documentation/image-31.png)
 
-![Alt text](image-35.png)
+![Alt text](documentation/image-35.png)
 
 
 - After successfully adding a product, the heart icon will change color and an additional message will appear.
 
-![Alt text](image-32.png)
+![Alt text](documentation/image-32.png)
 
-![Alt text](image-36.png)
+![Alt text](documentation/image-36.png)
 
-![Alt text](image-33.png)
+![Alt text](documentation/image-33.png)
 
 - If you click on the heart icon again, the item will be removed from your wishlist and there will be an additional message about it.
 
-![Alt text](image-34.png)
+![Alt text](documentation/image-34.png)
 
 - On the wishlist page itself, you can click on the binoculars icon to go to the product page.
 
-![Alt text](image-38.png)
+![Alt text](documentation/image-38.png)
 
 - You can remove a product from your wish list by clicking on the product removal icon, and if you want to remove the entire product from the list, you need to click on the “CLEAR WISHLIST” sign at the top.
 
-![Alt text](image-39.png)
+![Alt text](documentation/image-39.png)
 
-![Alt text](image-40.png)
+![Alt text](documentation/image-40.png)
 <br>
 
 [Back to Top](#table-of-contents)
@@ -547,24 +548,24 @@ If the user clicks the search button without entering anything, an error message
 - If the user is not logged in, they will be given the option to either register for an account or log into an existing account.
 - If the user is logged in and has administrator rights, he will see an additional menu "Product Management"
 
-![Alt text](image-42.png)
+![Alt text](documentation/image-42.png)
 
-![Alt text](image-43.png)
+![Alt text](documentation/image-43.png)
 
 
 - If the user is logged in and has admin permissions, they can add new products to the site from the admin dropdown in the nav menu.
 - The add product page contains a form for the admin to fill out with the details of the new product.
 
-![Alt text](image-44.png)
+![Alt text](documentation/image-44.png)
 
 - If the user is logged in and has admin permissions, they can edit site products by clicking the edit icon on either the product card on the all products page or the individual product page.
 - The edit product page contains the same form as the add product page but the fields are already populated with the product's current data.
 
-![Alt text](image-45.png)
+![Alt text](documentation/image-45.png)
 
 - If the user is logged in and has admin permissions, they can delete site products by clicking the delete icon on either the product card on the all products page or the individual product page.
 
-![Alt text](image-46.png)
+![Alt text](documentation/image-46.png)
 
 <br>
 
@@ -573,12 +574,12 @@ If the user clicks the search button without entering anything, an error message
 <br>
 
 ### User Sign Up Page
-![User Sign Up Image](image-47.png)
+![User Sign Up Image](documentation/image-47.png)
 - Users without an account can register by clicking the "Register" link in the main navigation menu. They will be given a form to add their details and create a profile for that user upon completion.
 
-![Alt text](image-48.png)
+![Alt text](documentation/image-48.png)
 
-![Alt text](image-49.png)
+![Alt text](documentation/image-49.png)
 - Users are sent a confirmation email to complete account registration
 
 <br>
@@ -588,11 +589,11 @@ If the user clicks the search button without entering anything, an error message
 <br>
 
 ### User Sign In Page
-![User Sign In Image](image-50.png)
+![User Sign In Image](documentation/image-50.png)
 
 - If the user is not logged into the site but has a profile, they can click on the login link where they will be presented with a login page. To do this, they must enter their username or email address and the correct password. There is also a checkbox to remember the user on their current device to avoid having to log in every time they visit the site.
 
-![Alt text](image-51.png)
+![Alt text](documentation/image-51.png)
 
 <br>
 
@@ -601,11 +602,11 @@ If the user clicks the search button without entering anything, an error message
 <br>
 
 ### User Sign Out Page
-![User Sign Out Image](image-52.png)
+![User Sign Out Image](documentation/image-52.png)
 
 - If the user is not logged into the site but has a profile, they can click on the login link where they will be presented with a login page. To do this, they must enter their username or email address and the correct password. There is also a checkbox to remember the user on their current device to avoid having to log in every time they visit the site.
 
-![Alt text](image-53.png)
+![Alt text](documentation/image-53.png)
 
 <br>
 
@@ -614,15 +615,15 @@ If the user clicks the search button without entering anything, an error message
 <br>
 
 ### User Profile Page
-![User Profile Image](image-54.png)
+![User Profile Image](documentation/image-54.png)
 
 - When the user has completed registration on the site, he is provided with a profile. The profile contains information about the default delivery address, if one is set, and a list of the user's previous orders.
 
-![Alt text](image-55.png)
+![Alt text](documentation/image-55.png)
 
 - There is a form in the user's profile that contains default delivery information if the user has saved it. The user can update this information from their profile by editing the form and clicking the "Update Information" button. This information will be automatically used the user's next purchase to make the site more convenient for customers.
 
-![Alt text](image-56.png)
+![Alt text](documentation/image-56.png)
 
 - Users can view a list with complete order history in their profiles. The data is displayed in a table, each row of which contains the order number, time and date of purchase, items included in the order, and the total amount of each order.
 - The order number contains a link that, when clicked, takes the user to the order confirmation page for that specific order containing all the details about that order, as well as a link to return to the user's profile.
@@ -635,26 +636,26 @@ If the user clicks the search button without entering anything, an error message
 
 
 ### Basket Page
-![basket Image](image-59.png)
+![basket Image](documentation/image-59.png)
 - The basket can be accessed from the main navigation menu.
 The menu displays the running total of items in the user's basket.
 When the user clicks on this, they can see all the items in their basket, the individual price of each product, a subtotal for the product if the quantity is greater than 1, and a quantity switch for each product with buttons to update the quantity or remove the product entirely from your basket.
 
-![Alt text](image-60.png)
+![Alt text](documentation/image-60.png)
 
 - If the user has nothing in their basket, a message will appear prompting the user to continue shopping
 
-![Alt text](image-61.png)
+![Alt text](documentation/image-61.png)
 
 - Similar to the quantity selector on an individual product page, users can adjust the quantity of a product already in their basket.
 - From here, the user can add a maximum quantity of 99 items to the cart in the same way as on the individual product page. Or it can be removed from the basket.
 
-![Alt text](image-62.png)
+![Alt text](documentation/image-62.png)
 
 - This is the amount that the user’s cart will be after adding up all the products and their quantities.
 - Under the cart amount, the user can see the shipping cost. If the value of the basket exceeds 50 euros, delivery is free, otherwise it is calculated as 10% of the order amount.
 
-![Alt text](image-63.png)
+![Alt text](documentation/image-63.png)
 
 
 - Once the total is calculated, users will see two buttons: one to continue shopping and one to proceed to checkout.
@@ -667,35 +668,35 @@ When the user clicks on this, they can see all the items in their basket, the in
 <br>
 
 ### Checkout Page
-![Checkout Image](image-64.png)
+![Checkout Image](documentation/image-64.png)
 
 - The final step in a user's shopping journey on a website is the checkout page.
 - This page contains a form for the user's shipping and payment information, as well as a summary of the user's order.
 - If a user has an account on the site, they can save shipping information to their profile so that it is automatically filled in when placing an order.
 
-![Alt text](image-65.png)
+![Alt text](documentation/image-65.png)
 
 - When placing an order, the user can add their details and, if logged in, check the box to save their details for future transactions.
 - Users must enter their payment information before completing checkout, and all payments are processed through Stripe.
 
-![Alt text](image-66.png)
+![Alt text](documentation/image-66.png)
 
 - The final summary of the user's order is displayed, containing all of the user's cart items, the quantity, and the running total for each item.
 - The user can also see the order total, shipping costs, any discounts applied, and the total in a summary.
 
 
-![Alt text](image-67.png)
+![Alt text](documentation/image-67.png)
 
 - At the very end of placing an order, the user will see two buttons: one for setting up a cart, the other for placing an order.
 - The total amount is displayed below the order completion button to further inform the user of how much will be charged to their card once the order is completed.
 
 
-![Alt text](image-68.png)
+![Alt text](documentation/image-68.png)
 
 - Once the order is completed and payment has been received, the user will receive an order confirmation email containing the order number and a receipt showing the total payment amount.
 
 
-![Alt text](image-69.png)
+![Alt text](documentation/image-69.png)
 
 - Once the order is completed, the user is redirected to a confirmation page informing them that an order confirmation email has been sent to the provided email address.
 - This page contains the final description of the order and what the user purchased.
@@ -709,7 +710,7 @@ When the user clicks on this, they can see all the items in their basket, the in
 <br>
 
 ### Error Page
-![Error Page Image](image-70.png)
+![Error Page Image](documentation/image-70.png)
 - If a user lands on a page that either doesn't exist or that they shouldn't be on (a regular user using links on an admin page or trying to edit/delete something from a link), they will be shown an error message. . page with a button to return them to the store.
 
 <br>
@@ -739,13 +740,13 @@ When the user clicks on this, they can see all the items in their basket, the in
 ### Colour Scheme
 - The following colors were chosen for the website: white, which is associated with purity, freshness and lightness; gray, which is a universal color and adds elegance and restraint; blue, considered universal and popular; red, often associated with energy, passion and strength, which can draw attention to sportswear; and black, symbolizing class and elegance.
 
-![Color Sheme](image-72.png)
+![Color Sheme](documentation/image-72.png)
 
 ### Typography
  - The site chose the Lato font due to its excellent readability, modern design and versatility
 
 ### Images
-- All images used as educational material were taken from these sites[Freepik](https://www.freepik.com/), [Nike](https://www.nike.com/), [Adidas](https://www.adidas.ie/), [Puma](https://eu.puma.com/).
+- All images used as educational material were taken from these sites [Freepik](https://www.freepik.com/), [Nike](https://www.nike.com/), [Adidas](https://www.adidas.ie/), [Puma](https://eu.puma.com/).
 
 <br>
 
@@ -765,13 +766,13 @@ This online resource operates on the principle of Business to Customer model, pr
 
 The main task of this page on the social network Facebook is to inform about new products, notify subscribers about offers and promotions, as well as place targeted advertising.
 
-![Facebook 1]![Alt text](image-73.png)
+![Facebook 1](documentation/image-73.png)
 
 ### **Newsletter Marketing**
 
  In the footer of the website is a [Mailchimp](https://mailchimp.com/?currency=EUR) newsletter in the footer which is used to send emails to subscribers about the latest products, promotions and discounts.
 
-![Newsletter Email](image-74.png)
+![Newsletter Email](documentation/image-74.png)
 
 [Back to Top](#table-of-contents)
 
@@ -781,7 +782,7 @@ The main task of this page on the social network Facebook is to inform about new
 
 Keywords were analyzed and added to the description of the online store on the main page of the site
 
-![Keywords](image-75.png)
+![Keywords](documentation/image-75.png)
 
 ### **Sitemap.xml**
 
@@ -793,7 +794,7 @@ The XML that was created is in the root directory of the website.
 
 The robots.txt file was created using this guide [https://www.conductor.com/academy/robotstxt/](https://www.conductor.com/academy/robotstxt/).
 
-![Robots](image-76.png)
+![Robots](documentation/image-76.png)
 
 [Back to top](#table-of-contents)
 
@@ -1065,12 +1066,6 @@ Below is a description of bugs encountered and how I was able to fix them or why
   - [earthly.dev - Customizing the Django Admin](https://earthly.dev/blog/customize-django-admin-site/)
   - [Django Docs - ModelAdmin.filter_horizontal](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.filter_horizontal)
 
-<br>
-
-### Coupon Codes
-- [Packt YouTube - Django by Example : Creating a Coupon System](https://www.youtube.com/watch?v=_dSCGMJcoe4)
-- [freecodecamp.org Youtube - How to Build an E-commerce Website with Django and Python](https://www.youtube.com/watch?v=YZvRrldjf1Y)
-- [Nabil Moiun YouTube - Django Ecommerce Website | Add Coupon Code p1](https://www.youtube.com/watch?v=HFx6pVGxeys)
 
 <br>
 
@@ -1430,19 +1425,5 @@ You can fork this repository by using the following steps:
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/CodeWizard-1/e-commerce)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
-
-
-<br>
-
-[Back to Top](#table-of-contents)
-
-<br>
-
-# Acknowledgements
-- To my amazing boyfriend Thomas. For listening to me worry about this project for months, for keeping me sane, for helping me switch off after a long day with a cup of coffee and a bar of chocolate :)
-- My family and my cats for keeping my stress levels under control!
-- [Sean Johnston](https://github.com/seanj06/) and [Sean Finn](https://github.com/seanf316/), my fellow classmates on Slack. Your help with my many questions was super appreciated, thank you.
-
-<br>
 
 [Back to Top](#table-of-contents)
