@@ -154,9 +154,9 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Profile | Desktop | ![screenshot](image-181.png) | No major warnings |
 | Profile | Mobile | ![screenshot](image-182.png) | Some minor warnings |
 
-## Defensive Programming
+## Manual testing
 
-Defensive programming was manually tested with the below user acceptance testing:
+Below are the results of manual testing:
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
@@ -202,8 +202,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click Add To Basket button when user already has the product in their basket | Quantity selected is added to the existing quantity in the user's basket for the product | Pass |  |
 | | Click on edit product button | Redirection to Edit Product page for that product | Pass | Button only appears if logged in user is an admin |
 | | Click on delete product button | Redirection to Delete Product confirmation page for that product | Pass | Button only appears if logged in user is an admin |
-
- **Reviews Page** | | | | |
+|**Reviews Page** | | | | |
 | | Click on "Review This Product" button | Additional fields “Title” and “Review” will open below for writing a review | Pass | |
 | | Click on Submit Review button with missing fields | The user will see a message indicating that the review was not sent | Pass | |
 | | Click on Submit Review button with all valid fields | The user will see a message indicating that a review has been added | Pass | |
@@ -211,16 +210,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on Update button | Redirect to product detail page with already edited review | Pass |  |
 | | Click on Delete Review button | Redirect to Delete Review page | Pass |  |
 | | Click on Delete Review button on Delete Review page | Review will be deleted and the user will be redirected to detail page | Pass |  |
-
-
-| **Contact Page** | | | | |
-| | Click on Contact Us link in footer | The heart icon will fill with color and the user will see a message that the product has been added to the wishlist | Pass | |
-| | Enter name | Form will only submit if all fields are filled | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message | Form will only submit if all fields are filled | Pass | |
-| | Click Send with missing fields | Message lets user know all fields are required | Pass | |
-| | Click Send with all valid fields | The user will see a success message in the upper right corner and administrators in the admin panel will see this message | Pass | |
-
 | **WishList Page** | | | | |
 | | Click on the heart icon on Products page or on the Product Detail page | Redirection to Blog Post page | Pass | |
 | | Click on the heart icon in the nav bar | Redirect to Wishlist page | Pass | |
@@ -228,7 +217,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on the trash can icon| The item will be removed from the Wishlist page and the user will see a success message | Pass | |
 | | Click on CLEAR WISHLIST link | All products are removed from the Wishlist| Pass | |
 | | Click on Go To Product button |  Redirection to Products page | Pass | This button is visible when all products from their Wishlist are deleted|
-
 | **Sign Up Page** | | | | |
 | | Click on Register button under account on nav menu | Redirection to Sign Up page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
@@ -241,7 +229,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Enter valid password | Field will only accept password format | Pass | |
 | | Click Login button on login page | Redirects user to homepage | Pass | |
 | | Sign in before confirming account | Redirects to message reminding user to confirm email address | Pass | |
-
 | **Log Out Page** | | | | |
 | | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
 | | Click Confirm Logout button | Redirects user to home page | Pass | |
@@ -252,20 +239,14 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Brute forcing the URL to profile if not logged in | User given an error | Pass | Redirects user to error page |
 | **Basket** | | | | |
 | | Click Basket icon in main nav | Redirects user to basket page | Pass | Shows back to shop button if basket is empty |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| | Click + button on quantity selector form | Quantity number increases if number + 1 is less than or equal to product's stock | Pass | |
+| | Click + button on quantity selector form | The quantity increases if the number + 1 to 99 | Pass | |
 | | Click - button on quantity selector form | Quantity number decreases if current quantity is greater than one | Pass | |
-| | Click + button on quantity selector form if quantity is at the product's stock | Nothing | Pass | |
-| | Click update button under quantity selector form | Updated quantity of product in basket to number in quantity select form | Pass | |
-| | Click remove button under quantity selector form | Removes product from basket completely | Pass | |
-| | Manually enter number greater than product stock in quantity selector form | Error message appears letting the user know what the product's stock is | Pass | |
-| | Click on discount apply button with empty discount field | Message appears letting user know the field can't be blank | Pass | |
-| | Click on discount apply button with invalid code in the discount field | Error message shows letting user know the code entered doesn't exist | Pass | |
-| | Click on discount apply button with valid code in the discount field | Alert message shows letting user know the discount has been added | Pass | |
-| | Discount code added successfully | Percentage gets taken off the basket total, discount form is replaced with discount amount | Pass | |
-| | Click on trash icon next to discount amount | Discount removed and discount code form reappears in place of discount amount | Pass | |
+| | Manually enter number greater than 99 in quantity selector form | The quantity is automatically changed to the maximum allowed quantity of 99 | Pass | |
+| | Manually enter a negative number | This item is automatically removed from the cart after clicking the Update icon because the value entered is incorrect | Pass | |
+| | Click icon update  under quantity selector form | Updated quantity of product in basket to number in quantity select form | Pass | |
+| | Click icon remove button under quantity selector form | Removes product from basket completely | Pass | |
 | | Remove item from basket that brings total to below €50 | Delivery goes from FREE to 10% of the total cost of the basket contents | Pass | |
-| | Click on Keep Shopping button | Redirection to All Products page | Pass | |
+| | Click on Keep Shopping button | Redirection to Products page | Pass | |
 | | Click on Secure Checkout button | Redirection to checkout page | Pass | |
 | **Checkout** | | | | |
 | | Click on Secure Checkout button in basket | Redirection to checkout page | Pass | |
@@ -278,65 +259,40 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Order completed | Order confirmation email is sent to the user and redirection to checkout success page | Pass | |
 | **Checkout Success Page** | | | | |
 | | Order completed | Redirection to checkout success page | Pass | |
-| | Click Checkout latest deals button | Redirects user to all products page | Pass | Only visible if user comes to this page straight from order completion |
+| | Click Checkout latest deals button | Redirects user to Products page | Pass | Only visible if user comes to this page straight from order completion |
 | | Click Back to profile button button | Redirects user to their profile | Pass | Only visible if user comes to this page from the order history list on their profile |
 | **Add Product Page** | | | | |
-| | Click Add New Product link from Admin dropdown | Redirects admin to add product page | Pass | User can only see this if they're logged in as an admin |
-| | Click Cancel button | Redirects admin to all products page | Pass | |
+| | Click Product Management link from My Account dropdown | Redirects admin to add product page | Pass | User can only see this if they're logged in as an admin |
+| | Click Cancel button | Redirects admin to Products page | Pass | |
 | | Click Add Product button with form filled correctly | Creates a new product on the site using the information provided | Pass | |
 | | Click Add Product button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
-| | Set product's stock to be less than 1 | Product will be created but appear on the site as sold out with add to basket button disabled | Pass | |
 | | Click Add Product button with no image set | Product will be created but will be displayed with default product image | Pass | |
-| | Brute forcing the URL to add a new product if not an admin | User given an error | Pass | Redirects user to error page |
 | **Edit Product Page** | | | | |
 | | Click edit icon on product | Redirects user to Edit Product page | Pass | User must be an admin to see icon and access this page |
 | | Click Cancel button | Redirects admin to all products page | Pass | |
 | | Click Update Product button with form filled correctly | Updates product with information provided | Pass | |
 | | Click Update Product button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
-| | Set product's stock to be less than 1 | Product will be updated but appear on the site as sold out with add to basket button disabled | Pass | |
 | | Click Update Product button with no image set | Product will be updated but will be displayed with default product image | Pass | |
-| | Brute forcing the URL to edit a product if not an admin | User given an error | Pass | Redirects user to error page |
 | **Delete Product Page** | | | | |
 | | Click delete icon on product | Redirects user to Edit Product page | Pass | User must be an admin to see icon and access this page |
 | | Click Cancel button | Redirects admin to product detail page for selected product | Pass | |
 | | Click Delete Product button | Product will be completely deleted from the site | Pass | |
-| | Brute forcing the URL to delete a product if not an admin | User given an error | Pass | Redirects user to error page |
-| **Add Blog Page** | | | | |
-| | Click Add New Blog Post link from Admin dropdown | Redirects admin to add blog page | Pass | User can only see this if they're logged in as an admin |
-| | Click Cancel button | Redirects admin to blog | Pass | |
-| | Click Add Post button with form filled correctly | Creates a new blog post on the site using the information provided | Pass | |
-| | Click Add Post button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
-| | Click Add Post button with no image set | Blog post will be created but will be displayed with default blog post image | Pass | |
-| | Brute forcing the URL to add a new blog post if not an admin | User given an error | Pass | Redirects user to error page |
-| **Edit Blog Page** | | | | |
-| | Click edit icon on blog post | Redirects user to Edit Blog Post page | Pass | User must be an admin to see icon and access this page |
-| | Click Cancel button | Redirects admin to blog | Pass | |
-| | Click Update Post button with form filled correctly | Updates blog post with information provided | Pass | |
-| | Click Update Post button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
-| | Click Update Post button with no image set | Blog post will be updated but will be displayed with default blog post image | Pass | |
-| | Brute forcing the URL to edit a blog post if not an admin | User given an error | Pass | Redirects user to error page |
-| **Delete Blog Page** | | | | |
-| | Click delete icon on blog post | Redirects user to Delete Blog post page | Pass | User must be an admin to see icon and access this page |
-| | Click Cancel button | Redirects admin to blog | Pass | |
-| | Click Delete Post button | Blog post will be completely deleted from the site | Pass | |
-| | Brute forcing the URL to delete a blog post if not an admin | User given an error | Pass | Redirects user to error page |
-| **Open Tickets Page** | | | | |
-| | Click View Open Tickets link from Admin dropdown | Redirects admin to open tickets | Pass | User can only see this if they're logged in as an admin |
-| | Click Close Ticket button on ticket | Marks ticket as seen and removes it from list of open tickets | Pass | If last open ticket is closed the page will contain just a header saying No Open Tickets |
-| | Brute forcing the URL to access open ticket page if not an admin | User given an error | Pass | Redirects user to error page |
 | **Footer** | | | | |
-| | Click Blog link in footer | Redirects user to blog page | Pass | |
-| | Click Contact Us link in footer | Redirects user to contact page | Pass | |
+| | Click Home link in footer | Redirects user to Home page | Pass | |
+| | Click Contact Us link in footer | Redirects user to Сontact Us page | Pass | |
+| | Click Privacy Policy link in footer | Redirects user to Privacy Policy page | Pass | |
+| | Click Privacy Returns in footer | Redirects user to Returns page | Pass | |
 | | Click social media icons in footer | Opens social media site clicked in a new tab | Pass | |
-| | Click on Games By Nintendo link in footer | Redirection to All Products page | Pass | Products filtered to Games on Nintendo consoles |
-| | Click on Games By Sega link in footer | Redirection to All Products page | Pass | Products filtered to Games on Sega consoles |
-| | Click on Games By Sony link in footer | Redirection to All Products page | Pass | Products filtered to Games on Sony consoles |
-| | Click on Consoles By Nintendo link in footer | Redirection to All Products page | Pass | Products filtered to Nintendo consoles |
-| | Click on Consoles By Sega link in footer | Redirection to All Products page | Pass | Products filtered to Sega consoles |
-| | Click on Consoles By Sony link in footer | Redirection to All Products page | Pass | Products filtered to Sony consoles |
-| | Click on Subscribe button on blank newsletter form | Error message appears telling user to try again | Pass | |
-| | Click on Subscribe button on filled newsletter form | Alert message lets user know they have signed up for the mailing list and welcome email is sent to address provided | Pass | |
-| | Try to subscribe to newsletter with already subscribed email address | Error message appears telling user to check the form or make sure they're not already subscribed | Pass | |
+| | Click on Subscribe button on blank newsletter form | An error message appears prompting the user to complete the field| Pass | |
+| | Click on Subscribe button on filled newsletter form | Alert message lets user know they have signed up for the mailing list | Pass | |
+| | Try to subscribe to newsletter with already subscribed email address | A message appears to the user indicating that he has already subscribed to the newsletter. | Pass | |
+| **Contact Page** | | | | |
+| | Click on Contact Us link in footer | The heart icon will fill with color and the user will see a message that the product has been added to the wishlist | Pass | |
+| | Enter name | Form will only submit if all fields are filled | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter message | Form will only submit if all fields are filled | Pass | |
+| | Click Send with missing fields | Message lets user know all fields are required | Pass | |
+| | Click Send with all valid fields | The user will see a success message in the upper right corner and administrators in the admin panel will see this message | Pass | |
 
 ## User Story Testing
 
