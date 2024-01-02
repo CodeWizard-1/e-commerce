@@ -367,11 +367,16 @@ The Home page of the online store is an attractive and informative landing page,
 <br>
 
 ### Main Nav Menu
+![Alt text](image-207.png)
+![Alt text](image-208.png)
+![Alt text](image-209.png)
+ - At the very top there is an information board in which information about the terms of return and delivery, the minimum order amount for free delivery is updated every three seconds (to encourage the user to buy a larger number of products, as well as a motivational phrase as a call to action).
+
 ![Main Nav Menu Image](image-13.png)
 
 - Throughout the site, the user has access to the main navigation menu. Features include a search bar, account/profile access, cart link and subtotal if the user has added items to their carts, as well as links to filter products by gender, brand and sale page. Once logged in, users have access to the wishlist page.
 
-<!-- ![Main-nav-dropdown](image-14.png) -->
+
 
 <br>
 
@@ -397,9 +402,12 @@ The Home page of the online store is an attractive and informative landing page,
 
 ![Main-nav-dropdown-brand](image-15.png)
 
-![Main-nav-dropdown-sale](image-16.png)
+- When selecting the desired product, the user can filter by men's, women's and children's products.
+- The user can also filter by brand.
 
-- Through the navigation menu, the user can sort and filter products. All products can be selected by gender, brand, as well as products for children. In the subcategory, you can choose from the presented clothing categories. There is also a separate page with products at a reduced price for a more convenient search for the product by the user.
+![Alt text](image-211.png)
+
+- On the product page, the user can filter the product by price, rating, name, category and brand
 
 <br>
 
@@ -426,6 +434,18 @@ If the user clicks the search button without entering anything, an error message
 
 <br>
 
+### Sale Page
+
+![Alt text](image-210.png)
+
+- This page displays all products that are participating in the promotion with a price reduction
+
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ### Product Details Page
 ![Product Detail Image](image-21.png)
@@ -465,6 +485,11 @@ If the user clicks the search button without entering anything, an error message
 ![Alt text](image-29.png)
 
 ![Alt text](image-30.png)
+
+
+-For the convenience of the user, to quickly return to the top of the page, a button has been added to the lower right corner when clicked on which the user will return to the top of the page
+
+![Alt text](image-212.png)
 
 <br>
 
@@ -684,7 +709,7 @@ When the user clicks on this, they can see all the items in their basket, the in
 <br>
 
 ### Error Page
-![Error Page Image] (image-70.png)
+![Error Page Image](image-70.png)
 - If a user lands on a page that either doesn't exist or that they shouldn't be on (a regular user using links on an admin page or trying to edit/delete something from a link), they will be shown an error message. . page with a button to return them to the store.
 
 <br>
@@ -692,6 +717,9 @@ When the user clicks on this, they can see all the items in their basket, the in
 [Back to Top](#table-of-contents)
 
 <br>
+
+
+
 
 ## Future Features
 
@@ -800,7 +828,7 @@ The robots.txt file was created using this guide [https://www.conductor.com/acad
 * [boto3==1.26.27](https://pypi.org/project/boto3/) - An Amazon Web Services (AWS) software development kit (SDK) used to connect to the S3 bucket
 * [Black](https://pypi.org/project/black/) - A Python code formatter.
 * [django storages](https://django-storages.readthedocs.io/en/latest/) - Collection of custom storage backends for Django.
-* [Css Minifier](https://www.toptal.com/developers/cssminifier) - Minify CSS for better response time.
+* [stripe==7.8.1](https://pypi.org/project/stripe/) - A Python library for Stripe’s API.
 
 <br>
 
@@ -814,17 +842,8 @@ The robots.txt file was created using this guide [https://www.conductor.com/acad
 * [Heroku](https://heroku.com)
 * [ElephantSQL](https://www.elephantsql.com/)
 * [Cloudinary](https://cloudinary.com/)
-* [ReadMe Template](https://github.com/Code-Institute-Solutions/readme-template)
-* [Stack Overflow](https://stackoverflow.com/)
 * [Coolors](https://coolors.co/)
 * [AmIResponsive](https://ui.dev/amiresponsive)
-* [Real Python](https://realpython.com/)
-* [Online Convert](https://image.online-convert.com/convert-to-webp)
-* [Pic Resize](https://picresize.com/)
-* [Sideshow](https://www.sideshow.com/)
-* [Hasbro](https://shop.hasbro.com/)
-* [Darkhorse](https://www.darkhorsedirect.com/)
-* [Gamestop](https://www.gamestop.com/)
 
 <br>
 
