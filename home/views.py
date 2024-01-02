@@ -37,14 +37,12 @@ def contact(request):
             form.save()
             messages.success(
                 request,
-                "Thank you, your email has been sent. \
-                    We will contact you shortly.",
+                "Thank you, your email has been sent. We will contact you shortly.",  # noqa
             )
             return redirect("contact")
         else:
             messages.error(
-                request, "Form submission failed. \
-                    Please check the form and try again."
+                request, "Form submission failed. Please check the form and try again."  # noqa
             )
     else:
         form = ContactForm()

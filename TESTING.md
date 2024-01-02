@@ -302,32 +302,20 @@ Below are the user stories I've included, along with corresponding screenshots f
 | --- | --- |
 | As a user I can view products so that I can decide which items I want to purchase | ![screenshot](image-183.png) |
 | In my user role, I am equipped with the capability to search through all products and explore various categories. This functionality guarantees that I only encounter products of personal interest | ![screenshot](image-184.png) ![screenshot](image-185.png) |
-|As a site user, I would like to have the capability to browse products based on categories. This functionality allows me to easily navigate through distinct product categories, enhancing my ability to find items aligned with my preferences. | ![screenshot](image-186.png) ![screenshot](image-187.png) |
-| In my role as a site user, I anticipate that the website integrates responsive design | Mobile: ![screenshot](image-188.png) Tablet: ![screenshot](image-189.png) Desktop:(image-190.png)|
+| As a site user, I want the site to be responsive. | Mobile:![screenshot](image-188.png) Tablet:![screenshot](image-189.png) Desktop:![screenshot](image-190.png)|
 | As a site user, I would appreciate the ability to filter products based on gender. This feature enables me to tailor my product search according to specific gender categories, streamlining the shopping experience and helping me find relevant items more efficiently. | ![Alt text](image-191.png) |
-
+|As a site user, I would like to have the capability to browse products based on categories. This functionality allows me to easily navigate through distinct product categories, enhancing my ability to find items aligned with my preferences. | ![screenshot](image-186.png) ![screenshot](image-187.png) |
 | As a user, I possess the ability to review the items present in my shopping basket. This feature facilitates the identification of the total cost of my purchase and all the items included. | ![screenshot](image-192.png) 
-
 | In my user role, I can effortlessly assess the total cost of my purchases. This feature aids me in avoiding unnecessary expenditure. | ![Alt text](image-193.png) ![Alt text](image-194.png)| |
-
 | In my user role, I should experience a sense of confidence in the security and safety of my payment information. This sense of assurance allows me to confidently provide the necessary details for making a purchase.| ![Alt text](image-195.png) |
-
 | As a site user, I have the ability to initiate the creation of an account. This functionality serves the purpose of allowing me to store my information for convenient repeat purchases and to review my order history. | ![screenshot](image-196.png) |
-
 | As a user, I would like the ability to make purchases without creating an account, ensuring a quick and convenient payment process. | ![screenshot](image-197.png)|
-
 | As a user of the site, I want to be able to update and save delivery information to my profile if necessary. | ![screenshot](image-198.png) |
-
 | In my user role, I want to add products to a Wishlist. This functionality simplifies the process of tracking items I plan to purchase in the future | ![screenshot](image-199.png) ![Alt text](image-200.png) ![Alt text](image-201.png)|
-
 | As a user role, I want to subscribe to the newsletter. This subscription ensures that I stay up to date with new products and promotions. |  ![screenshot](image-202.png) |
-
 | As a site administrator, I want to be able to access and use the admin panel. This feature allows me to efficiently perform tasks such as creating, updating, managing and deleting products and orders. | ![screenshot](image-203.png) |
-
 | As a site user, I would like to receive order confirmation emails containing detailed information about my purchase, including the ordered items and the total amount. This feature ensures that I stay informed about the specifics of my order and provides a convenient record of the transaction sent directly to my email. | ![screenshot](image-68.png) |
-
 | As a site user, I would like the ability to read product reviews and also to leave my own feedback. This feature provides me with valuable insights from other users' experiences, helping me make informed decisions about a product. Additionally, it allows me to contribute to the community by sharing my thoughts and opinions on the items I've purchased. | ![screenshot](image-204.png) |
-
 
 
 Below are the user stories that I plan to implement in the future:
@@ -339,9 +327,8 @@ Below are the user stories that I plan to implement in the future:
 
 ## Automated Testing
 
-I have conducted a series of automated tests on my application.
+Automatic testing results are below.
 
-I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
 
 ### Python (Unit Testing)
 
@@ -351,21 +338,12 @@ In order to run the tests, I ran the following command in the terminal each time
 
 `python3 manage.py test `
 
-![screenshot](documentation/testing/automated-tests.png)
+![screenshot](image-205.png)
 
-| Testing File | Screenshot |
-| --- | --- |
-| [Discount Forms](discount_codes/tests.py) | ![screenshot](documentation/testing/automated-testing-discount-forms.png) |
-| [Blog Forms](blog/test_forms.py) | ![screenshot](documentation/testing/automated-testing-blog-forms.png) |
-| [Blog Views](blog/test_views.py) | ![screenshot](documentation/testing/automated-testing-blog-views.png) |
-| [Product Forms](products/test_forms.py) | ![screenshot](documentation/testing/automated-testing-product-forms.png) |
-| [Product Views](products/test_views.py) | ![screenshot](documentation/testing/automated-testing-product-views.png) |
-| [Contact Forms](contact/test_forms.py) | ![screenshot](documentation/testing/automated-testing-contact-forms.png) |
-| [Contact Views](contact/test_views.py) | ![screenshot](documentation/testing/automated-testing-contact-views.png) |
-| [Basket Views](basket/tests.py) | ![screenshot](documentation/testing/automated-testing-basket-views.png) |
-| [Checkout Forms](checkout/tests.py) | ![screenshot](documentation/testing/automated-testing-checkout-forms.png) |
-| [Profile Views](profiles/tests.py) | ![screenshot](documentation/testing/automated-testing-profile-views.png) |
-| [Homepage Views](homepage/tests.py) | ![screenshot](documentation/testing/automated-testing-homepage-views.png) |
+
+`python-m coverage report `
+![Alt text](image-206.png)
+
 
 ## Bugs
 

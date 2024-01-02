@@ -74,8 +74,7 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any \
-                    search criteria!")
+                messages.error(request, "You didn't enter any search criteria!")  # noqa
                 return redirect(reverse('products'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)  # noqa
@@ -142,8 +141,7 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. \
-                Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')  # noqa
     else:
         form = ProductForm()
     template = 'products/add_product.html'
@@ -211,12 +209,10 @@ def add_review(request, product_id):
                     review=request.POST["review"],
                 )
                 reviews = Reviews.objects.filter(product=product)
-                messages.success(request, "Your review has been \
-                    successfully added!")
+                messages.success(request, "Your review has been successfully added!")  # noqa
                 return redirect(reverse("product_detail", args=[product.id]))
             except IntegrityError:
-                messages.error(request, "You have already \
-                    reviewed this product.")
+                messages.error(request, "You have already reviewed this product.")  # noqa
                 return redirect(reverse("product_detail", args=[product.id]))
         else:
             messages.error(request, "Your review has not been submitted.")
