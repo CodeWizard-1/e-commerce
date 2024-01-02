@@ -162,71 +162,73 @@ Defensive programming was manually tested with the below user acceptance testing
 | --- | --- | --- | --- | --- |
 | **Home Page** | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Shop Now button | Redirection to All Products page | Pass | |
-| | Enter Konami code correctly on keyboard | Sound plays and modal pops up giving discount code | Pass | |
-| | Enter Konami code incorrectly on keyboard | Nothing | Pass | |
-| **All Products Page** | | | | |
-| | Click on All Products link in navbar | Redirection to All Products page | Pass | |
-| | Click on All Products By Price link in navbar | Redirection to All Products page | Pass | Products sorted by price low to high |
-| | Click on All Products By Platform link in navbar | Redirection to All Products page | Pass | Products sorted by platform with platform sorted A-Z |
-| | Click on All Products By Release Year link in navbar | Redirection to All Products page | Pass | Products sorted by release year old - new |
-| | Click on Games By Nintendo link in navbar | Redirection to All Products page | Pass | Products filtered to Games on Nintendo consoles |
-| | Click on Games By Sega link in navbar | Redirection to All Products page | Pass | Products filtered to Games on Sega consoles |
-| | Click on Games By Sony link in navbar | Redirection to All Products page | Pass | Products filtered to Games on Sony consoles |
-| | Click on Consoles By Nintendo link in navbar | Redirection to All Products page | Pass | Products filtered to Nintendo consoles |
-| | Click on Consoles By Sega link in navbar | Redirection to All Products page | Pass | Products filtered to Sega consoles |
-| | Click on Consoles By Sony link in navbar | Redirection to All Products page | Pass | Products filtered to Sony consoles |
-| | Click on Price (low to high) in Sort by... dropdown | Redirection to All Products page | Pass | Products sorted by price low to high |
-| | Click on Price (high to low) in Sort by... dropdown | Redirection to All Products page | Pass | Products sorted by price high to low |
-| | Click on Name (A-Z) in Sort by... dropdown | Redirection to All Products page | Pass | Products sorted alphabetically A-Z |
-| | Click on Name (Z-A) in Sort by... dropdown | Redirection to All Products page | Pass | Products sorted alphabetically Z-A |
-| | Click on Year (oldest to newest) in Sort by... dropdown | Redirection to All Products page | Pass | Products sorted by release year old to new |
-| | Click on Year (newest to oldest) in Sort by... dropdown | Redirection to All Products page | Pass | Products sorted by release year new to old |
-| | Click on Platform (A-Z) in Sort by... dropdown | Redirection to All Products page | Pass | Products sorted by platform A-Z |
-| | Click on Platform (Z-A) in Sort by... dropdown | Redirection to All Products page | Pass | Products sorted by platform Z-A |
-| | Click on Product card image | Redirection to Product Detail page for that product | Pass | |
-| | Click on Product card name | Redirection to Product Detail page for that product | Pass | |
-| | Click on Add to basket button | Product added to basket | Pass | Single quantity added to basket |
-| | Click on disabled Add to basket button | Nothing | Pass | |
-| | Click on edit product button | Redirection to Edit Product page for that product | Pass | Button only appears if logged in user is an admin |
-| | Click on delete product button | Redirection to Delete Product confirmation page for that product | Pass | Button only appears if logged in user is an admin |
-| **Product Detail Page** | | | | |
-| | Click on Product image or name in all products page | Redirection to Product Detail page | Pass | |
-| | Click on Keep Shopping button | Redirection to All Products page | Pass | |
-| | Click + button on quantity selector form | Quantity number increases if number + 1 is less than or equal to product's stock | Pass | |
-| | Click - button on quantity selector form | Quantity number decreases if current quantity is greater than one | Pass | |
-| | Click + button on quantity selector form if quantity is at the product's stock | Nothing | Pass | |
-| | Manually enter number greater than product stock in quantity selector form | Error message appears letting the user know what the product's stock is | Pass | |
-| | Click Add To Basket button | Product is added to basket and quantity is set to the user's choice | Pass | |
-| | Click Add To Basket button when user already has the product in their basket | Quantity selected is added to the existing quantity in the user's basket for the product | Pass | Only applicable if quantity being added plus existing quantity remains less than or equal to product's stock |
-| | Click Add To Basket button when user already has the product in their basket and quantity selected plus existing quantity is greater than product's stock | Message appears informing user that they're trying to add more quantity than the product has in stock and nothing is added | Pass | |
-| | Click on edit product button | Redirection to Edit Product page for that product | Pass | Button only appears if logged in user is an admin |
-| | Click on delete product button | Redirection to Delete Product confirmation page for that product | Pass | Button only appears if logged in user is an admin |
+| | Click on to the product card in "Trending This Week" | Redirection to Product Detail page | Pass | |
 | **Search** | | | | |
 | | Enter word into search bar that appears in at least one product's name or description | Redirection to Products page | Pass | Products filtered to only show products containing search term |
 | | Enter word into search bar that doesn't appear in any product's name or description | Redirection to Products page | Pass | Products page is empty and shows user that 0 products were returned |
 | | Enter nothing into search bar | Redirection to Products page | Pass | Error message shows and lets user know they entered nothing into the search bar and all products are displayed |
+| **Products Page** | | | | |
+| | Click on  Men by Hoodies & Sweatshirts link in navbar | Redirect to Hoodies and Sweatshirts page for men | Pass | |
+| | Click on  Men by Jackets link in navbar | Redirection to Jackets page for men  | Pass | |
+| | Click on  Men by All Clothing link in navbar | Redirection to Clothing page  for men | Pass |  |
+| | Click on  Men by Socks link in navbar | Redirection to Socks page for men| Pass |  |
+| | Click on  Men by Bags link in navbar | Redirection to Bags page for men| Pass |  |
+| | Click on  Men by All Accessoires link in navbar | Redirection to All Accessoires page for men |  |
+| | Click on  Women by Hoodies & Sweatshirts link in navbar | Redirect to Hoodies and Sweatshirts page for women | Pass | |
+| | Click on  Women by Jackets link in navbar | Redirection to Jackets page for women  | Pass | |
+| | Click on  Women by All Clothing link in navbar | Redirection to Clothing page  for women | Pass |  |
+| | Click on  Women by Socks link in navbar | Redirection to Socks page for women| Pass |  |
+| | Click on  Women by Bags link in navbar | Redirection to Bags page for women| Pass |  |
+| | Click on  Women by All Accessoires link in navbar | Redirection to All Accessoires page for women |  |
+| | Click on  Kids by Hoodies & Sweatshirts link in navbar | Redirect to Hoodies and Sweatshirts page for kids | Pass | |
+| | Click on  Kids by Jackets link in navbar | Redirection to Jackets page for kids  | Pass | |
+| | Click on  Kids by All Clothing link in navbar | Redirection to Clothing page  for kids | Pass |  |
+| | Click on  Kids by Hats link in navbar | Redirection to Hats page for kids| Pass |  |
+| | Click on  Kids by Bags link in navbar | Redirection to Bags page for kids| Pass |  |
+| | Click on  Kids by All Accessoires link in navbar | Redirection to All Accessoires page for kids |  |
+| | Click on  Brands by Adidas link in navbar | Redirect to  Adidas page | Pass | |
+| | Click on  Brands by Nike link in navbar | Redirection to Nike page  | Pass | |
+| | Click on  Brands by Puma link in navbar | Redirection to Puma page | Pass |  |
+| | Click on  Brands by All Brands link in navbar | Redirection to All Brands page  | Pass |  |
+| | Click on  Sale link in navbar | Redirection to Sale page  | Pass |  |
+| **Product Detail Page** | | | | |
+| | Click on Product image or name in Products page | Redirection to Product Detail page | Pass | |
+| | Click on Keep Shopping button | Redirection to  Products page | Pass | |
+| | Click + button on quantity selector form | The quantity increases if the number + 1 to 99 | Pass | |
+| | Click - button on quantity selector form | Quantity number decreases if current quantity is greater than one | Pass | |
+| | Manually enter number greater than 99 in quantity selector form | The quantity is automatically changed to the maximum allowed quantity of 99 | Pass | |
+| | Manually enter a negative number | An error message appears that the number must be greater than or equal to 1 | Pass | |
+| | Click Add To Basket button | Product is added to basket and quantity is set to the user's choice | Pass | |
+| | Click Add To Basket button when user already has the product in their basket | Quantity selected is added to the existing quantity in the user's basket for the product | Pass |  |
+| | Click on edit product button | Redirection to Edit Product page for that product | Pass | Button only appears if logged in user is an admin |
+| | Click on delete product button | Redirection to Delete Product confirmation page for that product | Pass | Button only appears if logged in user is an admin |
+
+ **Reviews Page** | | | | |
+| | Click on "Review This Product" button | Additional fields “Title” and “Review” will open below for writing a review | Pass | |
+| | Click on Submit Review button with missing fields | The user will see a message indicating that the review was not sent | Pass | |
+| | Click on Submit Review button with all valid fields | The user will see a message indicating that a review has been added | Pass | |
+| | Click on Update Review button | Redirection to Edit Review page| Pass |  |
+| | Click on Update button | Redirect to product detail page with already edited review | Pass |  |
+| | Click on Delete Review button | Redirect to Delete Review page | Pass |  |
+| | Click on Delete Review button on Delete Review page | Review will be deleted and the user will be redirected to detail page | Pass |  |
+
+
 | **Contact Page** | | | | |
-| | Click on Contact Us link in footer | Redirection to Contact Us page | Pass | |
+| | Click on Contact Us link in footer | The heart icon will fill with color and the user will see a message that the product has been added to the wishlist | Pass | |
 | | Enter name | Form will only submit if all fields are filled | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Enter message | Form will only submit if all fields are filled | Pass | |
 | | Click Send with missing fields | Message lets user know all fields are required | Pass | |
-| | Click Send with all valid fields | User is sent email confirming their message has been received and new ticket is created in open tickets page for admin | Pass | |
-| **Blog Page** | | | | |
-| | Click on the Blog link in nav menu | Redirection to Blog page | Pass | |
-| | Click on the Blog link in footer | Redirection to Blog page | Pass | |
-| | Click on Blog post | Redirection to Blog Post page | Pass | |
-| | Click on edit blog button | Redirection to Edit Blog page for that post | Pass | Button only appears if logged in user is an admin |
-| | Click on delete blog button | Redirection to Delete Blog confirmation page for that post | Pass | Button only appears if logged in user is an admin |
-| **Blog Post** | | | | |
-| | Click on Blog post on blog page | Redirection to Blog Post page | Pass | |
-| | Click hollow heart icon | Alert pops up confirming post has been liked, heart icon turns solid red and like count increases by 1 | Pass | Only if user is logged in, nothing happens if logged out |
-| | Click filled in heart icon | Alert pops up confirming post has been unliked, heart icon turns hollow and like count decreases by 1 | Pass | |
-| | Click Submit button under comment form | Comment added to post | Pass | Comment only added if field is filled |
-| | Click Submit button under empty comment form | Message appears for user informing them they need to fill the body field | Pass | |
-| | Click on edit blog button | Redirection to Edit Blog page for that post | Pass | Button only appears if logged in user is an admin |
-| | Click on delete blog button | Redirection to Delete Blog confirmation page for that post | Pass | Button only appears if logged in user is an admin |
+| | Click Send with all valid fields | The user will see a success message in the upper right corner and administrators in the admin panel will see this message | Pass | |
+
+| **WishList Page** | | | | |
+| | Click on the heart icon on Products page or on the Product Detail page | Redirection to Blog Post page | Pass | |
+| | Click on the heart icon in the nav bar | Redirect to Wishlist page | Pass | |
+| | Сlick on the binoculars icon | Redirect to product page | Pass | |
+| | Click on the trash can icon| The item will be removed from the Wishlist page and the user will see a success message | Pass | |
+| | Click on CLEAR WISHLIST link | All products are removed from the Wishlist| Pass | |
+| | Click on Go To Product button |  Redirection to Products page | Pass | This button is visible when all products from their Wishlist are deleted|
+
 | **Sign Up Page** | | | | |
 | | Click on Register button under account on nav menu | Redirection to Sign Up page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
@@ -238,11 +240,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Enter valid password | Field will only accept password format | Pass | |
 | | Click Login button on login page | Redirects user to homepage | Pass | |
-| | Click Forgot Password | Redirects user to password reset page | Pass | |
 | | Sign in before confirming account | Redirects to message reminding user to confirm email address | Pass | |
-| **Password Reset Page** | | | | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Click Reset Password button | Sends email with instructions to reset password | Pass | |
+
 | **Log Out Page** | | | | |
 | | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
 | | Click Confirm Logout button | Redirects user to home page | Pass | |
