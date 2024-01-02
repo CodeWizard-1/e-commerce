@@ -14,7 +14,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2F) | ![screenshot]!(image-77.png) | Pass: No Errors |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2F) | ![screenshot](image-77.png) | Pass: No Errors |
 | All Products | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F) | ![screenshot](image-78.png) | Pass: No Errors |
 | Product Detail | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F13%2F) | ![screenshot]![Alt text](image-79.png) | Pass: No Errors |
 | Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fcontact) | ![screenshot](image-80.png) | Pass: No Errors |
@@ -131,10 +131,10 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | --- | --- | --- | --- |
 | Home | Desktop | ![screenshot](image-160.png) | No major warnings |
 | Home | Mobile | ![screenshot](image-159.png) | Some minor warnings |
-| All Products | Desktop | ![screenshot](image-161.png)| Some minor warnings |
-| All Products | Mobile | ![screenshot](image-162.png) | Some minor warnings |
+| Products | Desktop | ![screenshot](image-161.png)| Some minor warnings |
+| Products | Mobile | ![screenshot](image-162.png) | Some minor warnings |
 | Product detail | Desktop | ![screenshot](image-163.png) | Some minor warnings |
-| Product detail | Mobile | ![screenshot]!(image-164.png) | Some minor warnings |
+| Product detail | Mobile | ![screenshot](image-164.png) | Some minor warnings |
 | Contact | Desktop | ![screenshot](image-165.png) | No major warnings |
 | Contact | Mobile | ![screenshot](image-166.png) | Some minor warnings |
 | Wishlist | Desktop | ![screenshot](image-168.png) | No major warnings |
@@ -296,47 +296,46 @@ Below are the results of manual testing:
 
 ## User Story Testing
 
-The following are user stories I've implemented with screenshots to prove.
+Below are the user stories I've included, along with corresponding screenshots for you to check out
 
 | User Story | Screenshot |
 | --- | --- |
-| As a first-time site visitor I want to be able to clearly see what the site's purpose is so that I can decide whether or not to continue browsing it. | ![screenshot](documentation/testing/homepage.png) |
-| As a user I want to be able to easily navigate the website so that I can find the content I'm looking for. | ![screenshot](documentation/testing/main-nav.png) ![screenshot](documentation/testing/main-nav-dropdown.png) |
-| As a site user I want to be able to search the website so that I can find specific products and see if the site has them in stock. | ![screenshot](documentation/testing/search-bar.png) ![screenshot](documentation/testing/search-results.png) ![screenshot](documentation/testing/search.png) |
-| As a site user I want to be able to contact the site owners so that I can request further information about the site or lodge a complaint. | ![screenshot](documentation/testing/contact-page.png) ![screenshot](documentation/testing/contact-form.png) |
-| As a site user I want to be able to see a list of all site products so that I can browse what the site has to offer. | ![screenshot](documentation/testing/all-products.png) |
-| As a site user I want to be able to see the prices of products clearly so that I can make a decision whether or not to purchase. | ![screenshot](documentation/testing/product-card.png) |
-| As a site user I want to be able to view a product on its own individual page so that I can see more information about the product. | ![screenshot](documentation/testing/product-detail.png) |
-| As a site user I want to be able to sort products by category (game/console or games by console) so that I can find specific products related to the category I select. | ![screenshot](documentation/testing/product-filtering-menu.png) ![screenshot](documentation/testing/product-filtering-detail.png) |
-| As a site user I want to be able to add products to my shopping basket so that I can proceed to the checkout and purchase them. | ![screenshot](documentation/testing/add-to-basket.png) |
-| As a site user I want to be able to see a running total of the items in my basket so that I can manage my spending and know what to expect at the checkout. | ![screenshot](documentation/testing/add-to-basket-message.png) |
-| As a site user I want to be able to checkout with a card payment so that I can place an order for the items in my basket. | ![screenshot](documentation/testing/checkout.png) |
-| As a site user I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox. | ![screenshot](documentation/testing/order-confirmation-email.png) |
-| As a site user I want to be able to apply discount codes in the checkout so that I can receive a discount on my purchase. | ![screenshot](documentation/testing/discount-form.png) ![screenshot](documentation/testing/discount-added.png) |
-| As a site user I want to be able to create an account on the site so that I can save my billing and shipping details and see a history of my purchases on my account. | ![screenshot](documentation/testing/sign-up.png) |
-| As a registered user I want to be able to edit the details saved to my account so that I can keep my details up to date. | ![screenshot](documentation/testing/profile.png) ![screenshot](documentation/testing/default-delivery-form.png) |
-| As a site user I want to be able to view blog posts on the website so that I can read any posts I feel are relevant to me. | ![screenshot](documentation/testing/blog.png) ![screenshot](documentation/testing/blog-post.png) |
-| As a site admin I want to be able to create blog posts from the front end so that I can share information with site visitors. | ![screenshot](documentation/testing/add-blog.png) |
-| As a site admin I want to be able to edit existing blog posts so that I can ensure that posts are up to date and relevant without having to create them from scratch in case of error. | ![screenshot](documentation/testing/edit-blog.png) |
-| As a site admin I want to be able to delete existing blog posts so that I can remove any unwanted posts from the site. | ![screenshot](documentation/testing/delete-blog.png) |
-| As a site admin I want to be able to create new products from the front end so that I can easily add new products to the site. | ![screenshot](documentation/testing/add-product.png) |
-| As a site admin I want to be able to edit existing products so that I can ensure that all product listings are up to date and accurate. | ![screenshot](documentation/testing/edit-product.png) |
-| As a site admin I want to be able to delete products from the site so that I can remove any products that are no longer being supplied by the site. | ![screenshot](documentation/testing/delete-product.png) |
-| As a site admin I want to be able to set the stock for each product so that I can manage how many units of each product the site can sell. | ![screenshot](documentation/testing/stock-green.png) ![screenshot](documentation/testing/stock-yellow.png) ![screenshot](documentation/testing/stock-sold-out.png) |
-| As a site admin I want to be able to see a list of open tickets so that I can manage contact form inquiries. | ![screenshot](documentation/testing/open-tickets-1.png) ![screenshot](documentation/testing/single-open-ticket.png) ![screenshot](documentation/testing/no-open-tickets.png) |
-| As a site user I want to be able to sign up for the site's mailing list so that I can receive offers and news in my inbox. | ![screenshot](documentation/testing/newsletter-form.png) ![screenshot](documentation/testing/newsletter-alert.png) ![screenshot](documentation/testing/newsletter-email.png) |
-| As a site user I want to be able to enter the Konami code (Up Up Down Down Left Right Left Right B A) on my keyboard so that I can experience an easter egg. | ![screenshot](documentation/testing/konami-code-easter-egg.png) ![screenshot](documentation/testing/konami-code-modal.png) |
-| As a site admin I want to be able to set appropriate keywords on site pages so that I can increase the chances potential customers will find the site when searching to purchase records on Google. | ![screenshot](documentation/testing/seo-keywords.png) |
-| As a site admin I want to be able to share the business on Facebook so that I can reach and market to a larger audience. | ![screenshot](documentation/facebook-mockup.png) |
+| As a user I can view products so that I can decide which items I want to purchase | ![screenshot](image-183.png) |
+| In my user role, I am equipped with the capability to search through all products and explore various categories. This functionality guarantees that I only encounter products of personal interest | ![screenshot](image-184.png) ![screenshot](image-185.png) |
+|As a site user, I would like to have the capability to browse products based on categories. This functionality allows me to easily navigate through distinct product categories, enhancing my ability to find items aligned with my preferences. | ![screenshot](image-186.png) ![screenshot](image-187.png) |
+| In my role as a site user, I anticipate that the website integrates responsive design | Mobile: ![screenshot](image-188.png) Tablet: ![screenshot](image-189.png) Desktop:(image-190.png)|
+| As a site user, I would appreciate the ability to filter products based on gender. This feature enables me to tailor my product search according to specific gender categories, streamlining the shopping experience and helping me find relevant items more efficiently. | ![Alt text](image-191.png) |
 
-The following are user stories I wasn't able to implement and have labeled as Wont Have in my MoSCoW prioritization
+| As a user, I possess the ability to review the items present in my shopping basket. This feature facilitates the identification of the total cost of my purchase and all the items included. | ![screenshot](image-192.png) 
+
+| In my user role, I can effortlessly assess the total cost of my purchases. This feature aids me in avoiding unnecessary expenditure. | ![Alt text](image-193.png) ![Alt text](image-194.png)| |
+
+| In my user role, I should experience a sense of confidence in the security and safety of my payment information. This sense of assurance allows me to confidently provide the necessary details for making a purchase.| ![Alt text](image-195.png) |
+
+| As a site user, I have the ability to initiate the creation of an account. This functionality serves the purpose of allowing me to store my information for convenient repeat purchases and to review my order history. | ![screenshot](image-196.png) |
+
+| As a user, I would like the ability to make purchases without creating an account, ensuring a quick and convenient payment process. | ![screenshot](image-197.png)|
+
+| As a user of the site, I want to be able to update and save delivery information to my profile if necessary. | ![screenshot](image-198.png) |
+
+| In my user role, I want to add products to a Wishlist. This functionality simplifies the process of tracking items I plan to purchase in the future | ![screenshot](image-199.png) ![Alt text](image-200.png) ![Alt text](image-201.png)|
+
+| As a user role, I want to subscribe to the newsletter. This subscription ensures that I stay up to date with new products and promotions. |  ![screenshot](image-202.png) |
+
+| As a site administrator, I want to be able to access and use the admin panel. This feature allows me to efficiently perform tasks such as creating, updating, managing and deleting products and orders. | ![screenshot](image-203.png) |
+
+| As a site user, I would like to receive order confirmation emails containing detailed information about my purchase, including the ordered items and the total amount. This feature ensures that I stay informed about the specifics of my order and provides a convenient record of the transaction sent directly to my email. | ![screenshot](image-68.png) |
+
+| As a site user, I would like the ability to read product reviews and also to leave my own feedback. This feature provides me with valuable insights from other users' experiences, helping me make informed decisions about a product. Additionally, it allows me to contribute to the community by sharing my thoughts and opinions on the items I've purchased. | ![screenshot](image-204.png) |
+
+
+
+Below are the user stories that I plan to implement in the future:
 
 | User Story | Screenshot |
 | --- | --- |
-| As a registered site user I want to be able to review products that I have purchased so that I can share my experience with other potential customers. | N/A |
-| As a registered site user I want to be able to add products to a wish list so that I can keep a collection of items I am interested in buying in the future. | N/A |
-| As a site user I want to be able to spin a discount wheel so that I can receive a discount code pending on the outcome of the wheel. | N/A |
-| As a site admin I want to be able to send marketing emails to people who signed up to the mailing list so that I can send out updates and offers to their inboxes. | N/A |
+| As a user, I should be able to easily recover my password, ensuring continued access to my account in the event that my password is forgotten.| N/A |
+
 
 ## Automated Testing
 
