@@ -342,47 +342,13 @@ In order to run the tests, I ran the following command in the terminal each time
 
 
 `python-m coverage report `
+
 ![Alt text](image-206.png)
 
 
-## Bugs
-
-### GitHub **Issues**
-
-I tracked my bugs on GitHub Issues using the BUG label
-
-**Fixed Bugs**
-
-All previously closed/fixed bugs can be tracked [here](https://github.com/adamgilroy22/retro-reboot/issues?q=is%3Aissue+is%3Aclosed+label%3ABug).
-
-| Bug | Status |
-| --- | --- |
-| [BUG: NameError in basket on quantity adjust](https://github.com/adamgilroy22/retro-reboot/issues/30) | Closed |
-| [BUG: Error thrown when trying to access checkout](https://github.com/adamgilroy22/retro-reboot/issues/32) | Closed |
-| [BUG: Quantity selector allows higher value than product stock](https://github.com/adamgilroy22/retro-reboot/issues/33) | Closed |
-| [BUG: Quantity buttons not working in basket](https://github.com/adamgilroy22/retro-reboot/issues/34) | Closed |
-| [BUG: Arcade Machine filter not working](https://github.com/adamgilroy22/retro-reboot/issues/35) | Closed |
-| [BUG: Homepage image not loading on deployed site](https://github.com/adamgilroy22/retro-reboot/issues/37) | Closed |
-| [BUG: Error when adding product to basket if already in basket](https://github.com/adamgilroy22/retro-reboot/issues/38) | Closed |
-| [BUG: Users can add more than product stock on product page](https://github.com/adamgilroy22/retro-reboot/issues/39) | Closed |
-| [BUG: Konami Code easter egg music doesn't play on deployed site](https://github.com/adamgilroy22/retro-reboot/issues/40) | Closed |
-
 **Open Issues**
 
-Any remaining open issues can be tracked [here](https://github.com/adamgilroy22/retro-reboot/issues). Any remaining user stories have been labeled as Won't Have in my MoSCoW prioritization.
 
 | Bug | Status |
 | --- | --- |
-| [USER STORY: Wishlist](https://github.com/adamgilroy22/retro-reboot/issues/13) | Open |
-| [USER STORY: Send Marketing Emails](https://github.com/adamgilroy22/retro-reboot/issues/23) | Open |
-| [USER STORY: Discount Wheel](https://github.com/adamgilroy22/retro-reboot/issues/27) | Open |
-| [BUG: Search is sensitive to accents](https://github.com/adamgilroy22/retro-reboot/issues/31) | Open |
-| [USER STORY: Product Reviews](https://github.com/adamgilroy22/retro-reboot/issues/42) | Open |
-
-## Unfixed Bugs
-
-There is one remaining bug that I am aware of and have left open in GitHub issues: [BUG: Search is sensitive to accents](https://github.com/adamgilroy22/retro-reboot/issues/31).
-
-I decided not to attempt to fix this bug during development so far as it was only affecting a small number of products on the site. I worked around this bug by replacing the é with e in product descriptions that mention the word Pokémon. As the search picks up from both the product title and description, I was able to leave the accent in the product names that are affected so if a user was to search the products using the accent they would still appear in the results.
-
-This is a bug that can definitely be looked at and fixed as the site grows and more products are added in the future but for now I felt the work that would go in to fixing the bug was not worth it due to the miniscule affect it has that was easily worked around by updating product descriptions.
+| [USER STORY: Password Recovery](https://github.com/CodeWizard-1/e-commerce/issues/17) | Open |
