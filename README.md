@@ -29,21 +29,27 @@ Users can search for products, view product details, add to cart, and make payme
 6. [The Structure Plane](#the-structure-plane)
     * [Features](#features)
     * [Home Page](#home-page)
-      * [Brands Section](#brands-section)
-      * [Categories Section](#categories-section)
       * [Featured Products Section](#featured-products-section)
-      * [Why Shop With Us Section](#why-shop-with-us-section)
+      * [Healthy Lifestyle and Sporty Fashion Section](#healthy-lifestyle-and-sporty-fashion-section)
       * [Footer](#footer)
-    * [FAQs Page](#faqs-page)
+    * [Returns Page](#returns-page)
     * [Contact Page](#contact-page)
-    * [Pages Restricted to Login](#restricted-pages)
-    * [Products](#products-page)
-    * [Product Details](#product-details-page)
-    * [Wishlist](#wishlist)
-    * [My Profile](#profile-page)
-    * [Cart Page](#cart-page)
+    * [Privacy Policy](#privacy-policy)
+    * [Main Nav Menu](#main-nav-menu)
+    * [Restricted Pages](#restricted-pages)
+    * [Product Filtration](#product-filtration)
+    * [Search Bar](#search-bar)
+    * [Sale Page](#sale-page)
+    * [Product Details Page](#product-details-page)
+    * [Wishlist Page](#wishlist-page)
+    * [My Account Dropdown](#my-account-dropdown)
+    * [User Sign Up Page](#user-sign-up-page)
+    * [User Sign In Page](#user-sign-in-page)
+    * [User Sign Out Page](#user-sign-out-page)
+    * [User Profile Page](#user-profile-page)
+    * [Basket Page](#basket-page)
     * [Checkout Page](#checkout-page)
-    * [Admin Page](#admin-page)
+    * [Error Page](#error-page)
     * [Future Features](#future-features)
 7. [The Surface Plane](#the-surface-plane)
     * [Design](#design)
@@ -54,20 +60,18 @@ Users can search for products, view product details, add to cart, and make payme
     * [Marketing Strategy](#marketing-strategy)
       * [Social Media Marketing](#social-media-marketing)
       * [Newsletter Marketing](#newsletter-marketing)
-    * [SEO](#search-engine-optimization-seo)
+    * [Search Engine Optimization (SEO)](#search-engine-optimization-seo)
       * [Keywords](#keywords)
       * [SiteMap](#sitemapxml)
       * [Robots](#robotstxt)
 9. [Technologies](#technologies)
     * [Languages Used](#languages-used)
-    * [Libraries And Frameworks](#libraries-and-frameworks)
+    * [Frameworks Used](#frameworks-used)
+    * [Libraries And Installed Packages](#libraries-and-installed-packages)
     * [Tools and Resources](#tools-and-resources)
 10. [Testing](#testing)
-    * [Validator Testing](#validator-testing)
-    * [Other Testing](#other-testing)
-11. [Bugs Found and Fixed](#bugs-found-and-fixed)
-    * [Bugs Not Fixed](#bugs-not-fixed)
-12. [Credits And Sources](#credits-and-sources)
+11. [Bugs](#bugs)
+12. [Credits](#credits)
 13. [Deployment](#deployment)
 14. [Acknowledgements](#acknowledgements)
 
@@ -107,7 +111,7 @@ Users can search for products, view product details, add to cart, and make payme
 
 ## **Agile Planning**
 
-My project followed an agile planning approach, breaking down each feature into user stories to align with user expectations. Each user story was meticulously planned, leading to the creation of multiple tasks dedicated to implementing specific features. These tasks were then grouped into epics.
+My project followed an agile planning approach, breaking down each feature into user stories to align with user expectations. Each user story was meticulously planned, leading to the creation of multiple tasks dedicated to implementing specific features.
 
 To prioritize development efforts, features were categorized as Must Have, Should Have, Could Have, and Won't Have. This classification helped determine the importance of each feature.
 
@@ -922,10 +926,16 @@ Below are the problems I encountered and how I solved them.
 
 <br>
 
-# Credits and Sources
+# Credits 
 
-### Wishlist
-- Getting the Wishlist system to worked needed several tutorials and articles:
+## Below is a list of sources of information that helped me and inspired me with their ideas:
+
+
+  - [Boutique Ado Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/3adff2bf4a78469db72c5330b1afa836/)
+  - [I Think Therefore I Blog Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2023_Q3/courseware/56a2da0940b4411d8a38c2b093a22c60/4565659a34d648b8b8edd063c3182180/)
+  - [Tasks Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DB101+2021_T1/courseware/c0c31790fcf540539fd2bd3678b12406/6e44128b0b37416ab40c1a87ef2cb32a/)
+  - [Retro Reboot - Portfolio Project 5](https://github.com/adamgilroy22/retro-reboot/tree/main)
+   - [LevelUp! Loot](https://github.com/VictoriaT87/level_up_loot_vt/tree/main)
   - [stackoverflow.com - How to implement Add to WishList for a Product in Django?](https://stackoverflow.com/questions/56580696/how-to-implement-add-to-wishlist-for-a-product-in-django)
   - [stackoverflow.com - Filter in the template if the product is in wishlist or no. Django ecommerce website](https://stackoverflow.com/questions/71248375/filter-in-the-template-if-the-product-is-in-wishlist-or-no-django-ecommerce-web)
   - [Very Academy YouTube - Creating a User Bookmark / Favourites Features](https://www.youtube.com/watch?v=H4QPHLmsZMU)
@@ -936,11 +946,6 @@ Below are the problems I encountered and how I solved them.
   - [StackOverflow - Django Admin ManyToManyField](https://stackoverflow.com/questions/8043881/django-admin-manytomanyfield)
   - [earthly.dev - Customizing the Django Admin](https://earthly.dev/blog/customize-django-admin-site/)
   - [Django Docs - ModelAdmin.filter_horizontal](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.filter_horizontal)
-
-
-<br>
-
-### Testing Credits
 - [Freecodecamp.org, An Introduction to Unit Testing in Python](https://www.freecodecamp.org/news/an-introduction-to-testing-in-python) 
 - [Real Python.com, Getting Started With Testing in Python](https://realpython.com/python-testing/)
 - [Real Python.com, Testing in Django (Part 1) – Best Practices and Examples](https://realpython.com/testing-in-django-part-1-best-practices-and-examples/)
@@ -959,10 +964,6 @@ Below are the problems I encountered and how I solved them.
 - [A Beginner’s Guide to Unit Tests in Python (2023)](https://www.dataquest.io/blog/unit-tests-python/)
 - [Django Testing - check messages for a view that redirects](https://stackoverflow.com/questions/16143149/django-testing-check-messages-for-a-view-that-redirects)
 - [StackOverflow - Django testing model with ImageField](https://stackoverflow.com/questions/26298821/django-testing-model-with-imagefield)
-
-<br>
-
-### General Credits
 - [Geeks For Geeks, UpdateView – Class Based Views Django](https://www.geeksforgeeks.org/updateview-class-based-views-django/)
 - [Geeks For Geeks, Update View – Function based Views Django](https://www.geeksforgeeks.org/update-view-function-based-views-django/)
 - [Stackoverflow.com, How to validate in UpdateView without validating through a form?](https://stackoverflow.com/questions/54319706/how-to-validate-in-updateview-without-validating-through-a-form)
@@ -974,7 +975,7 @@ Below are the problems I encountered and how I solved them.
 - [StackOverflow - How to add a unique randomly generated 6 digit key stored in a model](https://stackoverflow.com/questions/64850945/how-to-add-a-unique-randomly-generated-6-digit-key-stored-in-a-model)
 - [StackOverflow - Delete Modal Loop Fix](https://stackoverflow.com/questions/66116509/bootstrap-modal-is-not-working-with-for-in-jinja-2)
 - [Dynamic page titles in Django](https://www.forgepackages.com/guides/page-titles/)
-- [CodePen for Card Hover Effect](https://codepen.io/Corsurath/pen/abbxNpj)
+
 - [Color Contrast Picker for Lighthouse Error](https://dequeuniversity.com/rules/axe/4.6/color-contrast)
 - [StackOverflow - Static Root Deployment Error Fix](https://stackoverflow.com/questions/48455469/youre-using-the-staticfiles-app-without-having-set-the-static-root-setting-to-a)
 - [StackOverflow - Calculate On Sale Discount](https://stackoverflow.com/questions/73813646/django-models-to-calculate-discount)
@@ -1296,5 +1297,11 @@ You can fork this repository by using the following steps:
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/CodeWizard-1/e-commerce)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+
+# Acknowledgements
+
+- I would like to express my sincere gratitude to my mentor Mitko Bachvarov for his incredible support and assistance in my learning process.
+I would also like to express my gratitude to all the staff of the Code Institute for the excellent organization of the educational process.
+It is equally important to express gratitude to your classmates. Your knowledge, enthusiasm and willingness to support in difficult times made our training more productive and interesting.
 
 [Back to Top](#table-of-contents)
