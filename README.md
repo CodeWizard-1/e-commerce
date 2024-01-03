@@ -461,11 +461,11 @@ If the user clicks the search button without entering anything, an error message
 
 - If the user is not authorized, he is prompted to log into his account or register.
 
-![Review Image](documentation/image-22.png)
-
-- If the user is authorized, he can click on “Review this product” to write a review.
- 
 ![Review Image](documentation/image-23.png)
+
+- If the user is authorized, he can click on “Write a Review” to write a review.
+ 
+![Review Image](documentation/image-22.png)
 
 - A window will open below in which the user can specify a topic and leave a review.
 
