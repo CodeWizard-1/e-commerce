@@ -16,7 +16,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2F) | ![screenshot](documentation/image-77.png) | Pass: No Errors |
 | All Products | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F) | ![screenshot](documentation/image-78.png) | Pass: No Errors |
-| Product Detail | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F13%2F) | ![screenshot]![Alt text](documentation/image-79.png) | Pass: No Errors |
+| Product Detail | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fproducts%2F13%2F) | ![screenshot](documentation/image-79.png) | Pass: No Errors |
 | Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fcontact) | ![screenshot](documentation/image-80.png) | Pass: No Errors |
 | Privacy Policy | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Fprivacy_policy) | ![screenshot](documentation/image-81.png) | Pass: No Errors |
 | Returns | [W3C](https://https://validator.w3.org/nu/?doc=https%3A%2F%2Fsportswear-ebbdbb6bb6ec.herokuapp.com%2Freturns) | ![screenshot](documentation/image-82.png) | Pass: No Errors |
@@ -168,28 +168,28 @@ Below are the results of manual testing:
 | | Enter word into search bar that doesn't appear in any product's name or description | Redirection to Products page | Pass | Products page is empty and shows user that 0 products were returned |
 | | Enter nothing into search bar | Redirection to Products page | Pass | Error message shows and lets user know they entered nothing into the search bar and all products are displayed |
 | **Products Page** | | | | |
-| | Click on  Men by Hoodies & Sweatshirts link in navbar | Redirect to Hoodies and Sweatshirts page for men | Pass | |
-| | Click on  Men by Jackets link in navbar | Redirection to Jackets page for men  | Pass | |
-| | Click on  Men by All Clothing link in navbar | Redirection to Clothing page  for men | Pass |  |
-| | Click on  Men by Socks link in navbar | Redirection to Socks page for men| Pass |  |
-| | Click on  Men by Bags link in navbar | Redirection to Bags page for men| Pass |  |
-| | Click on  Men by All Accessoires link in navbar | Redirection to All Accessoires page for men |  |
-| | Click on  Women by Hoodies & Sweatshirts link in navbar | Redirect to Hoodies and Sweatshirts page for women | Pass | |
-| | Click on  Women by Jackets link in navbar | Redirection to Jackets page for women  | Pass | |
-| | Click on  Women by All Clothing link in navbar | Redirection to Clothing page  for women | Pass |  |
-| | Click on  Women by Socks link in navbar | Redirection to Socks page for women| Pass |  |
-| | Click on  Women by Bags link in navbar | Redirection to Bags page for women| Pass |  |
-| | Click on  Women by All Accessoires link in navbar | Redirection to All Accessoires page for women |  |
-| | Click on  Kids by Hoodies & Sweatshirts link in navbar | Redirect to Hoodies and Sweatshirts page for kids | Pass | |
-| | Click on  Kids by Jackets link in navbar | Redirection to Jackets page for kids  | Pass | |
-| | Click on  Kids by All Clothing link in navbar | Redirection to Clothing page  for kids | Pass |  |
-| | Click on  Kids by Hats link in navbar | Redirection to Hats page for kids| Pass |  |
-| | Click on  Kids by Bags link in navbar | Redirection to Bags page for kids| Pass |  |
-| | Click on  Kids by All Accessoires link in navbar | Redirection to All Accessoires page for kids |  |
-| | Click on  Brands by Adidas link in navbar | Redirect to  Adidas page | Pass | |
-| | Click on  Brands by Nike link in navbar | Redirection to Nike page  | Pass | |
-| | Click on  Brands by Puma link in navbar | Redirection to Puma page | Pass |  |
-| | Click on  Brands by All Brands link in navbar | Redirection to All Brands page  | Pass |  |
+| | Click on the "Men" link in the navbar and go to the "Hoodies & Sweatshirts" section | Redirect to Hoodies and Sweatshirts page for men | Pass | |
+| | Click on the "Men" link in the navbar and go to the "Jackets" section| Redirection to Jackets page for men  | Pass | |
+| | Click on the "Men" link in the navbar and go to the "All Clothing" section| Redirection to Clothing page  for men | Pass |  |
+| | Click on the "Men" link in the navbar and go to the "Socks" section| Redirection to Socks page for men| Pass |  |
+| | Click on the "Men" link in the navbar and go to the "Bags" section| Redirection to Bags page for men| Pass |  |
+| | Click on the "Men" link in the navbar and go to the "All Accessories" section | Redirection to All Accessoires page for men |  |
+| | Click on the "Women" link in the navbar and go to the "Hoodies & Sweatshirts" section | Redirect to Hoodies and Sweatshirts page for women | Pass | |
+| | Click on the "Women" link in the navbar and go to the "Jackets" section | Redirection to Jackets page for women  | Pass | |
+| | Click on the "Women" link in the navbar and go to the "All Clothing" section | Redirection to Clothing page  for women | Pass |  |
+| | Click on the "Women" link in the navbar and go to the "Socks" section | Redirection to Socks page for women| Pass |  |
+| | Click on the "Women" link in the navbar and go to the "Bags" section | Redirection to Bags page for women| Pass |  |
+| | Click on the "Women" link in the navbar and go to the "All Accessories" section | Redirection to All Accessoires page for women |  |
+| | Click on the "Kids" link in the navbar and go to the "Hoodies & Sweatshirts" section | Redirect to Hoodies and Sweatshirts page for kids | Pass | |
+| | Click on the "Kids" link in the navbar and go to the "Jackets" section | Redirection to Jackets page for kids  | Pass | |
+| | Click on the "Kids" link in the navbar and go to the "All Clothing" section | Redirection to Clothing page  for kids | Pass |  |
+| | Click on the "Kids" link in the navbar and go to the "Hats" section | Redirection to Hats page for kids| Pass |  |
+| | Click on the "Kids" link in the navbar and go to the "Bags" section | Redirection to Bags page for kids| Pass |  |
+| | Click on the "Kids" link in the navbar and go to the "All Accessories" section | Redirection to All Accessoires page for kids |  |
+| | Click on the "Brands" link in the navbar and go to the "Adidas" section | Redirect to  Adidas page | Pass | |
+| | Click on the "Brands" link in the navbar and go to the "Nike" section | Redirection to Nike page  | Pass | |
+| | Click on the "Brands" link in the navbar and go to the "Puma" section | Redirection to Puma page | Pass |  |
+| | Click on the "Brands" link in the navbar and go to the "All Brands" section | Redirection to All Brands page  | Pass |  |
 | | Click on  Sale link in navbar | Redirection to Sale page  | Pass |  |
 | **Product Detail Page** | | | | |
 | | Click on Product image or name in Products page | Redirection to Product Detail page | Pass | |
@@ -344,11 +344,3 @@ In order to run the tests, I ran the following command in the terminal each time
 `python-m coverage report `
 
 ![Alt text](documentation/image-206.png)
-
-
-**Open Issues**
-
-
-| Bug | Status |
-| --- | --- |
-| [USER STORY: Password Recovery ](https://github.com/CodeWizard-1/e-commerce/issues/17) | Open |
