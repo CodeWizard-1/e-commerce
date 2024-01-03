@@ -864,36 +864,36 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 # Bugs
 
-Below is a description of bugs encountered and how I was able to fix them or why I couldn't.
+Below are the problems I encountered and how I solved them.
 
-### Adding a blank quantity would throw a 500 error
+### You could enter any quantity of goods from the keyboard
 
   - #### Issue:
 
-    - When Adding or Updating Products, if the quantity was blank or an empty string, a 500 server error would be thrown
+    - Despite the fact that the code was set to check the form and limit the maximum number of goods that could be purchased was 99 pieces, when entering from the keyboard in the cart, it was possible to enter a number greater than 99.
+
+![Bugs](documentation/bugs-1.png)
 
   - #### Fix:
 
-    - Initially I googled this and thought I might need to update the quantity_input_script.html to check for NaN (Not a Number). However, this seemed like it would be quite involved and I didn't think I would be able to make it work.
-    - I then decided to check in the views for a validation. My views for add_to_cart and adjust_cart were updated with form validation and this works. The website now shows an error toast message if the quantity is blank.
+    - The problem was solved by adding an additional form check and if the user tries to enter a number greater than 99, the system will automatically change this number to the maximum allowed, namely 99.
 
-![Quanitity Error 1](documentation/images/quantity-error1.png)
-![Quanitity Error 2](documentation/images/quantity-error2.png)
+![Bugs](documentation/bugs-2.png)
 
 <br>
 
-### Adding an incorrect SKU throws a server error
+
+### When deleting a product from the database, access to the site was lost
 
   - #### Issue:
 
-    - When Adding or Updating Products, the SKU could be any combination of letters or numbers and any length - resulting an error on form submission
+    - After deleting a product from the database, access to the site was lost for no reason. It was not even possible to log into the admin panel.
+
+![Bugs](documentation/bugs-3.png)
 
   - #### Fix:
 
-    - My inital thought was to add help-text to the model so that the form would tell the user what to write in the code. However, this didn't solve the issue that someone could intentionally or unintentionally still add an incorrect SKU and cause the same failure.
-    - I then decided to have a SKU automatically generated when a new product was being added. This field pre-populates with a 6 digit code and is always unique. On top of that, I also made the field Read-Only on the Product Form, therefore it doesn't need to be touched by the admin and can't cause an issue.
-
-![SKU](documentation/images/sku-readonly.png) 
+    - After a long search for a solution to the problem, I tried resetting cookies using developer tools (DevTools). This helped solve the problem and the site became available again.
 
 <br>
 
@@ -901,149 +901,20 @@ Below is a description of bugs encountered and how I was able to fix them or why
 
 <br>
 
-  ### Delete Modal Not Deleting Correct Product ID
+### When connecting Webhooks to the Stripe control panel, problems were identified with payment_intent.succeeded 
 
   - #### Issue:
 
-    - When clicking on "Delete" on the all products page, the product ID for deletion would only point to the first product ID.
+    - When connecting Webhooks to the Stripe control panel, problems were identified with payment_intent.succeeded, which indicated incorrect processing of successful payments or possible technical problems in the process of interaction with the Stripe API.
 
-  - #### Fix:
-
-    - This fix was actually quite easy in the end but it wasn't spotted for a long time, so thank you to [Sean Finn](https://github.com/seanf316/) my classmate for finding it.
-    - The product cards on the product page were being rendered with a loop - {% for product in products %}, however I originally had the modal for deletion outside the loop. Therefore it rendered for the first product only. Moving the deletion modal into the loop, made sure that when clicking Delete, it was for the correct Product ID.
-
-![Delete Modal](documentation/images/delete-product.png) 
-
-<br>
-
-[Back to Top](#table-of-contents)
-
-<br>
-
-### User Editing and Deletion
-
-  - #### Issue:
-
-    - Any logged in user was able to delete another users profile by changing the URL PK number to another.
-
-  - #### Fix:
-
-    - This was a bug pointed out to me by a fellow student [Sean Johnston](https://github.com/seanj06/). I wouldn't have known to look for it myself so I'm very thankful.
-    - I had LoginRequired Mixins on my edit and delete views for both appointments and profiles, however I didn't realise that would allow _any_ logged in user access to a different users account just by changing the PK in the URL for edit/delete.
-    - Sean pointed me towards the UserPassesTestMixin and I was successfully able to implement this into my Views. Users now need to pass an ID check before they're allowed to access the Edit or Delete views for their own profile and they get a 403 Forbidden page if they try to access a different users profile.
-
-<br>
-
-[Back to Top](#table-of-contents)
-
-<br>
-
-### Reviews Can Be Updated By Any User, Multiple Reviews Allowed 
-
-  - #### Issue:
-
-    - Any user can update any other users review by changing the review ID in the update URL. Also, multiple reviews could be submitted by a user for the same product.
-
-  - #### Fix:
-
-    - I used CBVs for my Review forms - to allow updating and deleting. However, I originally only had the LoginRequiredMixin on these.
-    - I needed to add the UserPassesTestMixin to these CBVs, so that only the original auther of the reviews could update or delete their own review.
-    - For the reviews being 1 per user - I found this article on [StackOverflow](https://stackoverflow.com/questions/68135234/how-to-allow-users-to-rate-a-product-only-once), which allowed me to a UnqiueContraint to the review model.
-
-<br>
-
-[Back to Top](#table-of-contents)
-
-<br>
-
-### Wishlists
-
-  - #### Issue:
-
-    - The Wishlist would only allow 1 product to be added per user.
-
-  - #### Fix:
-
-    - The most trouble I had with this project seemed to be with the Wishlist. This particular issue was more to do with a misunderstanding of my models.
-    - The original model I created for the wishlist used a ForiegnKey for both the user and the product. This meant that I could add 1 product to 1 user's Wishlist.
-    - I also had an issue where a newly registered user would not have a Wishlist automatically created on account creation - so when that user tried to add a product to a wishlist, this would throw an error as a wishlist didn't exist. I originally thought to create a signal that would create the Wishlist, the same way the UserProfile would be created, however this seemed like it was an overcomplication of the issue.
-    - To fix everything, I had a complete re-write of the Wishlist app. I changed the model from ForeignKeys to a ManyToManyField key for Products and a OneToOneField for the User.
-    - For the views, I found these articles - [Django Docs](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#get-or-create) and [https://www.queworx.com/django/django-get_or_create/](https://www.queworx.com/django/django-get_or_create/) - which would allow me to get_or_create a Wishlist for a user. Alongside the Try and Except statements, this would handle any error that might be created if a user did not currently have a Wishlist associated with their account ID.
-    - However, on the actual template then, this was giving me the error "AttributeError::: 'tuple' object has no attribute 'products'" when trying to iterate over the Wishlist with {% if wishlist %} and {% for product in wishlist %}.
-    - I realised the get_or_create was creating a tuple, so I couldn't iterate over it with just the {% if wishlist %} syntax - I needed to check if the wishlist exists with products first and then I needed to access the products on the wishlist. This lead me to try {% if wishlist.products.exists %} and {% for product in wishlist.products.all %} which worked. This - to my knowledge - was because the Wishlist itself was only a type of holder for many products. The wishlist itelf was 1 item - the products were what we needed to access.
-    - I feel there was probably an easier way to achieve the same outcome - but this solution worked for me, it's being saved properly to the database and so was fit for purpose here.
-
-
-<br>
-
-[Back to Top](#table-of-contents)
-
-<br>
-
-# Bugs Not Fixed
-
-### Coupon Codes
-
-  - #### Issue:
-
-    - Coupon codes can be used multiple times per user.
-
-  - #### What I Tried:
-
-    - For coupons, I only wanted a user to be able to use a coupon once and then they couldn't use it again on a new order but I couldn't get this to work.
-    - I tried this from [StackOverflow](https://stackoverflow.com/questions/62359009/django-how-to-reduce-total-number-of-coupons-after-each-use) with my code being:
-    ```
-    def add_coupon(request):
-    """ Allow a user to add the coupon code """
-
-    code = request.POST.get('code')
-    order = Order.objects.filter(user_profile__user=request.user).order_by('-date').first()
-    now = timezone.now()
-    coupon = Coupon.objects.filter(code__iexact=code, start_date__lte=now, expiry_date__gte=now).exclude(order=order, max_value__lte=F('used')).first()
     
-    if not coupon:
-        messages.error(request, 'You can\'t use the same coupon again, or the coupon does not exist')
-        return redirect('checkout')
-    else:
-        try:
-            coupon.used += 1
-            coupon.save()
-            order.coupon = coupon
-            order.save()
-            messages.success(request, "Successfully added the coupon")
-        except Exception:
-            messages.error(request, "Max level exceeded for the coupon")
-        
-        return redirect('checkout')
+![Bugs](documentation/bugs-4.png)
 
-    ```
-    - However I was unable to get this to work properly and so for time purposes, I just allowed the coupon code to stay as it is. If this was a project going into a real production, this would be a bug that would be a priority to fix.
+  - #### Fix:
 
-<br>
+    - The reason for this error lay in different versions of Python in the environment in which I worked and on Heroku when deploying the project. The solution to the problem was to add a runtime.txt file to the root of the project, which indicated which version of Python Heroku should use when deploying the project.
 
-### Submit button on contact form
-
-  - #### Issue:
-
-    - Have the Submit button dissapear from the contact form once submitted.
-
-  - #### What I Tried: 
-
-    - I would like the contact form to completely disappear on submission, instead of just the Submit button being left behind. This is something I looked into but adding an onclick through HTML/CSS wouldn't work because the button would still disappear if the form failed to send. This would mean the user needs to refresh the page to get the submit button to reappear.
-    - I then tried to add javascript for a button click event but this prevented the submission message from being displayed after the successful submission. Adding javascript to hide the button on submission, would hide it when the form was invalid but still show it when the page rendered the success message.
-
-<br>
-
-### Whitespace Validation on Contact Form
-
-- #### Issue:
-
-    - Could not achieve full whitespace validation for forms.
-
-- #### What I Tried: 
-
-  - The contact form currently allows users to submit messages that aren't stripped, e.g "C C C". Looking into this, I found some answers which were to set the model fields to have "blank=False" and "null=False" but this didn't work. I then tried to clean the data on the field using the clean() method but again, this didn't work. [Trim whitespaces from charField](https://stackoverflow.com/questions/5043012/django-trim-whitespaces-from-charfield)
-  - The fields do all have to be filled in or the form will fail to send with an error message explaing all fields must be filled in, this was the best I could achieve for the form currently.
+![Bugs](documentation/bugs-5.png)
 
 <br>
 
