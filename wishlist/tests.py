@@ -8,13 +8,16 @@ from products.models import Product
 
 
 
+# Define test classes for Wishlist views and operations
 class ViewWishlistTest(TestCase):
 
     def setUp(self):
+        # Set up the testing environment for authenticated user view tests
         self.client = Client()
         self.user = User.objects.create_user(username="testuser", password="testpass")
 
     def test_authenticated_user_view_wishlist(self):
+        # Test the view for an authenticated user's wishlist
         user_profile = UserProfile.objects.get_or_create(user=self.user)
         wishlist = Wishlist.objects.create(user=self.user)
         self.client.login(username="testuser", password="testpass")
@@ -24,6 +27,7 @@ class ViewWishlistTest(TestCase):
         self.assertEqual(response.context["wishlist"], wishlist)
 
     def test_unauthenticated_user_view_wishlist(self):
+        # Test the view for an unauthenticated user's wishlist
         response = self.client.get(reverse("wishlist"))
         self.assertEqual(response.status_code, 302)
         self.assertRedirects(response, reverse("account_login"))
@@ -34,6 +38,7 @@ class ViewWishlistTest(TestCase):
 
 
 class AddWishlistTest(TestCase):
+    # Set up the testing environment for adding items to the wishlist
     def setUp(self):
         self.client = Client()
         self.user = User.objects.create_user(username="testuser", password="testpass")
@@ -44,6 +49,7 @@ class AddWishlistTest(TestCase):
         )
 
     def test_authenticated_user_add_wishlist(self):
+        # Test adding a product to the wishlist for an authenticated user
         user_profile = UserProfile.objects.get_or_create(user=self.user)
         self.client.force_login(self.user)
         response = self.client.post(reverse("add_wishlist", args=[self.product.id]))
@@ -59,6 +65,7 @@ class AddWishlistTest(TestCase):
         )
 
     def test_unauthenticated_user_view_wishlist(self):
+        # Test adding a product to the wishlist for an unauthenticated user
         response = self.client.get(reverse("wishlist"))
         self.assertEqual(response.status_code, 302)
         self.assertRedirects(response, reverse("account_login"))
@@ -71,7 +78,7 @@ class AddWishlistTest(TestCase):
 class RemoveWishlistTest(TestCase):
 
     def setUp(self):
-
+        # Set up the testing environment for removing items from the wishlist
         self.client = Client()
         self.user = User.objects.create_user(username="testuser", password="testpass")
         self.product = Product.objects.create(
@@ -83,7 +90,7 @@ class RemoveWishlistTest(TestCase):
         self.wishlist.products.add(self.product)
 
     def test_remove_wishlist(self):
-
+        # Test removing a product from the wishlist for an authenticated user
         self.client.force_login(self.user)
         response = self.client.post(reverse("remove_wishlist", args=[self.product.id]))
         self.assertEqual(response.status_code, 302)
@@ -95,6 +102,7 @@ class RemoveWishlistTest(TestCase):
         )
 
     def test_remove_wishlist_unauthenticated_user(self):
+        # Test removing a product from the wishlist for an unauthenticated user
         response = self.client.post(reverse("remove_wishlist", args=[self.product.id]))
         self.assertEqual(response.status_code, 302)
         self.assertRedirects(response, reverse("account_login"))

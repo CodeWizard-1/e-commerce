@@ -4,10 +4,12 @@
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-md-6 my-auto">
+                <!-- Display the error message for the 404 page -->
                 <h1 class="display-6 logo-font text-black">
                     The page you are looking for isn't available
                 </h1>
                 <div class="my-5">
+                    <!-- Provide a link to return to the main shop page -->
                     <h4>
                         <a href="{% url 'products' %}" 
                             class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
@@ -17,6 +19,7 @@
                 </div>
             </div>
             <div class="col-md-6 my-auto">
+                <!-- Display an image related to the 404 error -->
                 <img src="{% static 'images/404.png' %}" alt="404" style="max-width: 100%; max-height: 75vh;">
             </div>
         </div>

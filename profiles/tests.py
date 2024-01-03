@@ -10,19 +10,21 @@ from django.shortcuts import get_object_or_404
 
 
 class TestProfilesViews(TestCase):
-
+    # Set up a test user for authentication
     def setUp(self):
         testuser = User.objects.create_user(
             username="test_username", password="secret", email="testuser@email.com"
         )
         testuser.save()
 
+    # Test the GET request for the profile page
     def test_get_profile_page(self):
         self.client.login(username="test_username", password="secret")
         response = self.client.get(reverse("profile"))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "profiles/profile.html")
 
+    # Test the POST request for the profile page
     def test_post_profile_page(self):
         self.client.login(username="test_username", password="secret")
 
@@ -31,6 +33,7 @@ class TestProfilesViews(TestCase):
 
         self.assertTemplateUsed(response, "profiles/profile.html")
 
+    # Test unauthorized POST request for the profile page
     def test_unauthorized_post_profile_page(self):
 
         response = self.client.post(reverse("profile"))
@@ -41,6 +44,7 @@ class TestProfilesViews(TestCase):
         self.assertRedirects(response, expected_url)
 
 
+# Set up necessary data for order history view tests
 class OrderHistoryViewTest(TestCase):
 
     def setUp(self):
@@ -59,6 +63,7 @@ class OrderHistoryViewTest(TestCase):
             county="Anywhere",
         )
 
+    # Test the order history view
     def test_order_history_view(self):
         self.client.login(username="testuser", password="testpass")
 

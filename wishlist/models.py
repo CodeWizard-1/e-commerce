@@ -3,6 +3,7 @@ from products.models import Product, ProductVariant
 from django.contrib.auth.models import User
 
 
+# Define the Wishlist model with specified fields
 class Wishlist(models.Model):
 
     products = models.ManyToManyField(Product, blank=True)
