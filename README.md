@@ -2,7 +2,7 @@
 
 ![Alt text](documentation/image.png)
 
-Welcome to the Sportswear online store. This site was built using Django with custom Python, HTML, and CSS code for Code Institute P5 eCommerce apps. Our online store is an application that allows users to purchase clothes and accessories for sports as well as for everyday style.
+Welcome to the online sportswear store. This app allows users to purchase clothing and accessories for both sports and casual wear.
 
 Some features on the site are available exclusively to registered users, including viewing your order history, saving items to your wishlist, and adding product reviews.
 
@@ -25,8 +25,8 @@ Users can search for products, view product details, add to cart, and make payme
 4. [Fundamental Structure](#fundamental-structure)
     * [Wireframes](#wireframes)
     * [Database Schema](#database-schema) 
-5. [The Scope Plane](#the-scope-plane)
-6. [The Structure Plane](#the-structure-plane)
+5. [Main plan](#main-plan)
+6. [Structure Plane](#structure-plane)
     * [Features](#features)
     * [Home Page](#home-page)
       * [Featured Products Section](#featured-products-section)
@@ -51,8 +51,7 @@ Users can search for products, view product details, add to cart, and make payme
     * [Checkout Page](#checkout-page)
     * [Error Page](#error-page)
     * [Future Features](#future-features)
-7. [The Surface Plane](#the-surface-plane)
-    * [Design](#design)
+7. [Design](#design)
       * [Colour Scheme](#colour-scheme)
       * [Typography](#typography)
       * [Images](#images)
@@ -97,7 +96,7 @@ Users can search for products, view product details, add to cart, and make payme
 
 ### Project Goals
 
-- Develop a polished and functional e-commerce website.
+- Develop a  functional e-commerce website.
 - Incorporate comprehensive features for a professional online store experience.
 - Apply knowledge gained from previous projects to make this website more advanced.
 - Introduce new elements, such as a wishlist and user reviews, to enhance CRUD functionality.
@@ -111,11 +110,11 @@ Users can search for products, view product details, add to cart, and make payme
 
 ## **Agile Planning**
 
-My project followed an agile planning approach, breaking down each feature into user stories to align with user expectations. Each user story was meticulously planned, leading to the creation of multiple tasks dedicated to implementing specific features.
+My project followed an agile planning approach, based on user stories. Each user story was meticulously plannedand and included in a specific iteration
 
 To prioritize development efforts, features were categorized as Must Have, Should Have, Could Have, and Won't Have. This classification helped determine the importance of each feature.
 
-The product section took precedence as the primary focus of the website, receiving the most attention and time for completion. As the project progressed, additional tasks were introduced or modified to accommodate the evolving needs of users within the website.
+The product section took precedence as the primary focus of the website, receiving the most attention and time for completion. 
 
 The Project board [here](https://github.com/users/CodeWizard-1/projects/5).
 
@@ -151,7 +150,7 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 
 ### Wireframes
 
-- To facilitate the design of the website, I created wireframes for every page. Adhering to best practices, wireframes were crafted for mobile and desktop dimensions. Balsamiq was employed as the tool for creating the site's wireframes.
+- To facilitate the design of the website, I created wireframes for every page. Adhering to best practices, wireframes were crafted for mobile and desktop dimensions. [Balsamiq](https://balsamiq.com/) was employed as the tool for creating the site's wireframes.
 
 ### Home Page Wireframes
 
@@ -278,7 +277,7 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 
 <br>
 
-## The Scope Plane
+## Main plan
 - Designing a homepage featuring a compelling hero images that instantly communicates the website's purpose to users.
 - Implementing account registration to enable restricted access for editing and deleting reviews, managing wishlists, and saving user information for faster checkouts in the future.
 - Developing a fully responsive website, ensuring seamless functionality across all screen sizes, with optimized navigation for mobile users.
@@ -290,7 +289,7 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 
 <br>
 
-## The Structure Plane
+## Structure Plane
 
 # Features 
 
@@ -298,7 +297,7 @@ You can read milestones [here](https://github.com/CodeWizard-1/e-commerce/milest
 
 ### Home Page
 ![Hero Image](documentation/image-4.png)
-The Home page of the online store is an attractive and informative landing page, created to attract attention and comfortably guide users.
+The Home page of the online store is an attractive and informative landing page, created to attract attention users.
 
 <br>
 
@@ -310,7 +309,7 @@ The Home page of the online store is an attractive and informative landing page,
 ### Featured Products Section
 ![Featured Products Section Image](documentation/image-5.png)
 - The "Trending This Week" section will showcase a random list of 5 products marked as "Is_Featured" on the admin panel.
-- Each product is presented with a card displaying its details, price, and whether it is currently on sale
+- Each product is presented with a card displaying its details.
 
 <br>
 
@@ -320,7 +319,7 @@ The Home page of the online store is an attractive and informative landing page,
 
 ### Healthy Lifestyle and Sporty Fashion Section
 ![Healthy Lifestyle and Sporty Fashion Image](documentation/image-6.png)
-- This section serves as an introduction to the online store's commitment to promoting a healthy lifestyle through sporty fashion.
+- This section is a description of the activities of the online store with the inclusion of high-frequency keywords for search engine optimization
 
 <br>
 
@@ -375,7 +374,7 @@ The Home page of the online store is an attractive and informative landing page,
 ![Alt text](documentation/image-208.png)
 ![Alt text](documentation/image-207.png)
 
- - At the very top there is an information board in which information about the terms of return and delivery, the minimum order amount for free delivery is updated every three seconds (to encourage the user to buy  more number of products), as well as a motivational phrase as a call to action.
+ - At the very top there is an information board in which information about the terms of return, delivery, the minimum order amount for free delivery is updated every three seconds (to encourage the user to buy  more number of products), as well as a motivational phrase as a call to action.
 
 ![Main Nav Menu Image](documentation/image-13.png)
 
@@ -715,8 +714,7 @@ When the user clicks on this, they can see all the items in their basket, the in
 
 ### Error Page
 ![Error Page Image](documentation/image-70.png)
-- If a user lands on a page that either doesn't exist or that they shouldn't be on (a regular user using links on an admin page or trying to edit/delete something from a link), they will be shown an error message. . page with a button to return them to the store.
-
+- If a user lands on a page that either doesn't exist or that they shouldn't be on (a regular user using links on an admin page or trying to edit/delete something from a link), they will be shown an error message and button to return to store.
 <br>
 
 [Back to Top](#table-of-contents)
@@ -734,12 +732,13 @@ When the user clicks on this, they can see all the items in their basket, the in
 
 - Additionally, to attract more visitors, I would introduce a blog with information about the latest trends in the world of sportswear.
 
+- Also complete the [USER STORY: Password Recovery](https://github.com/CodeWizard-1/e-commerce/issues/17).
+
 <br>
 
 [Back to Top](#table-of-contents)
 
 
-## The Surface Plane
 ## Design
 ### Colour Scheme
 - The following colors were chosen for the website: white, which is associated with purity, freshness and lightness; gray, which is a universal color and adds elegance and restraint; blue, considered universal and popular; red, often associated with energy, passion and strength, which can draw attention to sportswear; and black, symbolizing class and elegance.
@@ -1300,7 +1299,7 @@ You can fork this repository by using the following steps:
 
 # Acknowledgements
 
-- I would like to express my sincere gratitude to my mentor Mitko Bachvarov for his incredible support and assistance in my learning process.
+I would like to express my sincere gratitude to my mentor Mitko Bachvarov for his incredible support and assistance in my learning process.
 I would also like to express my gratitude to all the staff of the Code Institute for the excellent organization of the educational process.
 It is equally important to express gratitude to your classmates. Your knowledge, enthusiasm and willingness to support in difficult times made our training more productive and interesting.
 
