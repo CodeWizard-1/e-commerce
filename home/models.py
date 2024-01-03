@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
-
+# Model representing a contact form submission
 class Contact(models.Model):
 
     email = models.EmailField(blank=False)
@@ -14,4 +14,3 @@ class Contact(models.Model):
 
     class Meta:
         verbose_name = "Contact Form Submission"
-    

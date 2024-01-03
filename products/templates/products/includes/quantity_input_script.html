@@ -1,6 +1,6 @@
 <script>
 
-  
+    // Function to handle enabling/disabling of quantity input based on current value
     function handleEnableDisable(itemId) {
 
         let currentValue = parseInt($(`.id_qty_${itemId}`).val());
@@ -11,19 +11,20 @@
 
     }
     
-
+    // Loop through all quantity input elements and call handleEnableDisable function
     let allQtyInputs = $('.qty_input');
     for (let i = 0; i < allQtyInputs.length; i++) {
         let itemId = $(allQtyInputs[i]).data('item_id');
         handleEnableDisable(itemId);
     }
     
-
+    // Event listener for quantity input change
     $('.qty_input').change(function () {
         let itemId = $(this).data('item_id');
         handleEnableDisable(itemId);
     });
 
+    // Event listener for quantity input on input event
     $('.qty_input').on('input', function () {
     let itemId = $(this).data('item_id');
     let currentValue = parseInt($(this).val());
@@ -35,7 +36,7 @@
         handleEnableDisable(itemId);
     });
     
-
+    // Event listener for increment button click
     $('.increment-qty').click(function (e) {
         e.preventDefault();
         let itemId = $(this).data('item_id');
@@ -50,7 +51,7 @@
         }
     });
     
-
+    // Event listener for decrement button click
     $('.decrement-qty').click(function (e) {
         e.preventDefault();
         let itemId = $(this).data('item_id');

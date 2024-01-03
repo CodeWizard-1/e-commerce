@@ -1,3 +1,4 @@
+/* Styling for Stripe Element and custom input */
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -10,7 +11,7 @@
   -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
 }
-
+/* Styling for focused state of Stripe Element and custom input */
 .StripeElement--focus,
 .stripe-style-input:focus,
 .stripe-style-input:active {
@@ -46,6 +47,7 @@ select option[value=""] {
     color: #aab7c4 !important;
 }
 
+/* Styling for loading overlay */
 #loading-overlay {
 	display: none;
 	position: fixed;
@@ -57,6 +59,7 @@ select option[value=""] {
     z-index: 9999;
 }
 
+/* Styling for loading spinner within overlay */
 .loading-spinner {
 	display: flex;
     align-items: center;

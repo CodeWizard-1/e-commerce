@@ -31,6 +31,7 @@
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
                             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                                <!-- Options for sorting products -->
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                                 <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
@@ -42,12 +43,11 @@
                                 <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
                                 <option value="brand_asc" {% if current_sorting == 'brand_asc' %}selected{% endif %}>Brand (A-Z)</option>
                                 <option value="brand_desc" {% if current_sorting == 'brand_desc' %}selected{% endif %}>Brand (Z-A)</option>
-
-
                             </select>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 order-md-first">
+                        <!-- Displaying product count and search term if applicable -->
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
                                 <span class="small"><a href="{% url 'products' %}">All Products</a> | </span>
@@ -56,6 +56,7 @@
                         </p>
                     </div>
                 </div>
+                <!-- Displaying products in a grid -->
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -70,7 +71,7 @@
                                     </a>
                                 {% endif %}
 
-                                
+                                <!-- Product image -->
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -80,6 +81,7 @@
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
+                                <!-- Product details and pricing -->
                                 <div class="card-body pb-0">
                                     <p class="mb-0">{{ product.name }}</p>
                                 </div>
@@ -102,7 +104,7 @@
                                             <p class="mb-0 pt-2 pb-2"><span class="h5 text-left font-weight-bold price-font">
                                                     €{{ product.price }}</span></p>
                                             {% endif %}
-
+                                            <!-- Displaying brand and category details -->
                                             {% if product.brand %}
                                                 <a class="text-muted" href="{% url 'products' %}?brand={{ product.brand.name }}">
                                                     <i class="fa-solid fa-copyright"></i> {{ product.brand.friendly_name }}
@@ -115,11 +117,13 @@
                                                 </a>
                                             </p>
                                             {% endif %}
+                                            <!-- Displaying product rating -->
                                             {% if product.rating %}
                                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
+                                            <!-- Superuser options for editing and deleting products -->
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
                                                     <a href="{% url 'edit_product' product.id %}"><i class="fa-solid fa-pen-to-square"></i></a> | 
@@ -131,6 +135,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Dividing rows based on loop counter -->
                         {% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none mb-5">
                                 <hr>
@@ -156,6 +161,7 @@
             </div>
         </div>
     </div>
+    <!-- Back to top button -->
     <div class="btt-button shadow-sm rounded-0 border border-black bg-white">
         <a href="#" class="btt-link d-flex h-100">
             <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
@@ -165,12 +171,13 @@
 
 {% block postloadjs %}
     {{ block.super }}
+    <!-- Script for scrolling to top -->
     <script>
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
 		})
 	</script>
-    
+     <!-- Script for handling product sorting -->
     <script>
         $('#sort-selector').change(function() {
             var selector = $(this);
