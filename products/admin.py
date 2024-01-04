@@ -48,12 +48,7 @@ class ProductVariantAdmin(admin.ModelAdmin):
     list_display = (
         'product',
         'clothing_size',
-        'men_shoe_size',
-        'women_shoe_size',
-        'child_shoe_size',
-        'color',
         'stock_quantity',
-
     )
 
 
