@@ -494,3 +494,17 @@ footer a {
 .accout-block{
     display: flex;
 }
+
+.card-header {
+    border: none;
+}
+
+.borderAccordion {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.btn:focus{
+    box-shadow: none
+}
