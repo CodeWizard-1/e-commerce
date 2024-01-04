@@ -26,6 +26,8 @@ class ProductAdmin(admin.ModelAdmin):
         'discount',
         'discounted_price',
         'created_on',
+        'fit',
+        'materials',
     )
 
     list_editable = (

@@ -128,7 +128,7 @@
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <strong>Fit:</strong> Slim fit
+                                        <strong>Fit:</strong> {{ product.fit }}
                                     </div>
                                 </div>
                             </div>
@@ -145,20 +145,7 @@
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <strong>Materials</strong>
-                                        <br>
-                                        <strong>Composition</strong>
-                                        Cotton 95%, Spandex 5%
-                                        <br>
-                                        Material: Cotton, Jersey
-                                        <br>
-                                        <strong>Materials in this product explained</strong>
-                                        <br>
-                                        Cotton
-                                        <br>
-                                        Cotton is a soft and versatile natural fiber harvested from the cotton plant.
-                                        Spandex
-                                        Elastane is an elastic synthetic fiber made from oil (a fossil resource).
+                                        {{ product.materials }}
                                     </div>
                                 </div>
                             </div>

@@ -28,6 +28,14 @@ class Product(models.Model):
         ('women', 'women'),
         ('kids', 'kids'),
     ]
+    FIT_CHOICES = [
+        ('Regular (Classic)', 'Regular (Classic)'),
+        ('Slim', 'Slim'),
+        ('Loose', 'Loose'),
+        ('Athletic', 'Athletic'),
+        ('Relaxed', 'Relaxed'),
+        ('Skinny', 'Skinny'),
+    ]
     category = models.ForeignKey('Category', null=True,
                                  blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
@@ -58,6 +66,9 @@ class Product(models.Model):
     is_featured = models.BooleanField(
         default=False, verbose_name="Feature on Home Page"
     )
+    fit = models.CharField(max_length=60, choices=FIT_CHOICES,
+                              null=True, blank=True)
+    materials = models.TextField(null=True, blank=True)
 
     def clean(self):
         if self.price < 0:
