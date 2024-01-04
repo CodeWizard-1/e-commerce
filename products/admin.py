@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import Product, Category, ProductVariant, Brand, Reviews
+from django_summernote.admin import SummernoteModelAdmin
 
 
 class ProductVariantInline(admin.StackedInline):
@@ -7,7 +8,7 @@ class ProductVariantInline(admin.StackedInline):
     extra = 1
 
 
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(SummernoteModelAdmin, admin.ModelAdmin):
 
     search_fields = [
         'name',
@@ -27,16 +28,14 @@ class ProductAdmin(admin.ModelAdmin):
         'discounted_price',
         'created_on',
         'fit',
-        'materials',
     )
-
+    summernote_fields = ("materials",)
     list_editable = (
         "is_featured",
         "on_sale",
     )
 
     ordering = ("name",)
-    inlines = [ProductVariantInline]
 
 
 class CategoryAdmin(admin.ModelAdmin):

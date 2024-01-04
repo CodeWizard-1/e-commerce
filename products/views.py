@@ -13,6 +13,7 @@ from .forms import ProductForm, ReviewsForm
 from profiles.models import UserProfile
 from wishlist.models import Wishlist
 import random
+from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 
 
 def all_products(request):

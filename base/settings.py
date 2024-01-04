@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'profiles',
     'storages',
     'wishlist',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -70,7 +71,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'base.urls'
-
+SUMMERNOTE_THEME = 'bs4'
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 TEMPLATES = [

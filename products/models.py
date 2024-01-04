@@ -5,7 +5,7 @@ from django.core.exceptions import ValidationError
 
 from django.contrib.auth.models import User
 from profiles.models import UserProfile
-
+from django_summernote.fields import SummernoteTextField
 
 class Category(models.Model):
 
