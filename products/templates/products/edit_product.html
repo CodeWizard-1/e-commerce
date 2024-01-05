@@ -30,6 +30,8 @@
                     {% for field in form %}
                         {% if field.name != 'image' %}
                             {{ field | as_crispy_field }}
+                        {% elif field.name == 'materials' %}
+                            {{ field.label_tag }} {{ form.materials }}
                         {% else %}
                             {{ field }}
                         {% endif %}
