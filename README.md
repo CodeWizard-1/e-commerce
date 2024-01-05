@@ -457,6 +457,16 @@ If the user clicks the search button without entering anything, an error message
 - The page also displays reviews left by users, with the option for authorized users to leave their own.
 - Reviews can be updated or deleted by the user who left them or by the administrator/superuser. These are all CRUD functions.
 
+![Alt text](documentation/image-213.png)
+![Alt text](documentation/image-214.png)
+
+- Also in the drop-down window you can see Fit as well as the material from which the clothes are made.
+
+![Alt text](documentation/image-215.png)
+![Alt text](documentation/image-216.png)
+
+- You can make changes to Fit and Materials either in the admin panel or on the editing page directly on the site with access rights as an administrator.
+
 
 - If the user is not authorized, he is prompted to log into his account or register.
 

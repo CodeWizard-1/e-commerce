@@ -34,7 +34,7 @@ class Product(models.Model):
         ('Loose', 'Loose'),
         ('Athletic', 'Athletic'),
         ('Relaxed', 'Relaxed'),
-        ('Skinny', 'Skinny'),
+        ('Oversized', 'Oversized'),
     ]
     category = models.ForeignKey('Category', null=True,
                                  blank=True, on_delete=models.SET_NULL)
