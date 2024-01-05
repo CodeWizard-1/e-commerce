@@ -843,6 +843,7 @@ The robots.txt file was created using this guide [https://www.conductor.com/acad
 * [Black](https://pypi.org/project/black/) - A Python code formatter.
 * [django storages](https://django-storages.readthedocs.io/en/latest/) - Collection of custom storage backends for Django.
 * [stripe==7.8.1](https://pypi.org/project/stripe/) - A Python library for Stripe’s API.
+* [django-summernote](https://github.com/summernote/django-summernote) - Is a simple WYSIWYG editor.
 
 <br>
 
@@ -878,6 +879,24 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 # Bugs
 
 Below are the problems I encountered and how I solved them.
+
+### When entering an empty value in the product quantity field, the last error Server Error 500 appeared
+
+  - #### Issue:
+
+  - If you delete the number 1 in the quantity field, which is set by default on the product details page and send it to the Basket, then the error "Server Error 500" occurs
+
+![Alt text](documentation/image-219.png)
+
+
+- #### Fix:
+
+ - It was decided to add code: ![Alt text](documentation/image-217.png) 
+
+ that checks for the presence of a value for the quantity of an item in the request. If the value is missing, an error message is generated and the user is redirected back to the page from which the request was made to specify the required quantity.
+
+![Alt text](documentation/image-218.png)
+
 
 ### You could enter any quantity of goods from the keyboard
 
