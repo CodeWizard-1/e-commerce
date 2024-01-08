@@ -742,7 +742,7 @@ When the user clicks on this, they can see all the items in their basket, the in
 
 - Additionally, to attract more visitors, I would introduce a blog with information about the latest trends in the world of sportswear.
 
-- Also complete the [USER STORY: Password Recovery](https://github.com/CodeWizard-1/e-commerce/issues/17).
+- I also plan to complete this [USER STORY: Password Recovery](https://github.com/CodeWizard-1/e-commerce/issues/17).
 
 <br>
 
@@ -880,7 +880,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 Below are the problems I encountered and how I solved them.
 
-### When entering an empty value in the product quantity field, the last error Server Error 500 appeared
+### When entering an empty value in the product quantity field  error Server Error 500 appeared
 
   - #### Issue:
 
@@ -891,7 +891,9 @@ Below are the problems I encountered and how I solved them.
 
 - #### Fix:
 
- - It was decided to add code: ![Alt text](documentation/image-217.png) 
+ - It was decided to add code: 
+ 
+ ![Alt text](documentation/image-217.png) 
 
  that checks for the presence of a value for the quantity of an item in the request. If the value is missing, an error message is generated and the user is redirected back to the page from which the request was made to specify the required quantity.
 
@@ -968,14 +970,9 @@ Below are the problems I encountered and how I solved them.
  - [stackoverflow.com - Filter in the template if the product is in wishlist or no. Django ecommerce website](https://stackoverflow.com/questions/71248375/filter-in-the-template-if-the-product-is-in-wishlist-or-no-django-ecommerce-web)
 - [Very Academy YouTube - Creating a User Bookmark / Favourites Features](https://www.youtube.com/watch?v=H4QPHLmsZMU)
 - [thenewboston Youtube - Django Tutorial for Beginners - Favorite View Function](https://www.youtube.com/watch?v=irH98-4eKmQ)
-- [Freecodecamp.org, An Introduction to Unit Testing in Python](https://www.freecodecamp.org/news/an-introduction-to-testing-in-python) 
+- [Freecodecamp.org, An Introduction to Unit Testing in Python](https://www.
 - [Real Python.com, Getting Started With Testing in Python](https://realpython.com/python-testing/)
 - [Stackoverflow.com, Django how to test model functions with validator](https://stackoverflow.com/questions/67331863/django-how-to-test-model-functions-with-validator)
-- [Stackoverflow.com, Is it possible exclude test directories from coverage.py reports?](https://stackoverflow.com/questions/1628996/is-it-possible-exclude-test-directories-from-coverage-py-reports)
-- [DjangoCon 2021 | Speed up your tests with setUpTestData | Adam Johnson](https://www.youtube.com/watch?v=_8qLxaWMdzE)
-- [StackOverflow - How to add a unique randomly generated 6 digit key stored in a model](https://stackoverflow.com/questions/64850945/how-to-add-a-unique-randomly-generated-6-digit-key-stored-in-a-model)
-- [StackOverflow - Delete Modal Loop Fix](https://stackoverflow.com/questions/66116509/bootstrap-modal-is-not-working-with-for-in-jinja-2)
-
 
 
 <br>
